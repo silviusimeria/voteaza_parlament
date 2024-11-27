@@ -1,0 +1,19 @@
+<div class="overflow-hidden">
+  <div class="inset-y-0 right-0 w-full max-w-2xl bg-white shadow-xl flex flex-col">
+    <div class="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white">
+      <h2 class="text-xl font-bold text-gray-900">
+        <%= county.name %>
+      </h2>
+      <button data-action="panel#close"
+              class="rounded-full p-1.5 text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto bg-gray-50">
+      <%= render partial: 'parties_list', locals: { county: county } %>
+    </div>
+  </div>
+</div>

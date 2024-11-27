@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://voteazaparlament.ro/sitemap.xml

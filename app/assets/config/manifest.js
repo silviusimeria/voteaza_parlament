@@ -1,0 +1,15 @@
+//= link_tree ../images
+//= link_directory ../javascripts .js
+//= link_directory ../stylesheets .css
+//= link active_admin.scss
+//= link active_admin.js
+//= link tailwind.css
+//= link application.js
+//= link leaflet.js
+//= link controllers/application.js
+//= link controllers/hello_controller.js
+//= link controllers/index.js
+//= link controllers/map_controller.js
+//= link controllers/panel_controller.js
+//= link controllers/party_controller.js
+//= link controllers/dropdown_controller.js

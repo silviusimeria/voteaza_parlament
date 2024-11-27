@@ -1,0 +1,42 @@
+<html lang="ro">
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) + " | VoteazaParlament.ro" : "VoteazaParlament.ro - Informații Alegeri Parlamentare 2024" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : 'Informații complete despre candidații la alegerile parlamentare din 1 Decembrie 2024' %>">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+                            integrity: "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=",
+                            crossorigin: "" %>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <%= javascript_importmap_tags %>
+    <style>
+        #map {
+            height: 600px;
+        }
+    </style>
+  </head>
+
+  <body>
+  <%= render "shared/header" %>
+  <main class="min-h-screen w-full">
+    <%= yield %>
+  </main>
+  <%= render "shared/footer" %>
+  </body>
+</html>

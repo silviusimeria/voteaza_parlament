@@ -1,0 +1,2 @@
+module PartyLinksHelper
+end
