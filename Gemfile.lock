@@ -254,6 +254,7 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
+    pg (1.5.9)
     psych (5.2.0)
       stringio
     public_suffix (6.0.1)
@@ -478,6 +479,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  pg
   puma (>= 5.0)
   pundit (~> 2.4)
   rails (~> 8.0.0)
@@ -492,13 +494,16 @@ DEPENDENCIES
   solid_cache
   solid_queue
   sprockets-rails
-  sqlite3 (>= 2.1)
+  sqlite3
   stimulus-rails
   tailwindcss-rails
   thruster
   turbo-rails
   tzinfo-data
   web-console
+
+RUBY VERSION
+   ruby 3.3.0p0
 
 BUNDLED WITH
    2.5.3

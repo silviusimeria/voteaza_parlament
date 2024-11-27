@@ -22,8 +22,8 @@ namespace :import do
       counties_data = geojson_data['features'].map do |feature|
         {
           name: feature['properties']['name'],
-          code: feature['properties']['mnemonic'],
-          geojson: feature['geometry']
+          mnemonic: feature['properties']['mnemonic'],
+          county_id: feature['properties']['countyId']
         }
       end
 
@@ -47,7 +47,7 @@ namespace :import do
 
         if county_name.strip == 'Diaspora'
           county = County.find_or_create_by!(name: 'Diaspora', code: 'D') do |c|
-            c.geojson_id =  [10,20]
+            c.geojson_id = 'D'
           end
           # puts "Found or created Diaspora county: #{county.name}"
         else
@@ -79,8 +79,8 @@ namespace :import do
           if matched_county
             # puts "Matched #{county_name} with #{matched_county[:name]}"
             county = County.find_or_create_by!(name: matched_county[:name]) do |c|
-              c.code = matched_county[:code]
-              c.geojson_id = matched_county[:geojson].to_json
+              c.code = matched_county[:mnemonic]
+              c.geojson_id = matched_county[:county_id]
             end
             # puts "Found or created county: #{county.name}"
           else

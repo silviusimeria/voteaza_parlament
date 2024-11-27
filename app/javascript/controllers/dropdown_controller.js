@@ -4,12 +4,11 @@ export default class extends Controller {
     static targets = ["content", "arrow"]
 
     connect() {
-        // Initialize in a closed state
         this.close()
     }
 
     toggle() {
-        if (this.contentTarget.style.display === "none" || this.contentTarget.style.display === "") {
+        if (this.contentTarget.classList.contains("hidden")) {
             this.open()
         } else {
             this.close()
@@ -17,12 +16,12 @@ export default class extends Controller {
     }
 
     open() {
-        this.contentTarget.style.display = "block"
+        this.contentTarget.classList.remove("hidden")
         this.arrowTarget.classList.add("rotate-180")
     }
 
     close() {
-        this.contentTarget.style.display = "none"
+        this.contentTarget.classList.add("hidden")
         this.arrowTarget.classList.remove("rotate-180")
     }
 }

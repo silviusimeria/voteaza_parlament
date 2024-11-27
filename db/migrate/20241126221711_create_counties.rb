@@ -7,6 +7,5 @@ class CreateCounties < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    add_index :counties, :code, unique: true
   end
 end

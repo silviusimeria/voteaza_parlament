@@ -7,6 +7,5 @@ class CreateParties < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    add_index :parties, :name, unique: true
   end
 end
