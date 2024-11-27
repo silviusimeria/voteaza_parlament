@@ -3,7 +3,7 @@ module ApplicationHelper
     return nil unless color.present?
 
     # Convert hex to RGB and add alpha
-    hex = color.delete('#')
+    hex = color.delete("#")
     r, g, b = hex.scan(/../).map(&:hex)
     "rgba(#{r}, #{g}, #{b}, #{alpha})"
   end

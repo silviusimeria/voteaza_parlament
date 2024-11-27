@@ -14,7 +14,7 @@ class PartyWithCandidates
     party.color
   end
 
-  def link
-    party.party_links.first
+  def party_links
+    party.party_links
   end
 end

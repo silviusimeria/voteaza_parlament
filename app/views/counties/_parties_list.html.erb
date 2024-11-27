@@ -1,33 +1,40 @@
 <div class="p-4 space-y-3">
-<% county.parties_with_candidates.each do |party| %>
-  <div class="rounded-lg bg-white shadow-sm"
-       data-controller="dropdown">
-    <button data-action="click->dropdown#toggle"
-            class="w-full flex items-center justify-between p-4 text-left transition-colors rounded-lg"
-              style="background-color: <%= color_with_alpha(party.color, 0.1) if party.color.present? %>">
-        <div class="flex items-center gap-3 w-full">
-          <div class="w-1.5 h-6 rounded-full" style="background-color: <%= party.color if party.color.present? %>"></div>
-          <div class="flex justify-between w-full">
-            <div>
-              <h3 class="text-base font-medium text-gray-900">
-                <% if party.link.present? %>
-                  <a href="<%= party.link %>" class="text-blue-500 underline">
-                    <%= party.name %>
-                  </a>
-                <% else %>
-                  <%= party.name %>
-                <% end %>
+  <% county.parties_with_candidates.each do |party| %>
+    <div class="rounded-lg bg-white shadow-sm" data-controller="dropdown">
+      <div class="flex items-center w-full transition-colors rounded-lg"
+           style="background-color: <%= color_with_alpha(party.color, 0.1) if party.color.present? %>">
+        <div class="flex-grow p-4">
+          <div class="flex items-center gap-3">
+            <div class="w-1.5 h-6 rounded-full" style="background-color: <%= party.color if party.color.present? %>"></div>
+            <div class="flex-grow">
+              <h3 class="text-base font-medium" style="color: <%= party.color if party.color.present? %>">
+                <%= party.name %>
               </h3>
+              <%= render partial: 'party_social_links', locals: { party: party, party_color: party.color } %>
             </div>
-            <p class="text-sm text-gray-500">
-              <%= party.candidates.count %>
-            </p>
           </div>
         </div>
-      </button>
+        <div class="w-16 text-sm text-gray-500 text-right pr-4">
+          <%= party.candidates.count %>
+        </div>
+        <div class="w-14 flex items-center justify-center">
+          <button data-action="click->dropdown#toggle"
+                  class="text-gray-400 hover:text-gray-500">
+            <svg class="w-5 h-5 transform transition-transform"
+                 data-dropdown-target="arrow"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 20 20"
+                 fill="currentColor">
+              <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
       <div data-dropdown-target="content" class="hidden border-t border-gray-100">
         <%= render partial: 'candidates_list', locals: { candidates: party.candidates, party_color: party.color } %>
       </div>
     </div>
-<% end %>
+  <% end %>
 </div>

@@ -4,9 +4,12 @@ class CandidateLink < ApplicationRecord
   validates :url, :kind, presence: true
 
   enum :kind, {
+    website: "website",
     facebook: "facebook",
-    twitter: "twitter",
-    wikipedia: "wikipedia"
+    telegram: "telegram",
+    wikipedia: "wikipedia",
+    instagram: "instagram",
+    tiktok: "tiktok"
   }
 
   def self.ransackable_attributes(auth_object = nil)

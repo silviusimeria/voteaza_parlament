@@ -11,11 +11,11 @@ Rails.application.routes.draw do
 
   resources :counties, only: [] do
     member do
-      get 'panel'
+      get "panel"
     end
   end
 
-  get 'termeni-si-conditii', to: 'pages#terms'
+  get "termeni-si-conditii", to: "pages#terms"
 
   ActiveAdmin.routes(self)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

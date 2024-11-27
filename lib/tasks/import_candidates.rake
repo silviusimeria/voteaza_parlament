@@ -1,13 +1,12 @@
-require 'csv'
-require 'json'
-require 'fuzzystringmatch'
+require "csv"
+require "json"
+require "fuzzystringmatch"
 
 namespace :import do
-  desc 'Import candidates from CSV files'
+  desc "Import candidates from CSV files"
   task candidates: :environment do
-
     def normalize_county_name(name)
-      name.strip.downcase.gsub(/[^\w\s]/, '')
+      name.strip.downcase.gsub(/[^\w\s]/, "")
     rescue
       name
     end
@@ -15,15 +14,15 @@ namespace :import do
       # puts "Parsing CSV file: #{file_path}"
 
       # Load GeoJSON data from file
-      geojson_file = File.read(Rails.root.join('public', 'ro_judete_poligon.geojson'))
+      geojson_file = File.read(Rails.root.join("public", "ro_judete_poligon.geojson"))
       geojson_data = JSON.parse(geojson_file)
 
       # Extract county data from GeoJSON features
-      counties_data = geojson_data['features'].map do |feature|
+      counties_data = geojson_data["features"].map do |feature|
         {
-          name: feature['properties']['name'],
-          mnemonic: feature['properties']['mnemonic'],
-          county_id: feature['properties']['countyId']
+          name: feature["properties"]["name"],
+          mnemonic: feature["properties"]["mnemonic"],
+          county_id: feature["properties"]["countyId"]
         }
       end
 
@@ -36,8 +35,8 @@ namespace :import do
 
       CSV.foreach(file_path, headers: true) do |row|
         county_name = row["﻿County"]
-        candidate_name = row['Candidate']
-        party_name = row['Party']
+        candidate_name = row["Candidate"]
+        party_name = row["Party"]
 
         normalized_county_name = normalize_county_name(county_name)
         # puts "Processing row: #{row.inspect}"
@@ -45,9 +44,9 @@ namespace :import do
 
         next if county_name.nil? || candidate_name.nil? || party_name.nil?
 
-        if county_name.strip == 'Diaspora'
-          county = County.find_or_create_by!(name: 'Diaspora', code: 'D') do |c|
-            c.geojson_id = 'D'
+        if county_name.strip == "Diaspora"
+          county = County.find_or_create_by!(name: "Diaspora", code: "D") do |c|
+            c.geojson_id = "D"
           end
           # puts "Found or created Diaspora county: #{county.name}"
         else
@@ -62,7 +61,7 @@ namespace :import do
             scores = counties_data.map do |county|
               score = jarow.getDistance(normalize_county_name(county[:name]), normalized_county_name)
               # puts "#{county_name} <-> #{county[:name]}: score #{score}"
-              [county, score]
+              [ county, score ]
             end
 
             best_match = scores.max_by { |_, score| score }
@@ -114,8 +113,8 @@ namespace :import do
       end
     end
 
-    senate_file_path = Rails.root.join('public', 'senate.csv')
-    deputy_file_path = Rails.root.join('public', 'deputy.csv')
+    senate_file_path = Rails.root.join("public", "senate.csv")
+    deputy_file_path = Rails.root.join("public", "deputy.csv")
 
     unless File.exist?(senate_file_path)
       puts "Error: File not found at #{senate_file_path}"
@@ -129,7 +128,7 @@ namespace :import do
       return
     end
 
-    parse_csv(senate_file_path, 'senate')
-    parse_csv(deputy_file_path, 'deputy')
+    parse_csv(senate_file_path, "senate")
+    parse_csv(deputy_file_path, "deputy")
   end
 end

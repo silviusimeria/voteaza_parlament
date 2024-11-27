@@ -6,12 +6,10 @@ export default class extends Controller {
 
     connect() {
         this.initializeMap()
-        // Keep track of currently selected layer
         this.selectedLayer = null
     }
 
     initializeMap() {
-        // Add these options to disable the default selection behavior
         this.map = L.map(this.mapTarget, {
             zoomControl: true,
             dragging: true,
@@ -25,14 +23,12 @@ export default class extends Controller {
                 [90, 180]
             ],
             keyboard: false,
-            boxZoom: false,          // Disable box zoom
-            doubleClickZoom: false   // Disable double click zoom
+            boxZoom: false,
+            doubleClickZoom: false
         }).setView([45.9432, 24.9668], 7);
 
-        // Add this CSS to remove the blue outline
         this.mapTarget.style.outline = 'none';
 
-        // Add these styles to your CSS or add them directly
         const style = document.createElement('style');
         style.textContent = `
             .leaflet-container {
@@ -58,6 +54,12 @@ export default class extends Controller {
                 fetch('/api/v1/map').then(r => r.json()),
                 fetch('/ro_judete_poligon.geojson').then(r => r.json())
             ]);
+
+            // Add this line to show Diaspora first
+            const diasporaCounty = data.counties.find(c => c.code === 'D');
+            if (diasporaCounty) {
+                this.showCountyData(diasporaCounty);
+            }
 
             const layer = L.geoJson(geoJson, {
                 style: this.getCountyStyle,
@@ -146,10 +148,6 @@ export default class extends Controller {
                 document.getElementById('county-info').classList.remove('hidden');
             })
             .catch(error => console.error("Error loading county data:", error));
-    }
-
-    closePanel() {
-        document.getElementById('county-info').classList.add('hidden');
     }
 
     togglePartySection(event) {

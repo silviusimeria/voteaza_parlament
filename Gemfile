@@ -7,11 +7,11 @@ gem "rails", "~> 8.0.0"
 # gem "propshaft"
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'sqlite3'
+  gem "sqlite3"
 end
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -74,7 +74,7 @@ end
 gem "activeadmin", "~> 3.2"
 gem "csv"
 gem "devise", "~> 4.9"
-gem 'fuzzy-string-match'
+gem "fuzzy-string-match"
 gem "pundit", "~> 2.4"
 gem "rotp", "~> 6.3"
 gem "rqrcode", "~> 2.2"
@@ -82,7 +82,7 @@ gem "dotenv-rails"
 
 
 gem "sassc-rails", "~> 2.1"
-gem 'sprockets-rails'
+gem "sprockets-rails"
 
 group :development do
   gem "rubocop", require: false

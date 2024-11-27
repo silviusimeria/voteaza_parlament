@@ -1,8 +1,7 @@
 class CountiesController < InheritedResources::Base
-
     def panel
       @county = County.find_by!(code: params[:id])
-      render partial: 'county_panel', locals: { county: @county }
+      render partial: "county_panel", locals: { county: @county }
     end
 
   private
