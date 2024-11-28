@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_11_26_221830) do
+ActiveRecord::Schema[8.0].define(version: 2024_11_28_161712) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -65,6 +65,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_26_221830) do
     t.string "geojson_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "senate_seats", default: 0
+    t.integer "deputy_seats", default: 0
     t.index ["code"], name: "index_counties_on_code", unique: true
     t.index ["geojson_id"], name: "index_counties_on_geojson_id", unique: true
   end

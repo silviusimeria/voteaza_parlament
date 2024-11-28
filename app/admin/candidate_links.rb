@@ -19,7 +19,9 @@ ActiveAdmin.register CandidateLink do
               collection: CandidateNomination.includes(:county, :party).order('name ASC').map { |cn|
                 ["#{cn.name} (#{cn.county&.name} - #{cn.party&.name})", cn.id]
               }
-      f.input :kind
+      f.input :kind,
+              input_html: { class: 'chosen-select' },
+              collection: CandidateLink.kinds.keys
       f.input :url
     end
     f.actions

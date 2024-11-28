@@ -19,7 +19,9 @@ ActiveAdmin.register PartyLink do
               collection: Party.order('name ASC').map { |p|
                 [p.name, p.id]
               }
-      f.input :kind
+      f.input :kind,
+              input_html: { class: 'chosen-select' },
+              collection: PartyLink.kinds.keys
       f.input :url
     end
     f.actions
