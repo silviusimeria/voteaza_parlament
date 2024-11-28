@@ -12,6 +12,19 @@ ActiveAdmin.register PartyLink do
     actions
   end
 
+  form do |f|
+    f.inputs do
+      f.input :party,
+              input_html: { class: 'chosen-select' },
+              collection: Party.order('name ASC').map { |p|
+                [p.name, p.id]
+              }
+      f.input :kind
+      f.input :url
+    end
+    f.actions
+  end
+
   filter :party
   filter :kind, as: :select, collection: PartyLink.kinds
 end
