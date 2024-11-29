@@ -1,17 +1,15 @@
 <%= render "shared/top" %>
 
-<div class="flex">
-  <div data-controller="map" class="flex">
-    <!-- Left side with map -->
-    <div style="width: 50vw; height: 50vw;" class="bg-gray-100">
-      <div data-map-target="map" style="width: 50vw; height: 50vw;"></div>
-      <%= render "shared/bottom" %>
+<div class="w-full">
+  <div data-controller="map" class="flex flex-col lg:flex-row">
+    <%# Map section %>
+    <div class="w-full lg:w-1/2">
+      <div data-map-target="map" class="w-full h-[70vh] lg:h-screen"></div>
     </div>
 
-    <!-- Right side with county panel -->
-    <div id='county-info'>
-      <div data-map-target="countyPanel" class="flex"></div>
+    <%# Counties panel - centered in its container %>
+    <div id="county-info" class="w-full lg:w-1/2 flex justify-center">
+      <div data-map-target="countyPanel" class="p-4 min-h-[50vh] lg:h-screen overflow-y-auto max-w-xl w-full"></div>
     </div>
   </div>
 </div>
-

@@ -1,0 +1,32 @@
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold text-gray-900 mb-8">Evaluarea Candidaților</h1>
+
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <div class="mb-6">
+      <p class="text-gray-600">
+        Pentru o evaluare obiectivă a candidaților la funcția de parlamentar (senator sau deputat),
+        vă recomandăm să luați în considerare următoarele criterii și competențe:
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      <% research_sections.each do |section| %>
+        <section>
+          <h2 class="text-xl font-semibold text-gray-800 mb-4"><%= section[:title] %></h2>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+            <% section[:items].each do |item| %>
+              <li><%= item %></li>
+            <% end %>
+          </ul>
+        </section>
+      <% end %>
+
+      <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+        <p class="text-blue-800 text-sm">
+          Notă: Aceste criterii sunt orientative și pot fi folosite ca punct de plecare în evaluarea candidaților.
+          Este important să vă informați din surse multiple și să evaluați istoricul și realizările concrete ale fiecărui candidat.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

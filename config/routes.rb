@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   end
 
   get "termeni-si-conditii", to: "pages#terms"
+  get 'voting-info', to: 'pages#voting_info', as: :voting_info
+  get 'candidate-evaluation', to: 'pages#candidate_evaluation', as: :candidate_evaluation
+
 
   ActiveAdmin.routes(self)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
