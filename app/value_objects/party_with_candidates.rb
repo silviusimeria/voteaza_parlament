@@ -14,6 +14,14 @@ class PartyWithCandidates
     party.color
   end
 
+  def logo_url
+    party.logo_url
+  end
+
+  def abbreviation
+    party.abbreviation
+  end
+
   def party_links
     party.party_links
   end

@@ -2,6 +2,8 @@
 ActiveAdmin.register County do
   permit_params :name, :code, :senate_seats, :deputy_seats
 
+  actions :all, except: [:create, :destroy]
+
   index do
     selectable_column
     id_column

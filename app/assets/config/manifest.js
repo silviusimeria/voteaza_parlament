@@ -7,7 +7,6 @@
 //= link application.js
 //= link leaflet.js
 //= link controllers/application.js
-//= link controllers/hello_controller.js
 //= link controllers/index.js
 //= link controllers/map_controller.js
 //= link controllers/panel_controller.js

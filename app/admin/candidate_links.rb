@@ -1,6 +1,8 @@
 ActiveAdmin.register CandidateLink do
   permit_params :candidate_nomination_id, :url, :kind
 
+  actions :all, except: [:destroy]
+
   index do
     selectable_column
     id_column

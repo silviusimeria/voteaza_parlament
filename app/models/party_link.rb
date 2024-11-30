@@ -10,8 +10,7 @@ class PartyLink < ApplicationRecord
     wikipedia: "wikipedia",
     instagram: "instagram",
     tiktok: "tiktok",
-    press: "press",
-    linkedin: "linkedin"
+    press: "press"
   }
 
   def self.ransackable_attributes(auth_object = nil)

@@ -1,6 +1,8 @@
 ActiveAdmin.register PartyLink do
   permit_params :party_id, :url, :kind
 
+  actions :all, except: [:destroy]
+
   index do
     selectable_column
     id_column

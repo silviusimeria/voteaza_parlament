@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_11_28_161712) do
+ActiveRecord::Schema[8.0].define(version: 2024_11_29_184538) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -54,9 +54,11 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_28_161712) do
     t.integer "position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "person_id"
     t.index ["county_id", "party_id", "kind", "position"], name: "idx_nominations_unique_position", unique: true
     t.index ["county_id"], name: "index_candidate_nominations_on_county_id"
     t.index ["party_id"], name: "index_candidate_nominations_on_party_id"
+    t.index ["person_id"], name: "index_candidate_nominations_on_person_id"
   end
 
   create_table "counties", force: :cascade do |t|
@@ -77,6 +79,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_28_161712) do
     t.string "logo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "abbreviation"
+    t.text "description"
     t.index ["name"], name: "index_parties_on_name", unique: true
   end
 
@@ -89,8 +93,29 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_28_161712) do
     t.index ["party_id"], name: "index_party_links_on_party_id"
   end
 
+  create_table "party_memberships", force: :cascade do |t|
+    t.integer "party_id", null: false
+    t.integer "person_id", null: false
+    t.string "role"
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["party_id"], name: "index_party_memberships_on_party_id"
+    t.index ["person_id"], name: "index_party_memberships_on_person_id"
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "candidate_links", "candidate_nominations"
   add_foreign_key "candidate_nominations", "counties"
   add_foreign_key "candidate_nominations", "parties"
+  add_foreign_key "candidate_nominations", "people"
   add_foreign_key "party_links", "parties"
+  add_foreign_key "party_memberships", "parties"
+  add_foreign_key "party_memberships", "people"
 end
