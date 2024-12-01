@@ -1,4 +1,6 @@
 class Party < ApplicationRecord
+  include Sluggable
+
   has_many :candidate_nominations
   has_many :counties, through: :candidate_nominations
   has_many :party_links

@@ -10,6 +10,10 @@ class PartyWithCandidates
     party.name
   end
 
+  def slug
+    party.slug
+  end
+
   def color
     party.color
   end

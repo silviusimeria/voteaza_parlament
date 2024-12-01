@@ -1,0 +1,89 @@
+<%# app/views/persons/show.html.erb %>
+<div class="container mx-auto px-4 py-8">
+  <div class="max-w-4xl mx-auto">
+    <%# Person Header %>
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+      <div class="flex items-start gap-6">
+        <div class="flex-grow">
+          <h1 class="text-3xl font-bold text-gray-900"><%= @person.name %></h1>
+
+          <% if @nominations.any? %>
+            <div class="mt-4 text-lg text-gray-600">
+              <% @nominations.each do |nomination| %>
+                <div class="mt-2">
+                  Candidat pentru <%= nomination.kind.titleize %>
+                  în județul <%= nomination.county.name %>,
+                  poziția <%= nomination.position %>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <%# Nominations Section %>
+    <% @nominations.each do |nomination| %>
+      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+        <h2 class="text-xl font-semibold mb-4">
+          Candidat <%= nomination.kind.titleize %> • <%= nomination.county.name %>
+        </h2>
+
+        <%# Party info %>
+        <div class="flex items-center gap-4 mb-6">
+          <% if nomination.party.logo_url.present? %>
+            <%= image_tag nomination.party.logo_url, class: "h-12 w-12 object-contain" %>
+          <% end %>
+          <div>
+            <div class="font-medium text-lg"><%= nomination.party.name %></div>
+            <% if nomination.party.abbreviation.present? %>
+              <div class="text-gray-600"><%= nomination.party.abbreviation %></div>
+            <% end %>
+          </div>
+        </div>
+
+        <%# Candidate Links %>
+        <% if nomination.candidate_links.any? %>
+          <div class="mb-6">
+            <h3 class="text-lg font-medium mb-3">Resurse Candidat</h3>
+            <div class="flex flex-wrap gap-3">
+              <% nomination.candidate_links.each do |link| %>
+                <%= link_to link.url,
+                            class: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors",
+                            target: "_blank",
+                            rel: "noopener noreferrer" do %>
+                  <%= link.kind.titleize %>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+
+        <%# Party Links %>
+        <% if nomination.party.party_links.any? %>
+          <div>
+            <h3 class="text-lg font-medium mb-3">Resurse Partid</h3>
+            <div class="flex flex-wrap gap-2">
+              <% nomination.party.party_links.each do |link| %>
+                <%= link_to link.url,
+                            class: "inline-flex items-center gap-1 px-3 py-1 text-sm text-blue-600 hover:text-blue-800 group",
+                            target: "_blank",
+                            rel: "noopener" do %>
+                  <span><%= link.kind %></span>
+                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5"
+                       viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

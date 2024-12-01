@@ -6,8 +6,14 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get "map", to: "map#index"
+      get 'search', to: 'search#index'
+
+      resources :counties, only: [:show], param: :slug
     end
   end
+
+  get 'persoana/:slug', to: 'people#show', as: :person_profile
+  get '/judet/:county_slug', to: 'counties#show', as: :map_county
 
   resources :counties, only: [] do
     member do

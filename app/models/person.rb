@@ -1,4 +1,6 @@
 class Person < ApplicationRecord
+  include Sluggable
+
   has_many :party_memberships
   has_many :parties, through: :party_memberships
   has_many :candidate_nominations

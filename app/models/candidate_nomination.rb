@@ -1,4 +1,6 @@
 class CandidateNomination < ApplicationRecord
+  include Sluggable
+
   belongs_to :county
   belongs_to :party
   has_many :candidate_links
@@ -13,6 +15,10 @@ class CandidateNomination < ApplicationRecord
     senate: "senate",
     deputy: "deputy"
   }
+
+  def unique_slug
+    "#{slug}" # ensures uniqueness across candidates
+  end
 
   def self.ransackable_attributes(auth_object = nil)
     %w[id name kind position county_id party_id person_id created_at updated_at]

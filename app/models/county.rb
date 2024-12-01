@@ -1,4 +1,6 @@
 class County < ApplicationRecord
+  include Sluggable
+
   has_many :candidate_nominations
   has_many :parties, through: :candidate_nominations
 

@@ -5,16 +5,20 @@
   <!-- Column for Senate Candidates -->
   <div class="w-1/2">
     <% senate_candidates.sort_by { |c| c.position }.each do |candidate| %>
-      <div class="p-4 hover:bg-gray-50">
+      <div class="p-4 hover:bg-gray-50 transition-colors"
+           data-candidate-slug="<%= candidate.slug %>">
         <div class="flex items-start gap-3">
           <div class="w-1 h-1 mt-2.5 rounded-full bg-gray-300"></div>
           <div class="flex-1 space-y-1">
-            <div class="font-medium text-gray-900">
-              <%= candidate.name %>
-            </div>
-            <div class="text-sm text-gray-500">
-              Senator • Poziția <%= candidate.position %>
-            </div>
+            <%= link_to person_profile_path(candidate.slug), class: "block" do %>
+              <div class="font-medium text-gray-900 hover:text-blue-600">
+                <%= candidate.name %>
+              </div>
+              <div class="text-sm text-gray-500">
+                Senator • Poziția <%= candidate.position %>
+              </div>
+            <% end %>
+
             <% if candidate.candidate_links.any? %>
               <div class="flex flex-wrap gap-3 mt-2">
                 <% candidate.candidate_links.each do |link| %>
@@ -40,16 +44,20 @@
   <!-- Column for Deputy Candidates -->
   <div class="w-1/2">
     <% deputy_candidates.sort_by { |c| c.position }.each do |candidate| %>
-      <div class="p-4 hover:bg-gray-50">
+      <div class="p-4 hover:bg-gray-50 transition-colors"
+           data-candidate-slug="<%= candidate.slug %>">
         <div class="flex items-start gap-3">
           <div class="w-1 h-1 mt-2.5 rounded-full bg-gray-300"></div>
           <div class="flex-1 space-y-1">
-            <div class="font-medium text-gray-900">
-              <%= candidate.name %>
-            </div>
-            <div class="text-sm text-gray-500">
-              Deputat • Poziția <%= candidate.position %>
-            </div>
+            <%= link_to person_profile_path(candidate.slug), class: "block" do %>
+              <div class="font-medium text-gray-900 hover:text-blue-600">
+                <%= candidate.name %>
+              </div>
+              <div class="text-sm text-gray-500">
+                Deputat • Poziția <%= candidate.position %>
+              </div>
+            <% end %>
+
             <% if candidate.candidate_links.any? %>
               <div class="flex flex-wrap gap-3 mt-2">
                 <% candidate.candidate_links.each do |link| %>

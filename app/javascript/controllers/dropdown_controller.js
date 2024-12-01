@@ -4,8 +4,19 @@ export default class extends Controller {
     static targets = ["content", "arrow"]
 
     connect() {
-        this.close()
+        // Check URL for active party
+        const path = window.location.pathname
+        const matches = path.match(/\/partid\/([^\/]+)/)
+        const activePartySlug = matches ? matches[1] : null
+
+        // If this is the active party's dropdown, open it
+        if (activePartySlug && this.element.dataset.partySlug === activePartySlug) {
+            this.open()
+        } else {
+            this.close()
+        }
     }
+
 
     toggle() {
         if (this.contentTarget.classList.contains("hidden")) {
@@ -16,6 +27,16 @@ export default class extends Controller {
     }
 
     open() {
+        // Close all other dropdowns first
+        document.querySelectorAll('[data-controller="dropdown"]').forEach(dropdown => {
+            if (dropdown !== this.element) {
+                const controller = this.application.getControllerForElementAndIdentifier(dropdown, 'dropdown')
+                if (controller) {
+                    controller.close()
+                }
+            }
+        })
+
         this.contentTarget.classList.remove("hidden")
         this.arrowTarget.classList.add("rotate-180")
     }

@@ -1,16 +1,21 @@
 <div class="overflow-hidden">
-  <div class="inset-y-0 right-0 w-full max-w-2xl bg-white shadow-xl flex flex-col">
+  <div class="inset-y-0 right-0 w-full max-w-2xl bg-white shadow-xl flex flex-col h-full">
     <div class="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white">
       <h2 class="text-xl font-bold text-gray-900">
-        <%= county.name %>
+        <%= @county.name %>
       </h2>
       <div class="text-l font-bold text-gray-900">
-        Senatori: <%= county.senate_seats %> Deputați: <%= county.deputy_seats %>
+        Senatori: <%= @county.senate_seats %> Deputați: <%= @county.deputy_seats %>
       </div>
     </div>
 
     <div class="flex-1 overflow-y-auto bg-gray-50">
-      <%= render partial: 'parties_list', locals: { county: county } %>
+      <%= render partial: 'parties_list',
+                 locals: {
+                   county: @county,
+                   party: @party,
+                   candidate: @candidate
+                 } %>
     </div>
   </div>
 </div>

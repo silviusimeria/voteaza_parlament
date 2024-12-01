@@ -1,4 +1,3 @@
-# app/controllers/api/v1/map_controller.rb
 module Api
   module V1
     class MapController < BaseController
@@ -13,6 +12,7 @@ module Api
               id: county.id,
               name: county.name,
               code: county.code,
+              slug: county.slug,
               geojson_id: county.geojson_id,
               candidates: county.candidate_nominations.group_by(&:kind).transform_values do |nominations|
                 nominations.map do |nom|

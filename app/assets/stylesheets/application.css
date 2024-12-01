@@ -55,3 +55,28 @@ html, body {
 .dropdown-container:hover .dropdown-button svg {
     transform: rotate(180deg);
 }
+
+.county-label {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.leaflet-tooltip {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: white !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+}
+
+/* Hide the arrow */
+.leaflet-tooltip:before {
+    display: none !important;
+}
+

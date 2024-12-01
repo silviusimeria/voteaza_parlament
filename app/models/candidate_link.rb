@@ -11,7 +11,11 @@ class CandidateLink < ApplicationRecord
     instagram: "instagram",
     tiktok: "tiktok",
     press: "press",
-    linkedin: "linkedin"
+    linkedin: "linkedin",
+    cv: "cv",
+    asset_declaration: "asset_declaration",
+    interests_declaration: "interests_declaration",
+    criminal_record: "criminal_record"
   }
 
   def self.ransackable_attributes(auth_object = nil)

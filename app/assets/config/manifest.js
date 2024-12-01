@@ -9,6 +9,6 @@
 //= link controllers/application.js
 //= link controllers/index.js
 //= link controllers/map_controller.js
-//= link controllers/panel_controller.js
 //= link controllers/party_controller.js
 //= link controllers/dropdown_controller.js
+//= link controllers/search_controller.js

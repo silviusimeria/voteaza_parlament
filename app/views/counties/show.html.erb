@@ -1,0 +1,21 @@
+<%# app/views/map/show.html.erb %>
+<%= render "shared/top" %>
+
+<div class="w-full">
+  <div data-controller="map" class="flex flex-col lg:flex-row">
+    <%# Map section %>
+    <div class="w-full lg:w-1/2">
+      <div data-map-target="map" class="w-full h-[70vh] lg:h-screen"></div>
+    </div>
+
+    <%# Counties panel - centered in its container %>
+    <div id="county-info" class="w-full lg:w-1/2 flex justify-center">
+      <div data-map-target="countyPanel"
+           data-highlight-party="<%= @party&.slug %>"
+           data-highlight-candidate="<%= @candidate&.unique_slug %>"
+           class="p-4 min-h-[50vh] lg:h-screen overflow-y-auto max-w-xl w-full">
+        <%= render partial: "county_panel", locals: { county: @county } if @county %>
+      </div>
+    </div>
+  </div>
+</div>

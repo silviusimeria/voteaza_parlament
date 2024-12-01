@@ -7,6 +7,41 @@ export default class extends Controller {
     connect() {
         this.initializeMap()
         this.selectedLayer = null
+        this.countyLayers = new Map()
+
+        // Improved URL handling for direct candidate access
+        if (window.location.pathname.includes('/candidat/')) {
+            const paths = window.location.pathname.split('/')
+            const candidateSlug = paths[paths.length - 1]
+            const partySlug = paths[paths.length - 3]
+            const countySlug = paths[paths.length - 5]
+
+            // Wait for county data to load and then handle candidate selection
+            document.addEventListener('turbo:render', () => {
+                // First ensure county is selected
+                const county = this.counties?.find(c => c.slug === countySlug)
+                if (county) {
+                    const layer = this.countyLayers.get(county.slug)
+                    if (layer) {
+                        this.selectCounty(county, layer)
+                    }
+                }
+
+                // Then setup candidate after a short delay to ensure DOM is ready
+                setTimeout(() => {
+                    const candidateElement = document.querySelector(`[data-candidate-slug="${candidateSlug}"]`)
+                    if (candidateElement) {
+                        const controller = this.application.getControllerForElementAndIdentifier(
+                            candidateElement,
+                            'candidate'
+                        )
+                        if (controller) {
+                            controller.activateCandidate()
+                        }
+                    }
+                }, 100)
+            }, { once: true })
+        }
     }
 
     initializeMap() {
@@ -55,10 +90,15 @@ export default class extends Controller {
                 fetch('/ro_judete_poligon.geojson').then(r => r.json())
             ]);
 
-            // Add this line to show Diaspora first
-            const diasporaCounty = data.counties.find(c => c.code === 'D');
-            if (diasporaCounty) {
-                this.showCountyData(diasporaCounty);
+            this.counties = data.counties;
+
+            if (!window.location.pathname.includes('/judet/')) {
+                const diasporaCounty = data.counties.find(c => c.code === 'D');
+                if (diasporaCounty) {
+                    this.showCountyData(diasporaCounty);
+                    const url = `/judet/${diasporaCounty.slug}`;
+                    window.history.pushState({}, '', url);
+                }
             }
 
             const layer = L.geoJson(geoJson, {
@@ -69,6 +109,7 @@ export default class extends Controller {
                     );
 
                     if (county) {
+                        this.countyLayers.set(county.slug, layer);
                         this.setupCountyInteractions(county, layer);
                     }
                 }
@@ -77,9 +118,41 @@ export default class extends Controller {
             this.map.fitBounds(layer.getBounds(), {
                 padding: [20, 20]
             });
+
+            this.handleInitialUrl();
+            window.addEventListener('popstate', () => this.handleInitialUrl());
         } catch (error) {
             console.error("Error loading map data:", error);
         }
+    }
+
+    handleInitialUrl() {
+        const path = window.location.pathname;
+        const countyMatch = path.match(/\/judet\/([^\/]+)/);
+        if (countyMatch) {
+            const countySlug = countyMatch[1];
+            const county = this.counties.find(c => c.slug === countySlug);
+            if (county) {
+                const layer = this.countyLayers.get(county.slug);
+                if (layer) {
+                    if (this.selectedLayer) {
+                        this.selectedLayer.setStyle(this.getCountyStyle());
+                    }
+                    this.selectedLayer = layer;
+                    layer.setStyle({
+                        weight: 2,
+                        fillOpacity: 0.9,
+                        fillColor: '#3b82f6'
+                    });
+                    this.showCountyData(county);
+                }
+            }
+        }
+    }
+
+    updateUrl(county) {
+        const url = `/judet/${county.slug}`;
+        window.history.pushState({}, '', url);
     }
 
     getCountyStyle() {
@@ -90,39 +163,6 @@ export default class extends Controller {
             color: 'white',
             fillColor: '#1e40af'
         }
-    }
-
-    setupCountyInteractions(county, layer) {
-        layer.on({
-            mouseover: this.highlightCounty.bind(this),
-            mouseout: (e) => {
-                // Only reset style if this isn't the selected layer
-                if (this.selectedLayer !== layer) {
-                    layer.setStyle(this.getCountyStyle());
-                }
-            },
-            click: () => {
-                // Reset previous selection if exists
-                if (this.selectedLayer) {
-                    this.selectedLayer.setStyle(this.getCountyStyle());
-                }
-
-                // Update selected layer and its style
-                this.selectedLayer = layer;
-                layer.setStyle({
-                    weight: 2,
-                    fillOpacity: 0.9,
-                    fillColor: '#3b82f6' // Different color for selected state
-                });
-
-                this.showCountyData(county);
-            }
-        });
-
-        layer.bindTooltip(county.name, {
-            sticky: true,
-            direction: 'top'
-        });
     }
 
     highlightCounty(e) {
@@ -137,15 +177,60 @@ export default class extends Controller {
         }
     }
 
+    selectCounty(county, layer) {
+        if (this.selectedLayer) {
+            this.selectedLayer.setStyle(this.getCountyStyle());
+        }
+
+        this.selectedLayer = layer;
+        layer.setStyle({
+            weight: 2,
+            fillOpacity: 0.9,
+            fillColor: '#3b82f6'
+        });
+
+        const url = `/judet/${county.slug}`;
+        window.history.pushState({}, '', url);
+        this.showCountyData(county);
+    }
+
+    setupCountyInteractions(county, layer) {
+        layer.on({
+            mouseover: this.highlightCounty.bind(this),
+            mouseout: (e) => {
+                if (this.selectedLayer !== layer) {
+                    layer.setStyle(this.getCountyStyle());
+                }
+            },
+            click: () => this.selectCounty(county, layer)
+        });
+
+        layer.bindTooltip(county.name, {
+            permanent: true,
+            direction: 'center',
+            className: 'county-label',
+            offset: [0, 0]
+        });
+    }
+
     showCountyData(county) {
         if (!county) return;
 
-        // Fetch the HTML for the county panel
-        fetch(`/counties/${county.code}/panel`)
+        // Don't fetch if we're already on a more specific URL
+        const currentPath = window.location.pathname;
+        if ((currentPath.includes('/partid/') || currentPath.includes('/candidat/')) &&
+            currentPath.includes(`/judet/${county.slug}`)) {
+            return;
+        }
+
+        fetch(`/judet/${county.slug}`, {
+            headers: {
+                'Accept': 'text/vnd.turbo-stream.html'
+            }
+        })
             .then(response => response.text())
             .then(html => {
-                this.countyPanelTarget.innerHTML = html;
-                document.getElementById('county-info').classList.remove('hidden');
+                Turbo.renderStreamMessage(html)
             })
             .catch(error => console.error("Error loading county data:", error));
     }

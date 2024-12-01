@@ -1,42 +1,54 @@
 <div class="p-4 space-y-3">
-  <% county.parties_with_candidates.each do |party| %>
-    <div class="rounded-lg bg-white shadow-sm overflow-hidden" data-controller="dropdown">
-      <%# Make the entire header clickable %>
+  <% county.parties_with_candidates.each do |party_with_candidate| %>
+    <div class="rounded-lg bg-white shadow-sm overflow-hidden"
+         data-controller="dropdown"
+         data-party-slug="<%= party_with_candidate.party.slug %>"
+         data-dropdown-selected-party-value="<%= party&.slug %>">
       <button
-        data-action="click->dropdown#toggle"
+        data-action="dropdown#toggle"
         class="flex items-center w-full text-left transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-        style="background-color: <%= color_with_alpha(party.color, 0.05) if party.color.present? %>">
+        style="background-color: <%= color_with_alpha(party_with_candidate.color, 0.05) if party_with_candidate.color.present? %>">
 
         <%# Left side color bar - now full height %>
-        <div class="w-2 self-stretch" style="background-color: <%= party.color if party.color.present? %>"></div>
+        <div class="w-2 self-stretch" style="background-color: <%= party_with_candidate.color if party_with_candidate.color.present? %>"></div>
 
         <div class="flex-grow p-4">
           <div class="flex items-center gap-3">
-            <%# Show large colored box as logo placeholder if no logo present %>
-            <% if party.logo_url.present? %>
-              <%= image_tag party.logo_url,
+            <% local_logo_path = "#{party_with_candidate.abbreviation&.downcase}.png" %>
+            <% begin %>
+              <% @local_logo = party_with_candidate.abbreviation && asset_path(local_logo_path) %>
+            <% rescue Sprockets::Rails::Helper::AssetNotFound %>
+              <% @local_logo = nil %>
+            <% end %>
+            <% if @local_logo %>
+              <%= image_tag local_logo_path,
                             class: "w-12 h-12 object-contain",
-                            alt: "#{party.name} logo" %>
+                            alt: "#{party_with_candidate.name} logo" %>
+            <% elsif party_with_candidate.logo_url.present? %>
+              <%= image_tag party_with_candidate.logo_url,
+                            class: "w-12 h-12 object-contain",
+                            alt: "#{party_with_candidate.name} logo" %>
             <% else %>
               <div class="w-12 h-12 rounded flex items-center justify-center"
-                   style="background-color: <%= party.color if party.color.present? %>">
-                <span class="text-white font-bold text-xl">
-                  <%= party.abbreviation.present? ? party.abbreviation[0] : party.name[0] %>
+                   style="background-color: <%= party_with_candidate.color || "grey" %>">
+                <span class="text-white font-bold text-sm">
+                  <%= party_with_candidate.abbreviation.present? ? party_with_candidate.abbreviation : party_with_candidate.name[0] %>
                 </span>
               </div>
             <% end %>
 
             <div class="flex-grow">
               <h3 class="text-base font-medium text-gray-900">
-                <%= party.name %>
+                <%= party_with_candidate.name %>
               </h3>
-              <%= render partial: 'party_social_links', locals: { party: party, party_color: party.color } %>
+              <%= render partial: 'party_social_links', locals: { party: party_with_candidate,
+                                                                  party_color: party_with_candidate.color } %>
             </div>
           </div>
         </div>
 
         <div class="w-16 text-sm text-gray-500 text-right">
-          <%= party.candidates.count %>
+          <%= party_with_candidate.candidates.count %>
         </div>
 
         <div class="w-14 flex items-center justify-center">
@@ -52,8 +64,15 @@
         </div>
       </button>
 
-      <div data-dropdown-target="content" class="hidden border-t border-gray-100">
-        <%= render partial: 'candidates_list', locals: { candidates: party.candidates, party_color: party.color } %>
+      <div data-dropdown-target="content"
+           class="<%= party&.slug == party_with_candidate.party.slug ? '' : 'hidden' %> border-t border-gray-100">
+        <%= render partial: 'candidates_list',
+                   locals: {
+                     candidates: party_with_candidate.candidates,
+                     party: party_with_candidate.party,
+                     county: county,
+                     candidate: candidate
+                   } %>
       </div>
     </div>
   <% end %>

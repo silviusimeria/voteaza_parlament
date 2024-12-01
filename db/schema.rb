@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_11_29_184538) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_01_193917) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -55,10 +55,12 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_29_184538) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "person_id"
+    t.string "slug"
     t.index ["county_id", "party_id", "kind", "position"], name: "idx_nominations_unique_position", unique: true
     t.index ["county_id"], name: "index_candidate_nominations_on_county_id"
     t.index ["party_id"], name: "index_candidate_nominations_on_party_id"
     t.index ["person_id"], name: "index_candidate_nominations_on_person_id"
+    t.index ["slug"], name: "index_candidate_nominations_on_slug"
   end
 
   create_table "counties", force: :cascade do |t|
@@ -69,8 +71,10 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_29_184538) do
     t.datetime "updated_at", null: false
     t.integer "senate_seats", default: 0
     t.integer "deputy_seats", default: 0
+    t.string "slug"
     t.index ["code"], name: "index_counties_on_code", unique: true
     t.index ["geojson_id"], name: "index_counties_on_geojson_id", unique: true
+    t.index ["slug"], name: "index_counties_on_slug"
   end
 
   create_table "parties", force: :cascade do |t|
@@ -81,7 +85,9 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_29_184538) do
     t.datetime "updated_at", null: false
     t.string "abbreviation"
     t.text "description"
+    t.string "slug"
     t.index ["name"], name: "index_parties_on_name", unique: true
+    t.index ["slug"], name: "index_parties_on_slug"
   end
 
   create_table "party_links", force: :cascade do |t|
@@ -109,6 +115,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_29_184538) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_people_on_slug"
   end
 
   add_foreign_key "candidate_links", "candidate_nominations"
