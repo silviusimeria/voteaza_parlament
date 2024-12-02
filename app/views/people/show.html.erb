@@ -1,4 +1,3 @@
-<%# app/views/persons/show.html.erb %>
 <div class="container mx-auto px-4 py-8">
   <div class="max-w-4xl mx-auto">
     <%# Person Header %>
@@ -22,7 +21,13 @@
       </div>
     </div>
 
-    <%# Nominations Section %>
+    <%# Research Section - this is complex enough to warrant its own partial %>
+    <%= render partial: "people/research_section", locals: {person: @person} if @person.funky_data.present? %>
+
+    <%# Links Section - complex enough for its own partial %>
+    <%= render partial: "people/links_section", locals: {person: @person} if @person.people_links.any? %>
+
+    <%# Nominations - keep in main template as it's simpler %>
     <% @nominations.each do |nomination| %>
       <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
         <h2 class="text-xl font-semibold mb-4">
@@ -41,27 +46,6 @@
             <% end %>
           </div>
         </div>
-
-        <%# Candidate Links %>
-        <% if nomination.candidate_links.any? %>
-          <div class="mb-6">
-            <h3 class="text-lg font-medium mb-3">Resurse Candidat</h3>
-            <div class="flex flex-wrap gap-3">
-              <% nomination.candidate_links.each do |link| %>
-                <%= link_to link.url,
-                            class: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors",
-                            target: "_blank",
-                            rel: "noopener noreferrer" do %>
-                  <%= link.kind.titleize %>
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                <% end %>
-              <% end %>
-            </div>
-          </div>
-        <% end %>
 
         <%# Party Links %>
         <% if nomination.party.party_links.any? %>

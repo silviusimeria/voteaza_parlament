@@ -1,4 +1,3 @@
-# app/services/search_service.rb
 class SearchService
   def initialize(term)
     @original_term = term

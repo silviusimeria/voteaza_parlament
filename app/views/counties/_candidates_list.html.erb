@@ -19,9 +19,9 @@
               </div>
             <% end %>
 
-            <% if candidate.candidate_links.any? %>
+            <% if candidate.person.people_links.any? %>
               <div class="flex flex-wrap gap-3 mt-2">
-                <% candidate.candidate_links.each do |link| %>
+                <% candidate.person.people_links.each do |link| %>
                   <%= link_to link.url,
                               class: "inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 group px-2 py-0.5 rounded-full bg-blue-50 hover:bg-blue-100 transition-colors",
                               target: "_blank",
@@ -58,9 +58,9 @@
               </div>
             <% end %>
 
-            <% if candidate.candidate_links.any? %>
+            <% if candidate.person.people_links.any? %>
               <div class="flex flex-wrap gap-3 mt-2">
-                <% candidate.candidate_links.each do |link| %>
+                <% candidate.person.people_links.each do |link| %>
                   <%= link_to link.url,
                               class: "inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 group px-2 py-0.5 rounded-full bg-blue-50 hover:bg-blue-100 transition-colors",
                               target: "_blank",

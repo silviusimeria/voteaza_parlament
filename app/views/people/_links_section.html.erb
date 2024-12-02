@@ -1,0 +1,108 @@
+
+<% if @person.people_links.any? %>
+  <div class="mb-6 space-y-6">
+    <h3 class="text-lg font-medium">Resurse Candidat</h3>
+
+    <%# Declarations & Official Documents %>
+    <% if @person.declaration_links.any? %>
+      <div>
+        <h4 class="text-sm font-medium text-gray-500 mb-2">Declarații și Documente Oficiale</h4>
+        <div class="flex flex-wrap gap-3">
+          <% @person.declaration_links.each do |link| %>
+            <%= link_to link.url,
+                        class: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 text-green-700 hover:bg-green-100 transition-colors",
+                        target: "_blank",
+                        rel: "noopener noreferrer" do %>
+              <%= case link.kind
+                  when 'asset_declaration' then 'Declarație de Avere'
+                  when 'interests_declaration' then 'Declarație de Interese'
+                  when 'criminal_record' then 'Cazier Judiciar'
+                  end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Professional Links %>
+    <% if @person.professional_links.any? %>
+      <div>
+        <h4 class="text-sm font-medium text-gray-500 mb-2">Profil Profesional</h4>
+        <div class="flex flex-wrap gap-3">
+          <% @person.professional_links.each do |link| %>
+            <%= link_to link.url,
+                        class: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors",
+                        target: "_blank",
+                        rel: "noopener noreferrer" do %>
+              <%= case link.kind
+                  when 'cv' then 'CV'
+                  when 'linkedin' then 'LinkedIn'
+                  when 'website' then 'Website'
+                  end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Social Media %>
+    <% if @person.social_links.any? %>
+      <div>
+        <h4 class="text-sm font-medium text-gray-500 mb-2">Social Media</h4>
+        <div class="flex flex-wrap gap-3">
+          <% @person.social_links.each do |link| %>
+            <%= link_to link.url,
+                        class: "inline-flex items-center gap-2 px-4 py-2 rounded-full #{link.official ? 'bg-purple-50 text-purple-600' : 'bg-gray-50 text-gray-600'} hover:bg-opacity-75 transition-colors",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        title: "#{link.official ? 'Cont Oficial' : 'Cont Personal'}" do %>
+              <%= link.kind.titleize %>
+              <% if link.official %>
+                <span class="text-xs bg-purple-100 px-1.5 py-0.5 rounded-full">Oficial</span>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Research Links %>
+    <% if @person.research_links.any? %>
+      <div>
+        <h4 class="text-sm font-medium text-gray-500 mb-2">Research & Media</h4>
+        <div class="flex flex-wrap gap-3">
+          <% @person.research_links.each do |link| %>
+            <%= link_to link.url,
+                        class: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-50 text-yellow-700 hover:bg-yellow-100 transition-colors",
+                        target: "_blank",
+                        rel: "noopener noreferrer" do %>
+              <%= case link.kind
+                  when 'wikipedia' then 'Wikipedia'
+                  when 'press' then 'Presă'
+                  when 'ad_library' then 'Reclame'
+                  else link.kind.titleize
+                  end %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Position Statements %>
+    <% if @person.position_statements.any? %>
+      <div>
+        <h4 class="text-sm font-medium text-gray-500 mb-2">Declarații & Poziții</h4>
+        <div class="flex flex-wrap gap-3">
+          <% @person.position_statements.each do |link| %>
+            <%= link_to link.url,
+                        class: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-600 hover:bg-indigo-100 transition-colors",
+                        target: "_blank",
+                        rel: "noopener noreferrer" do %>
+              <%= link.kind.titleize %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

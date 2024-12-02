@@ -1,8 +1,6 @@
 class PeopleController < ApplicationController
   def show
     @person = Person.find_by!(slug: params[:slug])
-
-    @nominations = CandidateNomination.includes(:party, :candidate_links, :county)
-                                     .where(person: @person)
+    @nominations = @person.candidate_nominations.includes(:county, :party)
   end
 end

@@ -1,0 +1,128 @@
+<div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-xl font-semibold">Research by Funky Citizens</h2>
+    <a href="https://funky.ong" target="_blank"
+       class="text-sm text-blue-600 hover:text-blue-800 flex items-center gap-1">
+      Vezi sursa
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="space-y-6">
+    <%# Basic Info %>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <% if person.funky_data['Data nașterii'].present? || person.funky_data['Vârsta'].present? %>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-2">Date Personale</h3>
+          <div class="space-y-2 text-gray-600">
+            <% if person.funky_data['Data nașterii'].present? %>
+              <p>Data nașterii: <%= person.funky_data['Data nașterii'] %></p>
+            <% end %>
+            <% if person.funky_data['Vârsta'].present? %>
+              <p>Vârsta: <%= person.funky_data['Vârsta'] %></p>
+            <% end %>
+            <% if person.funky_data['Zodia'].present? %>
+              <p>Zodia: <%= person.funky_data['Zodia'] %></p>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+
+      <%# Education and Career %>
+      <% if person.funky_data['Nivel de studii'].present? || person.funky_data['Ultimul job'].present? %>
+        <div>
+          <h3 class="font-medium text-gray-900 mb-2">Educație și Carieră</h3>
+          <div class="space-y-2 text-gray-600">
+            <% if person.funky_data['Nivel de studii'].present? %>
+              <p>Nivel studii: <%= person.funky_data['Nivel de studii'] %></p>
+            <% end %>
+            <% if person.funky_data['Ultimul job'].present? %>
+              <p>Ultimul job: <%= person.funky_data['Ultimul job'] %></p>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <%# Previous Political Experience %>
+    <% if person.funky_data['Funcție anterioară primar/ministru/parlamentar/consilier local/consilier județean'] == 'DA' %>
+      <div>
+        <h3 class="font-medium text-gray-900 mb-2">Experiență Politică Anterioară</h3>
+        <div class="space-y-2 text-gray-600">
+          <% if person.funky_data['Ce funcție?'].present? %>
+            <p>Funcție: <%= person.funky_data['Ce funcție?'] %></p>
+          <% end %>
+          <% if person.funky_data['Mandat anterior'].present? %>
+            <p>Mandat: <%= person.funky_data['Mandat anterior'] %></p>
+          <% end %>
+          <% if person.funky_data['Partid politic în timpul funcției'].present? %>
+            <p>Partid: <%= person.funky_data['Partid politic în timpul funcției'] %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Political Positions %>
+    <% positions = {
+      'LGBT' => ['A avut poziții pe comunitatea LGBT?', 'Declarație LGBT'],
+      'Anticorupție' => ['A avut poziții pe anticorupție?', 'Declarație anticorupție'],
+      'Schimbări climatice' => ['A avut poziții pe schimbările climatice?', 'Poziție schimbări climatice'],
+      'Dezvoltare' => ['A avut poziții pe dezvoltare regională/locală?', 'Poziție dezvoltare'],
+      'Inflație' => ['A avut poziții pe inflație și costul vieții?', 'Poziție inflație și costul vieții'],
+      'UE' => ['Pro/anti-UE', 'Poziție pro/anti'],
+      'Ucraina' => ['A avut poziție pe Ucraina?', 'Poziție Ucraina']
+    } %>
+
+    <% has_positions = positions.any? { |_, keys| person.funky_data[keys[0]] == 'DA' } %>
+    <% if has_positions %>
+      <div>
+        <h3 class="font-medium text-gray-900 mb-2">Poziții Politice</h3>
+        <div class="space-y-4">
+          <% positions.each do |topic, keys| %>
+            <% if person.funky_data[keys[0]] == 'DA' && person.funky_data[keys[1]].present? %>
+              <div class="p-4 bg-gray-50 rounded-lg">
+                <h4 class="text-gray-700 font-medium"><%= topic %></h4>
+                <p class="text-gray-600 mt-1"><%= person.funky_data[keys[1]] %></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Integrity Issues %>
+    <% if person.funky_data['Cazuri de corupție'].present? %>
+      <div>
+        <h3 class="font-medium text-gray-900 mb-2">Probleme de Integritate</h3>
+        <div class="p-4 bg-red-50 text-red-700 rounded-lg">
+          <%= person.funky_data['Cazuri de corupție'] %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Social Media Activity %>
+    <% if person.funky_data['A plătit publicitate în social media?'] == 'DA' %>
+      <div>
+        <h3 class="font-medium text-gray-900 mb-2">Activitate Social Media</h3>
+        <div class="space-y-2 text-gray-600">
+          <% if person.funky_data['Dacă da, câte?'].present? %>
+            <p>Număr reclame: <%= person.funky_data['Dacă da, câte?'] %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <%# Final Observations %>
+    <% if person.funky_data[' Observatii finale'].present? %>
+      <div>
+        <h3 class="font-medium text-gray-900 mb-2">Observații</h3>
+        <div class="p-4 bg-blue-50 text-blue-700 rounded-lg">
+          <%= person.funky_data[' Observatii finale'] %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_12_01_193917) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_01_230501) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -35,15 +35,6 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_01_193917) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
-  end
-
-  create_table "candidate_links", force: :cascade do |t|
-    t.integer "candidate_nomination_id", null: false
-    t.string "url"
-    t.string "kind"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["candidate_nomination_id"], name: "index_candidate_links_on_candidate_nomination_id"
   end
 
   create_table "candidate_nominations", force: :cascade do |t|
@@ -116,14 +107,27 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_01_193917) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
+    t.json "funky_data"
+    t.index ["funky_data"], name: "index_people_on_funky_data"
     t.index ["slug"], name: "index_people_on_slug"
   end
 
-  add_foreign_key "candidate_links", "candidate_nominations"
+  create_table "people_links", force: :cascade do |t|
+    t.integer "person_id", null: false
+    t.string "kind"
+    t.string "url"
+    t.boolean "official", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["person_id", "kind"], name: "index_people_links_on_person_id_and_kind"
+    t.index ["person_id"], name: "index_people_links_on_person_id"
+  end
+
   add_foreign_key "candidate_nominations", "counties"
   add_foreign_key "candidate_nominations", "parties"
   add_foreign_key "candidate_nominations", "people"
   add_foreign_key "party_links", "parties"
   add_foreign_key "party_memberships", "parties"
   add_foreign_key "party_memberships", "people"
+  add_foreign_key "people_links", "people"
 end
