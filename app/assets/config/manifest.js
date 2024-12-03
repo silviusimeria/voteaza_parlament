@@ -12,3 +12,5 @@
 //= link controllers/party_controller.js
 //= link controllers/dropdown_controller.js
 //= link controllers/search_controller.js
+//= link controllers/hemicycle_controller.js
+

@@ -11,6 +11,7 @@ class Party < ApplicationRecord
   has_many :election_party_county_results
   has_many :election_party_results
   has_many :candidate_nominations
+  has_many :election_party_national_results
 
   validates :name, presence: true, uniqueness: true
 

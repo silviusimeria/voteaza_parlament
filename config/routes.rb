@@ -21,6 +21,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'parliament/hemicycle', as: :parliament_map
+
   get "termeni-si-conditii", to: "pages#terms"
   get 'voting-info', to: 'pages#voting_info', as: :voting_info
   get 'candidate-evaluation', to: 'pages#candidate_evaluation', as: :candidate_evaluation
