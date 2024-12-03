@@ -1,0 +1,81 @@
+{
+  "1": { "county_code": "AB" },
+  "2": { "county_code": "AR" },
+  "3": { "county_code": "AG" },
+  "4": { "county_code": "BC" },
+  "5": { "county_code": "BH" },
+  "6": { "county_code": "BN" },
+  "7": { "county_code": "BT" },
+  "8": { "county_code": "BV" },
+  "9": { "county_code": "BR" },
+  "10": { "county_code": "BZ" },
+  "11": { "county_code": "CS" },
+  "12": { "county_code": "CL" },
+  "13": { "county_code": "CJ" },
+  "14": { "county_code": "CT" },
+  "15": { "county_code": "CV" },
+  "16": { "county_code": "DB" },
+  "17": { "county_code": "DJ" },
+  "18": { "county_code": "GL" },
+  "19": { "county_code": "GR" },
+  "20": { "county_code": "GJ" },
+  "21": { "county_code": "HR" },
+  "22": { "county_code": "HD" },
+  "23": { "county_code": "IL" },
+  "24": { "county_code": "IS" },
+  "25": { "county_code": "IF" },
+  "26": { "county_code": "MM" },
+  "27": { "county_code": "MH" },
+  "28": { "county_code": "MS" },
+  "29": { "county_code": "NT" },
+  "30": { "county_code": "OT" },
+  "31": { "county_code": "PH" },
+  "32": { "county_code": "SM" },
+  "33": { "county_code": "SJ" },
+  "34": { "county_code": "SB" },
+  "35": { "county_code": "SV" },
+  "36": { "county_code": "TR" },
+  "37": { "county_code": "TM" },
+  "38": { "county_code": "TL" },
+  "39": { "county_code": "VS" },
+  "40": { "county_code": "VL" },
+  "41": { "county_code": "VN" },
+  "42": {
+    "type": "bucharest_main",
+    "county_code": "B"
+  },
+  "43": {
+    "type": "diaspora",
+    "county_code": "D"
+  },
+  "44": {
+    "type": "bucharest_sector",
+    "county_code": "B",
+    "sector": 1
+  },
+  "45": {
+    "type": "bucharest_sector",
+    "county_code": "B",
+    "sector": 2
+  },
+  "46": {
+    "type": "bucharest_sector",
+    "county_code": "B",
+    "sector": 3
+  },
+  "47": {
+    "type": "bucharest_sector",
+    "county_code": "B",
+    "sector": 4
+  },
+  "48": {
+    "type": "bucharest_sector",
+    "county_code": "B",
+    "sector": 5
+  },
+  "49": {
+    "type": "bucharest_sector",
+    "county_code": "B",
+    "sector": 6
+  }
+}

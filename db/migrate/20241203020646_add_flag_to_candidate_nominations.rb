@@ -1,0 +1,5 @@
+class AddFlagToCandidateNominations < ActiveRecord::Migration[8.0]
+  def change
+    add_column :candidate_nominations, :qualified, :boolean, default: false
+  end
+end

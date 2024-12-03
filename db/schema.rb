@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_12_01_230501) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_03_020646) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -47,8 +47,11 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_01_230501) do
     t.datetime "updated_at", null: false
     t.integer "person_id"
     t.string "slug"
+    t.integer "election_id"
+    t.boolean "qualified", default: false
     t.index ["county_id", "party_id", "kind", "position"], name: "idx_nominations_unique_position", unique: true
     t.index ["county_id"], name: "index_candidate_nominations_on_county_id"
+    t.index ["election_id"], name: "index_candidate_nominations_on_election_id"
     t.index ["party_id"], name: "index_candidate_nominations_on_party_id"
     t.index ["person_id"], name: "index_candidate_nominations_on_person_id"
     t.index ["slug"], name: "index_candidate_nominations_on_slug"
@@ -68,6 +71,79 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_01_230501) do
     t.index ["slug"], name: "index_counties_on_slug"
   end
 
+  create_table "election_county_data", force: :cascade do |t|
+    t.integer "election_id", null: false
+    t.integer "county_id", null: false
+    t.integer "senate_seats"
+    t.integer "deputy_seats"
+    t.integer "registered_voters"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["county_id"], name: "index_election_county_data_on_county_id"
+    t.index ["election_id", "county_id"], name: "index_election_county_data_on_election_id_and_county_id", unique: true
+    t.index ["election_id"], name: "index_election_county_data_on_election_id"
+  end
+
+  create_table "election_party_county_results", force: :cascade do |t|
+    t.integer "election_id", null: false
+    t.integer "party_id", null: false
+    t.integer "county_id", null: false
+    t.integer "senate_mandates"
+    t.integer "deputy_mandates"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["county_id"], name: "index_election_party_county_results_on_county_id"
+    t.index ["election_id", "party_id", "county_id"], name: "idx_election_party_county", unique: true
+    t.index ["election_id"], name: "index_election_party_county_results_on_election_id"
+    t.index ["party_id"], name: "index_election_party_county_results_on_party_id"
+  end
+
+  create_table "election_party_national_results", force: :cascade do |t|
+    t.integer "election_id", null: false
+    t.integer "party_id", null: false
+    t.integer "votes_cd", default: 0, null: false
+    t.decimal "percentage_cd", precision: 5, scale: 2
+    t.integer "votes_senate", default: 0, null: false
+    t.decimal "percentage_senate", precision: 5, scale: 2
+    t.boolean "over_threshold_cd", default: false
+    t.boolean "over_threshold_senate", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["election_id", "party_id"], name: "idx_on_election_id_party_id_7e504695a0", unique: true
+    t.index ["election_id"], name: "index_election_party_national_results_on_election_id"
+    t.index ["party_id"], name: "index_election_party_national_results_on_party_id"
+  end
+
+  create_table "election_party_results", force: :cascade do |t|
+    t.integer "election_id", null: false
+    t.integer "county_id", null: false
+    t.integer "party_id", null: false
+    t.integer "votes_cd", default: 0, null: false
+    t.decimal "percentage_cd", precision: 5, scale: 2
+    t.integer "votes_senate", default: 0, null: false
+    t.decimal "percentage_senate", precision: 5, scale: 2
+    t.integer "deputy_mandates"
+    t.integer "senate_mandates"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["county_id"], name: "index_election_party_results_on_county_id"
+    t.index ["election_id", "county_id", "party_id"], name: "idx_election_party_results", unique: true
+    t.index ["election_id"], name: "index_election_party_results_on_election_id"
+    t.index ["party_id"], name: "index_election_party_results_on_party_id"
+  end
+
+  create_table "elections", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "kind", null: false
+    t.date "election_date", null: false
+    t.boolean "active", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["active"], name: "index_elections_on_active"
+    t.index ["election_date"], name: "index_elections_on_election_date"
+    t.index ["kind"], name: "index_elections_on_kind"
+  end
+
   create_table "parties", force: :cascade do |t|
     t.string "name"
     t.string "color"
@@ -77,6 +153,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_01_230501) do
     t.string "abbreviation"
     t.text "description"
     t.string "slug"
+    t.string "electoral_code"
+    t.index ["electoral_code"], name: "index_parties_on_electoral_code"
     t.index ["name"], name: "index_parties_on_name", unique: true
     t.index ["slug"], name: "index_parties_on_slug"
   end
@@ -124,8 +202,14 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_01_230501) do
   end
 
   add_foreign_key "candidate_nominations", "counties"
+  add_foreign_key "candidate_nominations", "elections"
   add_foreign_key "candidate_nominations", "parties"
   add_foreign_key "candidate_nominations", "people"
+  add_foreign_key "election_county_data", "counties"
+  add_foreign_key "election_county_data", "elections"
+  add_foreign_key "election_party_county_results", "counties"
+  add_foreign_key "election_party_county_results", "elections"
+  add_foreign_key "election_party_county_results", "parties"
   add_foreign_key "party_links", "parties"
   add_foreign_key "party_memberships", "parties"
   add_foreign_key "party_memberships", "people"

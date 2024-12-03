@@ -13,7 +13,7 @@
       <div data-map-target="countyPanel"
            data-highlight-party="<%= @party&.slug %>"
            data-highlight-candidate="<%= @candidate&.unique_slug %>"
-           class="p-4 min-h-[50vh] lg:h-screen overflow-y-auto max-w-xl w-full">
+           class="p-4 min-h-[50vh] lg:h-screen overflow-y-auto w-full">
         <%= render partial: "county_panel", locals: { county: @county } if @county %>
       </div>
     </div>

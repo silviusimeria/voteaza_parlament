@@ -1,46 +1,86 @@
-<div class="max-w-4xl mx-auto">
-  <div class="bg-white rounded-lg shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">Informații Importante pentru votul din România:</h2>
-    <div class="prose max-w-none">
-      <ul class="space-y-2">
-        <li>Alegerile parlamentare vor avea loc pe 1 Decembrie 2024</li>
-        <li>Votarea se desfășoară între orele 7:00 și 21:00</li>
-        <li>Pentru a vota, aveți nevoie de un act de identitate valid</li>
-        <li>Datele prezentate pe acest site sunt actualizate periodic din surse oficiale</li>
-        <li>Parlamentul României este format din:</li>
-        <ul class="ml-6 mt-2">
-          <li>Camera Deputaților: 330 de membri</li>
-          <li>Senat: 136 de membri</li>
-        </ul>
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold text-gray-900 mb-8">Informații Importante pentru votul din România:</h1>
+  <div class="prose max-w-none">
+    <ul class="space-y-2">
+      <li>Alegerile parlamentare vor avea loc pe 1 Decembrie 2024</li>
+      <li>Votarea se desfășoară între orele 7:00 și 21:00</li>
+      <li>Pentru a vota, aveți nevoie de un act de identitate valid</li>
+      <li>Datele prezentate pe acest site sunt actualizate periodic din surse oficiale</li>
+      <li>Parlamentul României este format din:</li>
+      <ul class="ml-6 mt-2">
+        <li>Camera Deputaților: 330 de membri</li>
+        <li>Senat: 136 de membri</li>
       </ul>
-    </div>
+    </ul>
+  </div>
 
-    <div class="mt-8 bg-gray-100 rounded-lg p-6">
-      <h3 class="text-lg font-semibold mb-4">Exemplu de Distribuție a Voturilor pe Județ</h3>
-      <p class="mb-4">Exemplu de calcul pentru un județ cu populație mare:</p>
+  <div class="mt-8 bg-gray-100 rounded-lg p-6">
+    <h3 class="text-lg font-semibold mb-4">Exemplu de Calcul pentru Județul Cluj</h3>
 
-      <div class="bg-white rounded shadow p-4">
-        <h4 class="font-semibold mb-2">Județul Model (900,000 locuitori)</h4>
-        <p class="font-medium">Locuri Alocate:</p>
-        <p>Senat: 8 locuri</p>
-        <p>Camera Deputaților: 13 locuri</p>
+    <div class="bg-white rounded shadow p-4 space-y-6">
+      <div>
+        <h4 class="font-medium mb-2">Date circumscripție:</h4>
+        <ul class="ml-4">
+          <li>Mandate de atribuit: 4 senatori, 8 deputați</li>
+          <li>Total voturi valabil exprimate: 300,000</li>
+        </ul>
+      </div>
 
-        <div class="mt-4">
-          <p class="font-medium">Rezultate Alegeri:</p>
-          <div class="mt-2 space-y-2">
-            <p>Partidul Viitorul: 33.5% → 3 Senatori, 4 Deputați</p>
-            <p>Alianța Cetățenilor: 28.2% → 2 Senatori, 4 Deputați</p>
-            <p>Uniunea Democrată: 19.8% → 2 Senatori, 3 Deputați</p>
-            <p>Partidul Verde: 13.3% → 1 Senator, 2 Deputați</p>
-            <p class="text-gray-500">Mișcarea Națională: 4.2% → 0 Senatori, 0 Deputați (sub pragul electoral de 5%)</p>
+      <div>
+        <h4 class="font-medium mb-2">Etapa 1: Calcul la nivel de circumscripție</h4>
+
+        <div class="bg-blue-50 p-3 rounded mb-3">
+          <p class="text-sm">Coeficient electoral circumscripție pentru deputați = 300,000 / 8 = 37,500 voturi</p>
+        </div>
+
+        <div class="space-y-3">
+          <div>
+            <p class="font-medium">Partidul A: 120,000 voturi</p>
+            <p class="text-sm text-gray-600 ml-4">120,000 ÷ 37,500 = 3 mandate directe, rest 7,500 voturi</p>
           </div>
 
-          <div class="mt-4 text-sm text-gray-600">
-            <p>* Partidele care nu ating pragul electoral de 5% nu primesc locuri în Parlament</p>
-            <p>* Distribuția locurilor este proporțională cu voturile valabil exprimate pentru partidele care au trecut pragul</p>
-            <p>* Voturile pentru partidele care nu ating pragul se redistribuie proporțional către celelalte partide</p>
+          <div>
+            <p class="font-medium">Partidul B: 90,000 voturi</p>
+            <p class="text-sm text-gray-600 ml-4">90,000 ÷ 37,500 = 2 mandate directe, rest 15,000 voturi</p>
+          </div>
+
+          <div>
+            <p class="font-medium">Partidul C: 70,000 voturi</p>
+            <p class="text-sm text-gray-600 ml-4">70,000 ÷ 37,500 = 1 mandat direct, rest 32,500 voturi</p>
+          </div>
+
+          <div>
+            <p class="font-medium">Independent: 38,000 voturi</p>
+            <p class="text-sm text-gray-600 ml-4">38,000 > 37,500 = 1 mandat direct</p>
           </div>
         </div>
+      </div>
+
+      <div>
+        <h4 class="font-medium mb-2">Etapa 2: Redistribuirea la nivel național</h4>
+        <p class="text-sm mb-2">Voturile rămase și mandatul neatribuit merg în procesul de redistribuire națională:</p>
+        <ul class="ml-4 text-sm text-gray-600">
+          <li>• Partidul A: 7,500 voturi neutilizate</li>
+          <li>• Partidul B: 15,000 voturi neutilizate</li>
+          <li>• Partidul C: 32,500 voturi neutilizate</li>
+          <li>• 1 mandat rămas pentru redistribuire națională</li>
+        </ul>
+      </div>
+
+      <div class="mt-4 bg-yellow-50 p-3 rounded">
+        <p class="text-sm font-medium">Rezultat final pentru Camera Deputaților în Cluj:</p>
+        <ul class="ml-4 text-sm mt-2">
+          <li>• Partidul A: 3 mandate</li>
+          <li>• Partidul B: 2 mandate</li>
+          <li>• Partidul C: 1 mandat</li>
+          <li>• Independent: 1 mandat</li>
+          <li>• 1 mandat va fi atribuit după redistribuirea națională</li>
+        </ul>
+      </div>
+
+      <div class="text-sm text-gray-500 mt-4">
+        <p>* Exemplul este simplificat pentru înțelegere. În realitate, calculele includ toate circumscripțiile și se aplică simultan pentru Senat și Camera Deputaților.</p>
+        <p>* Partidele trebuie să treacă pragul electoral la nivel național pentru a participa la distribuirea mandatelor.</p>
       </div>
     </div>
   </div>

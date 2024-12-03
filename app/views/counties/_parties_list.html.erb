@@ -47,8 +47,15 @@
           </div>
         </div>
 
-        <div class="w-16 text-sm text-gray-500 text-right">
-          <%= party_with_candidate.candidates.count %>
+        <div class="w-48 text-sm text-right">
+          <div class="text-blue-600">
+            <span title="Senate votes">Senatori:</span> <%= number_to_percentage(party_with_candidate.senate_percentage, precision: 2) %>
+            <span class="ml-1" title="Senate mandates">(<%= party_with_candidate.senate_mandates %>)</span>
+          </div>
+          <div class="text-green-600">
+            <span title="Deputy Chamber votes">Deputați:</span> <%= number_to_percentage(party_with_candidate.deputy_percentage, precision: 2) %>
+            <span class="ml-1" title="Deputy mandates">(<%= party_with_candidate.deputy_mandates %>)</span>
+          </div>
         </div>
 
         <div class="w-14 flex items-center justify-center">

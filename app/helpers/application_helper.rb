@@ -8,6 +8,11 @@ module ApplicationHelper
     "rgba(#{r}, #{g}, #{b}, #{alpha})"
   end
 
+  def number_to_percentage(number, options = {})
+    precision = options[:precision] || 0
+    format("%.#{precision}f%%", number)
+  end
+
   def research_sections
       [
         {

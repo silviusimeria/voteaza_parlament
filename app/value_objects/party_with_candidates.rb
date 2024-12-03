@@ -1,9 +1,11 @@
 class PartyWithCandidates
-  attr_reader :party, :candidates
+  attr_reader :party, :candidates, :votes, :mandates
 
-  def initialize(party, candidates)
+  def initialize(party, candidates, votes, mandates)
     @party = party
     @candidates = candidates
+    @votes = votes
+    @mandates = mandates
   end
 
   def name
@@ -28,5 +30,21 @@ class PartyWithCandidates
 
   def party_links
     party.party_links
+  end
+
+  def senate_percentage
+    votes&.percentage_senate || 0
+  end
+
+  def deputy_percentage
+    votes&.percentage_cd || 0
+  end
+
+  def senate_mandates
+    mandates&.senate_mandates || 0
+  end
+
+  def deputy_mandates
+    mandates&.deputy_mandates || 0
   end
 end

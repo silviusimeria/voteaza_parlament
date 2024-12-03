@@ -1,11 +1,12 @@
 <div class="overflow-hidden">
-  <div class="inset-y-0 right-0 w-full max-w-2xl bg-white shadow-xl flex flex-col h-full">
+  <div class="inset-y-0 right-0 w-full bg-white shadow-xl flex flex-col h-full">
     <div class="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white">
       <h2 class="text-xl font-bold text-gray-900">
         <%= @county.name %>
       </h2>
       <div class="text-l font-bold text-gray-900">
-        Senatori: <%= @county.senate_seats %> Deputați: <%= @county.deputy_seats %>
+        Senatori: <%= @county.election_county_data.find_by(election_id: 1).senate_seats %>
+        Deputați: <%= @county.election_county_data.find_by(election_id: 1).deputy_seats %>
       </div>
     </div>
 
