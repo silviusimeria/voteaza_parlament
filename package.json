@@ -2,16 +2,12 @@
   "name": "election_map",
   "private": true,
   "engines": {
-    "node": "23.2.0",
-    "yarn": "1.22.x"
+    "node": "23.2.0"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^7.3.0",
     "d3": "^7.8.5"
-  },
-  "scripts": {
-    "build": "rails assets:clobber && rails assets:precompile RAILS_ENV=production"
   }
 }
