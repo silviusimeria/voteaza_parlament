@@ -21,7 +21,7 @@
             <% if person.funky_data&.dig('birth_date').present? %>
               <p>Data nașterii: <%= person.funky_data['birth_date'] %></p>
             <% end %>
-            <% if person.funky_data&.dig('age').present? %>
+            <% if person.funky_data&.dig('age').present? && person.funky_data&.dig('age') > 18 %>
               <p>Vârsta: <%= person.funky_data['age'] %> ani</p>
             <% end %>
             <% if person.funky_data&.dig('zodiac').present? %>
