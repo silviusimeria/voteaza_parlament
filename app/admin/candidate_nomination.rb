@@ -5,8 +5,13 @@ ActiveAdmin.register CandidateNomination do
     selectable_column
     id_column
     column :name
-    column :county
-    column :party
+    column :county, sortable: 'counties.name' do |result|
+      link_to result.county.name, admin_county_path(result.county)
+    end
+
+    column :party, sortable: 'parties.name' do |result|
+      link_to result.party.name, admin_party_path(result.party)
+    end
     column :kind
     column :position
     column :qualified
@@ -33,6 +38,12 @@ ActiveAdmin.register CandidateNomination do
   filter :kind
   filter :qualified
   filter :election
+
+  controller do
+    def scoped_collection
+      super.includes(:county, :party)
+    end
+  end
 
   batch_action :mark_as_qualified do |ids|
     batch_action_collection.find(ids).each do |nomination|

@@ -1,14 +1,26 @@
 class PeopleLink < ApplicationRecord
   belongs_to :person
 
-  KINDS = %w[
-    website facebook telegram wikipedia instagram tiktok
-    press linkedin cv asset_declaration interests_declaration
-    criminal_record declaration_assets declaration_interests
-    position_statement ad_library other
-  ].freeze
+  enum :kind, {
+    website: "website",
+    facebook: "facebook",
+    telegram: "telegram",
+    wikipedia: "wikipedia",
+    instagram: "instagram",
+    tiktok: "tiktok",
+    press: "press",
+    linkedin: "linkedin",
+    cv: "cv",
+    asset_declaration: "asset_declaration",
+    interests_declaration: "interests_declaration",
+    criminal_record: "criminal_record",
+    declaration_assets: "declaration_assets",
+    declaration_interests: "declaration_interests",
+    position_statement: "position_statement",
+    ad_library: "ad_library",
+    other: "other"
+  }
 
-  validates :kind, inclusion: { in: KINDS }
   validates :url, presence: true
 
   # Ransack config

@@ -5,11 +5,21 @@ ActiveAdmin.register ElectionPartyCountyResult do
     selectable_column
     id_column
     column :election
-    column :county
-    column :party
+    column :county, sortable: 'counties.name' do |result|
+      link_to result.county.name, admin_county_path(result.county)
+    end
+    column :party, sortable: 'parties.name' do |result|
+      link_to result.party.name, admin_party_path(result.party)
+    end
     column :senate_mandates
     column :deputy_mandates
     actions
+  end
+
+  controller do
+    def scoped_collection
+      super.includes(:county, :party)
+    end
   end
 
   form do |f|

@@ -18,15 +18,15 @@ class Person < ApplicationRecord
 
 
   def birth_date
-    funky_data['birth_date']
+    funky_data&.dig('birth_date')
   end
 
   def education_level
-    funky_data['education_level']
+    funky_data&.dig('education_level')
   end
 
   def previous_role
-    funky_data['position_type']
+    funky_data&.dig('position_type')
   end
 
   def valid_age?
