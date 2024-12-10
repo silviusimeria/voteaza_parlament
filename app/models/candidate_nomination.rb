@@ -26,10 +26,10 @@ class CandidateNomination < ApplicationRecord
   }
 
   def self.ransackable_attributes(auth_object = nil)
-    %w[id name kind position county_id party_id person_id created_at updated_at]
+    %w[id name kind position county_id party_id person_id created_at updated_at qualified election_id]
   end
 
   def self.ransackable_associations(auth_object = nil)
-    %w[person county party ]
+    %w[person county party election]
   end
 end

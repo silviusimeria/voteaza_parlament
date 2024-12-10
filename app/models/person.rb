@@ -3,12 +3,13 @@ class Person < ApplicationRecord
 
   has_many :candidate_nominations
   has_many :people_links
+  has_many :party_memberships
   has_many :counties, through: :candidate_nominations
   has_many :parties, through: :candidate_nominations
 
   # Ransack config
   def self.ransackable_attributes(auth_object = nil)
-    %w[id name funky_data created_at updated_at]
+    %w[id name funky_data slug created_at updated_at]
   end
 
   def self.ransackable_associations(auth_object = nil)

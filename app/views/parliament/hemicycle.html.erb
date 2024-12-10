@@ -1,7 +1,11 @@
 <div class="container mx-auto p-4">
   <div class="bg-white rounded-lg shadow-lg p-6 space-y-6">
     <div class="text-sm text-gray-600 bg-blue-50 p-4 rounded border border-blue-100">
-      <p>Datele privind voturile sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP), însă distribuția mandatelor este o estimare bazată pe algoritmul nostru, care încearcă să respecte prevederile articolului 94 din Legea 208/2015. Menționăm că deputații din partea minorităților naționale nu au fost încă adăugați, iar datele vor fi aliniate cu rezultatele oficiale odată ce acestea sunt publicate de către Biroul Electoral Central. Pentru mai multe detalii privind metodologia de calcul, vă invităm să consultați <a href="https://github.com/silviusimeria/voteaza_parlament" class="text-blue-600 hover:underline">codul sursă al proiectului</a>.</p>
+      <p>Datele privind voturile și mandatele sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP) conform proceselor verbale oficiale (<a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_2.pdf" class="text-blue-600 hover:underline">Camera Deputaților</a> și <a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_3.pdf" class="text-blue-600 hover:underline">Senat</a>).</p>
+
+      <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale.</p>
+
+      <p>La Senat vor fi 134 de senatori, cu doi mai puțini decât câte locuri ar fi fost conform algoritmului. La redistribuire, județele Ialomița și Giurgiu au primit, fiecare, câte un loc de senator de la Partidul Oamenilor Tineri (POT). Cum respectiva formațiune politică nu a avut liste în aceste județe, locul nu a mai fost alocat iar cele două județe au rămas doar cu câte un senator.</p>
     </div>
 
     <div class="flex justify-between items-center">
@@ -31,15 +35,14 @@
         </svg>
       </div>
 
-      <div class="absolute left-1/2 transform -translate-x-1/2 bottom-12 w-64 bg-white p-4 rounded-lg shadow text-center">
+      <div class="absolute left-1/2 transform -translate-x-1/2 bottom-12 hover:bg-yellow-100 w:64 sm:w-48 bg-white p-4 sm:p-1 rounded-lg shadow text-center">
         <div data-hemicycle-target="selectedSeatInfo" class="text-gray-500">
-          Selectați un reprezentant pentru detalii
+          <p> Apasati un reprezentant pentru detalii</p>
         </div>
         <div data-hemicycle-target="selectedSeatDetails" class="hidden">
           <p class="font-bold" data-hemicycle-target="tooltipName"></p>
           <p class="text-sm" data-hemicycle-target="tooltipParty"></p>
           <p class="text-sm text-gray-600" data-hemicycle-target="tooltipCounty"></p>
-          <p class="text-xs mt-2 text-blue-600">Click pentru profil complet →</p>
         </div>
       </div>
     </div>
@@ -47,7 +50,7 @@
     <div class="mt-6 grid grid-cols-2 gap-8">
       <div class="space-y-2">
         <% @parties.each_with_index do |party, index| %>
-          <% if index < @parties.length / 2 %>
+          <% if index <= @parties.length / 2 %>
             <div class="flex items-center justify-between p-2 rounded bg-gray-50">
               <div class="flex items-center gap-2">
                 <div class="w-4 h-4 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
@@ -62,7 +65,7 @@
 
       <div class="space-y-2">
         <% @parties.each_with_index do |party, index| %>
-          <% if index >= @parties.length / 2 %>
+          <% if index > @parties.length / 2 %>
             <div class="flex items-center justify-between p-2 rounded bg-gray-50">
               <div class="flex items-center gap-2">
                 <div class="w-4 h-4 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>

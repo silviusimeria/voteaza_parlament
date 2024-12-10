@@ -57,12 +57,12 @@ export default class extends Controller {
             width: 1000,
             height: 600,
             centerX: 500,
-            centerY: 600, // Moved down to make room for upward orientation
+            centerY: 550, // Moved down to make room for upward orientation
             rows: isSenate ? 15 : 23,
-            innerRadius: isSenate ? 200 : 180,
-            radiusIncrement: 30,
-            startAngle: Math.PI * 1.1,  // Changed angles for upward orientation
-            endAngle: Math.PI * 1.9,    // Changed angles for upward orientation
+            innerRadius: isSenate ? 250 : 250,
+            radiusIncrement: isSenate ? 35 : 30,
+            startAngle: Math.PI,  // Changed angles for upward orientation
+            endAngle: Math.PI * 2,    // Changed angles for upward orientation
             iconSize: isSenate ? 25 : 20,
             seatsPerRow: Math.ceil(totalSeats / (isSenate ? 8 : 12))
         }
