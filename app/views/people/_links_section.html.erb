@@ -91,7 +91,7 @@
     <%# Position Statements %>
     <% if @person.position_statements.any? %>
       <div>
-        <h4 class="text-sm font-medium text-gray-500 mb-2">Declarații & Poziții</h4>
+        <h4 class="text-sm font-medium text-gray-500 mb-2">Declarații & Poziții Politice</h4>
         <div class="flex flex-wrap gap-3">
           <% @person.position_statements.each do |link| %>
             <%= link_to link.url,
