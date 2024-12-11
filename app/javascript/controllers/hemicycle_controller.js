@@ -55,9 +55,9 @@ export default class extends Controller {
 
         return {
             width: 1000,
-            height: 600,
+            height: 400,
             centerX: 500,
-            centerY: 550, // Moved down to make room for upward orientation
+            centerY: 450, // Moved down to make room for upward orientation
             rows: isSenate ? 15 : 23,
             innerRadius: isSenate ? 250 : 250,
             radiusIncrement: isSenate ? 35 : 30,

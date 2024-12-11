@@ -1,13 +1,22 @@
 <div class="container mx-auto p-4">
-  <div class="bg-white rounded-lg shadow-lg p-6 space-y-6">
-    <div class="text-sm text-gray-600 bg-blue-50 p-4 rounded border border-blue-100">
-      <p>Datele privind voturile și mandatele sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP) conform proceselor verbale oficiale (<a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_2.pdf" class="text-blue-600 hover:underline">Camera Deputaților</a> și <a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_3.pdf" class="text-blue-600 hover:underline">Senat</a>).</p>
 
-      <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale.</p>
-
-      <p>La Senat vor fi 134 de senatori, cu doi mai puțini decât câte locuri ar fi fost conform algoritmului. La redistribuire, județele Ialomița și Giurgiu au primit, fiecare, câte un loc de senator de la Partidul Oamenilor Tineri (POT). Cum respectiva formațiune politică nu a avut liste în aceste județe, locul nu a mai fost alocat iar cele două județe au rămas doar cu câte un senator.</p>
+  <div class="max-w-4xl mx-auto mb-8">
+    <h1 class="text-3xl font-bold mb-4">Rezultatele Alegerilor Parlamentare 2024</h1>
+    <div class="text-gray-700">
+      <p class="text-lg mb-4">
+        Această vizualizare interactivă prezintă componența noului Parlament al României,
+        oferind o perspectivă clară și accesibilă asupra rezultatelor alegerilor din decembrie 2024.
+      </p>
+      <p class="mb-6">
+        Deși trăim în era digitală, rezultatele oficiale sunt publicate în format PDF de către AEP,
+        făcând dificilă înțelegerea și analiza distribuției mandatelor.
+        Am creat această platformă pentru a oferi cetățenilor acces facil la informații
+        despre reprezentanții lor în Parlament, prezentând datele într-un format modern și interactiv.
+      </p>
     </div>
+  </div>
 
+  <div class="bg-white rounded-lg shadow-lg p-6 space-y-6">
     <div class="flex justify-between items-center">
       <div class="text-2xl font-bold">
         <%= @chamber == 'senate' ? 'Senat' : 'Camera Deputaților' %>
@@ -29,8 +38,8 @@
          data-hemicycle-chamber-value="<%= @chamber %>"
          class="relative">
       <div data-hemicycle-target="container" class="w-full">
-        <svg viewBox="0 0 1000 600" class="w-full">
-          <rect width="1000" height="600" fill="#f8f9fa"/>
+        <svg viewBox="0 0 1000 500" class="w-full">
+          <rect width="1000" height="500" fill="#f8f9fa"/>
           <g data-hemicycle-target="seatsContainer"></g>
         </svg>
       </div>
@@ -43,6 +52,30 @@
           <p class="font-bold" data-hemicycle-target="tooltipName"></p>
           <p class="text-sm" data-hemicycle-target="tooltipParty"></p>
           <p class="text-sm text-gray-600" data-hemicycle-target="tooltipCounty"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-gray-50 p-4 rounded-lg border border-gray-200">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="text-center">
+          <p class="text-gray-600 text-sm">Total locuri</p>
+          <p class="text-2xl font-bold">
+            <%= @chamber == 'senate' ? '134' : '331' %>
+          </p>
+          <p class="text-xs text-gray-500">
+            <%= @chamber == 'senate' ? 'Senatori' : 'Deputați' %>
+          </p>
+        </div>
+
+        <div class="text-center">
+          <p class="text-gray-600 text-sm">Mandate alocate</p>
+          <p class="text-2xl font-bold">
+            <%= @seats.length %>
+          </p>
+          <p class="text-xs text-gray-500">
+            <%= @chamber == 'senate' ? 'din 134 locuri' : 'din 312 locuri eligibile' %>
+          </p>
         </div>
       </div>
     </div>
@@ -78,5 +111,13 @@
         <% end %>
       </div>
     </div>
+  </div>
+
+  <div class="text-sm text-gray-600 bg-blue-50 p-4 rounded border border-blue-100">
+    <p>Datele privind voturile și mandatele sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP) conform proceselor verbale oficiale (<a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_2.pdf" class="text-blue-600 hover:underline">Senat</a> și <a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_3.pdf" class="text-blue-600 hover:underline">Camera Deputaților</a>).</p>
+
+    <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale, care vor fi adaugați ulterior.</p>
+
+    <p>La Senat vor fi 134 de senatori, cu doi mai puțini decât câte locuri ar fi fost conform algoritmului. La redistribuire, județele Ialomița și Giurgiu au primit, fiecare, câte un loc de senator de la Partidul Oamenilor Tineri (POT). Cum respectiva formațiune politică nu a avut liste în aceste județe, locul nu a mai fost alocat iar cele două județe au rămas doar cu câte un senator.</p>
   </div>
 </div>

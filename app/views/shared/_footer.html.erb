@@ -6,40 +6,67 @@
         <div class="space-y-2 text-sm">
           <p>Toate datele prezentate sunt informații publice.</p>
           <p>Acest site nu este afiliat cu nicio instituție, ONG sau partid.</p>
-          <p>Acest site nu va exista pentru mult timp, după alegeri.</p>
+          <p>Datele prezentate pot conține erori și nu constituie o sursă oficială.</p>
+          <p>Nu ne asumăm răspunderea pentru deciziile luate în baza acestor informații.</p>
+          <p>Nu colectăm date personale despre vizitatori.</p>
         </div>
       </div>
 
-      <div>
-        <h3 class="text-lg font-semibold mb-4">Linkuri Utile</h3>
-        <ul class="space-y-2 text-sm">
-          <li><%= link_to "Termeni și Condiții", termeni_si_conditii_path, class: "hover:text-blue-300" %></li>
-          <li><a href="https://www.bec.ro" target="_blank" class="hover:text-blue-300">Biroul Electoral Central</a></li>
-          <li><a href="https://www.roaep.ro" target="_blank" class="hover:text-blue-300">Autoritatea Electorală</a></li>
-          <li><a href="https://prezenta.roaep.ro/" target="_blank" class="hover:text-blue-300">Roaep Rezultate</a></li>
-          <li><a href="https://www.rezultatevot.ro/" target="_blank" class="hover:text-blue-300">Rezultate Vot</a></li>
-          <li><a href="https://votcorect.ro/prezidentiale-parlamentare-2024/" target="_blank" class="hover:text-blue-300">Vot Corect</a></li>
-          <li><a href="https://www.youtube.com/playlist?list=PLgh2YLmfq7L98giQfrFSk6m62S5sek4PJ" target="_blank" class="hover:text-blue-300">Recorder Youtube</a></li>
-          <li><a href="https://comunitate.funky.ong/candidati-parlamentare" target="_blank" class="hover:text-blue-300">Research candidați - Funky</a></li>
-          <li><a href="https://expertforum.ro/harta-candidati-parlamentare-2024/" target="_blank" class="hover:text-blue-300">Expert Forum</a></li>
-          <li><a href="https://alegeri.declic.ro/" target="_blank" class="hover:text-blue-300">Declic</a></li>
-          <li><a href="https://romania.europalibera.org/a/cum-arata-noul-parlament-autoritatea-electorala-permanenta-a-atribuit-mandatele-de-senatori-si-deputati/33230614.html" target="_blank" class="hover:text-blue-300">Europa Liberă</a></li>
-        </ul>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Surse Oficiale</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.bec.ro" target="_blank" class="hover:text-blue-300">Biroul Electoral Central</a></li>
+            <li><a href="https://www.roaep.ro" target="_blank" class="hover:text-blue-300">Autoritatea Electorală</a></li>
+            <li><a href="https://prezenta.roaep.ro/" target="_blank" class="hover:text-blue-300">Roaep Rezultate</a></li>
+            <li><a href="https://www.rezultatevot.ro/" target="_blank" class="hover:text-blue-300">Rezultate Vot</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Resurse Suplimentare</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://votcorect.ro/prezidentiale-parlamentare-2024/" target="_blank" class="hover:text-blue-300">Vot Corect</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLgh2YLmfq7L98giQfrFSk6m62S5sek4PJ" target="_blank" class="hover:text-blue-300">Recorder Youtube</a></li>
+            <li><a href="https://comunitate.funky.ong/candidati-parlamentare" target="_blank" class="hover:text-blue-300">Research candidați - Funky</a></li>
+            <li><a href="https://expertforum.ro/harta-candidati-parlamentare-2024/" target="_blank" class="hover:text-blue-300">Expert Forum</a></li>
+            <li><a href="https://alegeri.declic.ro/" target="_blank" class="hover:text-blue-300">Declic</a></li>
+            <li><a href="https://romania.europalibera.org/a/cum-arata-noul-parlament-autoritatea-electorala-permanenta-a-atribuit-mandatele-de-senatori-si-deputati/33230614.html" target="_blank" class="hover:text-blue-300">Europa Liberă</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <h3 class="text-lg font-semibold mb-4">Contact</h3>
-        <div class="space-y-2 text-sm">
-          <p>Pentru corectări sau actualizări:</p>
-          <p>Email: trickystyle07@gmail.com</p>
-          <p>Ultima actualizare: 10/12/2024 </p>
-          <p>Github: https://github.com/silviusimeria/voteaza_parlament</p>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Site Map</h3>
+          <ul class="space-y-2 text-sm">
+            <li><%= link_to "Acasă", root_path, class: "hover:text-blue-300" %></li>
+            <li><%= link_to "Parlamentari", parliament_map_path, class: "hover:text-blue-300" %></li>
+            <li><%= link_to "Informații Votare", voting_info_path, class: "hover:text-blue-300" %></li>
+            <li><%= link_to "Termeni și Condiții", termeni_si_conditii_path, class: "hover:text-blue-300" %></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact & Info</h3>
+          <div class="space-y-2 text-sm">
+            <p>Pentru corectări sau actualizări:</p>
+            <p>Email: trickystyle07@gmail.com</p>
+            <p>Ultima actualizare: 11/12/2024</p>
+            <p>
+              <a href="https://github.com/silviusimeria/voteaza_parlament"
+                 target="_blank"
+                 class="hover:text-blue-300">
+                Cod sursă pe Github
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="mt-8 pt-4 border-t border-gray-700 text-center text-sm">
-      <p> <%= Time.current.year %> </p>
+      <p>&copy; <%= Time.current.year %> - Toate drepturile rezervate</p>
     </div>
   </div>
 </footer>
