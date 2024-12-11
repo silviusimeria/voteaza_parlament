@@ -13,4 +13,5 @@
 //= link controllers/dropdown_controller.js
 //= link controllers/search_controller.js
 //= link controllers/hemicycle_controller.js
+//= link controllers/cookie_consent_controller.js
 
