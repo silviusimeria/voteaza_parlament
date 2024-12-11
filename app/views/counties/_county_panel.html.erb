@@ -1,16 +1,28 @@
-<div class="overflow-hidden">
+<div class="h-screen w-full overflow-hidden">
   <div class="inset-y-0 right-0 w-full bg-white shadow-xl flex flex-col h-full">
-    <div class="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white">
-      <h2 class="text-xl font-bold text-gray-900">
-        <%= @county.name %>
-      </h2>
-      <div class="text-l font-bold text-gray-900">
-        Senatori: <%= @county.election_county_data.find_by(election_id: 1).senate_seats %>
-        Deputați: <%= @county.election_county_data.find_by(election_id: 1).deputy_seats %>
+    <div class="flex flex-col px-6 py-4 border-b border-gray-200 bg-white">
+      <div class="flex justify-between items-center">
+        <div class="flex flex-col">
+          <h2 class="text-xl font-bold text-gray-900">
+            <%= @county.name %>
+          </h2>
+          <div class="text-sm text-gray-500 mt-1">
+            <span class="mr-4">Senatori: <%= @county.election_county_data.find_by(election_id: 1).senate_seats %></span>
+            <span>Deputați: <%= @county.election_county_data.find_by(election_id: 1).deputy_seats %></span>
+          </div>
+        </div>
+
+        <div class="flex flex-col text-center">
+          <span class="text-sm font-medium text-gray-700">Legendă rezultate:</span>
+          <div class="text-xs text-gray-500 mt-1">
+            <div class="text-blue-600">Senat: % voturi (mandate alocate)</div>
+            <div class="text-green-600">Camera Deputaților % voturi (mandate alocate)</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="flex-1 overflow-y-auto bg-gray-50">
+    <div class="flex-1 overflow-y-auto bg-gray-50 min-h-0">
       <%= render partial: 'parties_list',
                  locals: {
                    county: @county,

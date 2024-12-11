@@ -2,14 +2,11 @@
   <nav class="container mx-auto px-6 py-6">
     <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
       <%= image_tag asset_path("logo.png"), alt: "Parliament Logo", class: "site-logo" %>
-      <%= link_to root_path, class: "text-2xl font-bold text-blue-800 hover:text-blue-900" do %>
-        Alegeri Parlamentare
-      <% end %>
 
       <div class="flex items-center space-x-8">
-        <%= link_to "Harta Alegeri", root_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
-        <%= link_to "Harta Parlamentului", parliament_map_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
-        <%= link_to "Informații Votare", voting_info_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
+        <%= link_to "Alegeri", root_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
+        <%= link_to "Parlament", parliament_map_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
+        <%= link_to "Informații Vot", voting_info_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
         <%= link_to "Evaluare Candidați", candidate_evaluation_path, class: "text-lg text-gray-600 hover:text-blue-800" %>
       </div>
     </div>

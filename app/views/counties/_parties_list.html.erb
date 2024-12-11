@@ -9,8 +9,10 @@
         class="flex items-center w-full text-left transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
         style="background-color: <%= color_with_alpha(party_with_candidate.color, 0.05) if party_with_candidate.color.present? %>">
 
-        <%# Left side color bar - now full height %>
-        <div class="w-2 self-stretch" style="background-color: <%= party_with_candidate.color if party_with_candidate.color.present? %>"></div>
+        <%# Left side color bar with conditional styling %>
+        <div class="w-2 self-stretch <%= party_with_candidate.party.election_party_national_results.find_by(election: Election.current)&.over_threshold_cd? ? '' : 'opacity-30' %>"
+             style="background-color: <%= party_with_candidate.color if party_with_candidate.color.present? %>">
+        </div>
 
         <div class="flex-grow p-4">
           <div class="flex items-center gap-3">
@@ -47,14 +49,18 @@
           </div>
         </div>
 
-        <div class="w-48 text-sm text-right">
+        <div class="w-60 text-sm text-center">
           <div class="text-blue-600">
-            <span title="Senate votes">Senatori:</span> <%= number_to_percentage(party_with_candidate.senate_percentage, precision: 2) %>
-            <span class="ml-1" title="Senate mandates">(<%= party_with_candidate.senate_mandates %>)</span>
+            <span title="Senate votes">Senat:</span> <%= number_to_percentage(party_with_candidate.senate_percentage, precision: 2) %>
+            <% if party_with_candidate.senate_mandates > 0 %>
+              <span class="ml-1" title="Senate mandates">(<%= party_with_candidate.senate_mandates %>)</span>
+            <% end %>
           </div>
           <div class="text-green-600">
-            <span title="Deputy Chamber votes">Deputați:</span> <%= number_to_percentage(party_with_candidate.deputy_percentage, precision: 2) %>
-            <span class="ml-1" title="Deputy mandates">(<%= party_with_candidate.deputy_mandates %>)</span>
+            <span title="Deputy Chamber votes">Camera Deputaților:</span> <%= number_to_percentage(party_with_candidate.deputy_percentage, precision: 2) %>
+            <% if party_with_candidate.deputy_mandates > 0 %>
+              <span class="ml-1" title="Deputy mandates">(<%= party_with_candidate.deputy_mandates %>)</span>
+            <% end %>
           </div>
         </div>
 
