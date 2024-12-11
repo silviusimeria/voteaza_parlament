@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_12_03_020646) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_11_113054) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -154,7 +154,9 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_03_020646) do
     t.text "description"
     t.string "slug"
     t.string "electoral_code"
+    t.boolean "minority", default: false
     t.index ["electoral_code"], name: "index_parties_on_electoral_code"
+    t.index ["minority"], name: "index_parties_on_minority"
     t.index ["name"], name: "index_parties_on_name", unique: true
     t.index ["slug"], name: "index_parties_on_slug"
   end

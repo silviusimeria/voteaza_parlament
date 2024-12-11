@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
   def show
-    @person = Person.find_by!(slug: params[:slug])
+    @person = Person.where(slug: params[:slug]).last # until we fix DB duplicates :)
     @nominations = @person.candidate_nominations.includes(:county, :party)
   end
 end

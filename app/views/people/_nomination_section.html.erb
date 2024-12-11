@@ -1,0 +1,26 @@
+<% if @nominations.any? %>
+  <% grouped_nominations = @nominations.group_by(&:election) %>
+  <div class="space-y-8">
+    <% grouped_nominations.each do |election, nominations| %>
+      <div class="space-y-4">
+        <div class="text-xl font-medium text-gray-900 border-b pb-2">
+          <%= election.name %>
+        </div>
+
+        <% nomination_to_show = nominations.find { |n| n.county.name == "București" } ||
+          nominations.find(&:qualified) ||
+          nominations.first %>
+
+        <div class="text-lg text-gray-700 p-3 rounded <%= nomination_to_show.qualified ? 'bg-green-50' : 'bg-red-50' %>">
+          Candidat pentru <%= nomination_to_show.kind == 'senate' ? 'Senat' : 'Camera Deputaților' %>
+          în județul <%= nomination_to_show.county.name %>,
+          poziția <%= nomination_to_show.position %>
+          din partea <strong><%= nomination_to_show.party.name %></strong>
+          <% if nomination_to_show.qualified %>
+            și a obținut mandat pentru perioada <%= election.election_date.year %>-<%= election.election_date.year + 4 %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

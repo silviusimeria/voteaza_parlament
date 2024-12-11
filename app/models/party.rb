@@ -17,8 +17,11 @@ class Party < ApplicationRecord
 
   accepts_nested_attributes_for :party_links, allow_destroy: true
 
+  scope :minorities, -> { where(minority: true) }
+  scope :political_parties, -> { where(minority: false) }
+
   def self.ransackable_attributes(auth_object = nil)
-    %w[id name color logo_url website abbreviation created_at updated_at]
+    %w[id name color logo_url website abbreviation minority created_at updated_at]
   end
 
   def self.ransackable_associations(auth_object = nil)

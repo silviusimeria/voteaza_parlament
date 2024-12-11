@@ -1,5 +1,5 @@
 ActiveAdmin.register Party do
-  permit_params :name, :color, :logo_url, :website, :abbreviation, :description,
+  permit_params :name, :color, :logo_url, :website, :abbreviation, :minority, :description,
                 party_links_attributes: [:id, :url, :kind, :_destroy]
 
   actions :all, except: [:create, :destroy]
@@ -9,6 +9,7 @@ ActiveAdmin.register Party do
     id_column
     column :name
     column :abbreviation
+    column :minority
     column :description
     column :president do |party|
       party.members.first&.name
@@ -27,6 +28,7 @@ ActiveAdmin.register Party do
     f.inputs do
       f.input :name
       f.input :abbreviation
+      f.input :minority
       f.input :color
       f.input :logo_url
       f.inputs 'Links' do
@@ -43,4 +45,5 @@ ActiveAdmin.register Party do
 
   filter :name
   filter :abbreviation
+  filter :minority
 end

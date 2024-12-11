@@ -80,3 +80,9 @@ html, body {
     display: none !important;
 }
 
+.site-logo {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    padding: 4px;
+}
