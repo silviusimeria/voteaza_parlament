@@ -18,6 +18,17 @@ class ParliamentController < ApplicationController
       }
     end
 
+    parties_under_threshold = @election.election_party_national_results
+                                       .where(over_threshold_cd: false)
+                                       .pluck(:party_id)
+
+    @minority_candidates = CandidateNomination.includes(:party, :county)
+                                             .where(election: @election,
+                                                    party_id: parties_under_threshold,
+                                                    kind: 'deputy',
+                                                    qualified: true)
+                                             .order('parties.name', :position)
+
     case @chamber
     when 'senate'
       @parties = Party.joins(:candidate_nominations, :election_party_national_results)

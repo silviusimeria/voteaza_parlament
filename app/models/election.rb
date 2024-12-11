@@ -2,6 +2,7 @@ class Election < ApplicationRecord
   has_many :election_county_data, dependent: :destroy
   has_many :counties, through: :election_county_data
   has_many :election_party_county_results, dependent: :destroy
+  has_many :election_party_national_results
   has_many :election_party_results, dependent: :destroy
   has_many :candidate_nominations, dependent: :destroy
   has_many :parties, -> { distinct }, through: :candidate_nominations

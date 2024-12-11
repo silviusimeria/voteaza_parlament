@@ -14,4 +14,5 @@
 //= link controllers/search_controller.js
 //= link controllers/hemicycle_controller.js
 //= link controllers/cookie_consent_controller.js
+//= link controllers/toggle_controller.js
 

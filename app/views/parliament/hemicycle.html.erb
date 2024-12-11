@@ -44,7 +44,7 @@
         </svg>
       </div>
 
-      <div class="absolute left-1/2 transform -translate-x-1/2 bottom-12 hover:bg-yellow-100 w:64 sm:w-48 bg-white p-4 sm:p-1 rounded-lg shadow text-center">
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bottom-24 hover:bg-yellow-100 w:64 sm:w-48 bg-white p-4 sm:p-1 rounded-lg shadow text-center">
         <div data-hemicycle-target="selectedSeatInfo" class="text-gray-500">
           <p> Apasati un reprezentant pentru detalii</p>
         </div>
@@ -56,59 +56,112 @@
       </div>
     </div>
 
-    <div class="mt-6 bg-gray-50 p-4 rounded-lg border border-gray-200">
-      <div class="flex justify-center">
-        <div class="text-center">
-          <p class="text-gray-600 text-sm">Total locuri</p>
-          <p class="text-2xl font-bold">
-            <%= @chamber == 'senate' ? '134' : '331' %>
-          </p>
-          <p class="text-xs text-gray-500">
-            <%= @chamber == 'senate' ? 'Senatori' : 'Deputați' %>
-          </p>
+    <div class="mt-6">
+      <!-- Party list with collapsible sections -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+        <!-- First column -->
+        <div class="space-y-2">
+          <% @parties.each_with_index do |party, index| %>
+            <% if index <= @parties.length / 2 %>
+              <div class="space-y-2">
+                <!-- Party header - always visible -->
+                <div data-controller="toggle" class="rounded overflow-hidden">
+                  <button data-action="toggle#toggle" class="w-full flex items-center justify-between p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <div class="flex items-center gap-2 min-w-0">
+                      <div class="w-4 h-4 flex-shrink-0 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
+                      <span class="truncate"><%= party.name %></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <% seat_count = @seats.count { |seat| seat[:party_name] == party.name } %>
+                      <span class="font-semibold whitespace-nowrap"><%= seat_count %> locuri</span>
+                      <svg data-toggle-target="icon" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <!-- Collapsible members section -->
+                  <div data-toggle-target="content" class="hidden">
+                    <div class="pl-6 py-2 space-y-1 bg-white max-h-[50vh] overflow-y-auto">
+                      <% @seats.select { |seat| seat[:party_name] == party.name }.each do |seat| %>
+                        <%= link_to "/persoana/#{seat[:slug]}", class: "block p-2 rounded-lg hover:bg-gray-50" do %>
+                          <div class="font-medium"><%= seat[:name] %></div>
+                          <div class="text-sm text-gray-600"><%= seat[:county_name] %></div>
+                        <% end %>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          <% end %>
         </div>
-      </div>
-    </div>
 
-    <div class="mt-6 grid grid-cols-2 gap-8">
-      <div class="space-y-2">
-        <% @parties.each_with_index do |party, index| %>
-          <% if index <= @parties.length / 2 %>
-            <div class="flex items-center justify-between p-2 rounded bg-gray-50">
-              <div class="flex items-center gap-2">
-                <div class="w-4 h-4 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
-                <span><%= party.name %></span>
+        <!-- Second column -->
+        <div class="space-y-2">
+          <% @parties.each_with_index do |party, index| %>
+            <% if index > @parties.length / 2 %>
+              <div class="space-y-2">
+                <div data-controller="toggle" class="rounded overflow-hidden">
+                  <button data-action="toggle#toggle" class="w-full flex items-center justify-between p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors">
+                    <div class="flex items-center gap-2 min-w-0">
+                      <div class="w-4 h-4 flex-shrink-0 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
+                      <span class="truncate"><%= party.name %></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <% seat_count = @seats.count { |seat| seat[:party_name] == party.name } %>
+                      <span class="font-semibold whitespace-nowrap"><%= seat_count %> locuri</span>
+                      <svg data-toggle-target="icon" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                      </svg>
+                    </div>
+                  </button>
+
+                  <div data-toggle-target="content" class="hidden">
+                    <div class="pl-6 py-2 space-y-1 bg-white max-h-[50vh] overflow-y-auto">
+                      <% @seats.select { |seat| seat[:party_name] == party.name }.each do |seat| %>
+                        <%= link_to "/persoana/#{seat[:slug]}", class: "block p-2 rounded-lg hover:bg-gray-50" do %>
+                          <div class="font-medium"><%= seat[:name] %></div>
+                          <div class="text-sm text-gray-600"><%= seat[:county_name] %></div>
+                        <% end %>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <% seat_count = @seats.count { |seat| seat[:party_name] == party.name } %>
-              <span class="font-semibold"><%= seat_count %> locuri</span>
+            <% end %>
+          <% end %>
+
+          <% if @chamber == 'deputy' %>
+            <div data-controller="toggle" class="rounded overflow-hidden">
+              <button data-action="toggle#toggle" class="w-full flex items-center justify-between p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors">
+                <div class="flex items-center gap-2">
+                  <div class="w-4 h-4 rounded-full" style="background-color: #999999"></div>
+                  <span>MINORITĂȚI</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="font-semibold">19 locuri</span>
+                  <svg data-toggle-target="icon" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </div>
+              </button>
+
+              <div data-toggle-target="content" class="hidden">
+                <div class="pl-6 py-2 space-y-1 bg-white max-h-[50vh] overflow-y-auto">
+                  <% @minority_candidates.each do |candidate| %>
+                    <%= link_to "/persoana/#{candidate.slug}", class: "block p-2 rounded-lg hover:bg-gray-50" do %>
+                      <div class="font-medium"><%= candidate.name %></div>
+                      <div class="text-sm text-gray-600">
+                        <%= candidate.party.name %> - <%= candidate.county.name %>
+                      </div>
+                    <% end %>
+                  <% end %>
+                </div>
+              </div>
             </div>
           <% end %>
-        <% end %>
-      </div>
-
-      <div class="space-y-2">
-        <% @parties.each_with_index do |party, index| %>
-          <% if index > @parties.length / 2 %>
-            <div class="flex items-center justify-between p-2 rounded bg-gray-50">
-              <div class="flex items-center gap-2">
-                <div class="w-4 h-4 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
-                <span><%= party.name %></span>
-              </div>
-              <% seat_count = @seats.count { |seat| seat[:party_name] == party.name } %>
-              <span class="font-semibold"><%= seat_count %> locuri</span>
-            </div>
-          <% end %>
-        <% end %>
-
-        <% if @chamber == 'deputy' %>
-          <div class="flex items-center justify-between p-2 rounded bg-gray-50">
-            <div class="flex items-center gap-2">
-              <div class="w-4 h-4 rounded-full" style="background-color: #999999"></div>
-              <span>MINORITĂȚI</span>
-            </div>
-            <span class="font-semibold">19 locuri</span>
-          </div>
-        <% end %>
+        </div>
       </div>
     </div>
   </div>
@@ -116,7 +169,7 @@
   <div class="text-sm text-gray-600 bg-blue-50 p-4 rounded border border-blue-100">
     <p>Datele privind voturile și mandatele sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP) conform proceselor verbale oficiale (<a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_2.pdf" class="text-blue-600 hover:underline">Senat</a> și <a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_3.pdf" class="text-blue-600 hover:underline">Camera Deputaților</a>).</p>
 
-    <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale, care vor fi adaugați ulterior.</p>
+    <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale.</p>
 
     <p>La Senat vor fi 134 de senatori, cu doi mai puțini decât câte locuri ar fi fost conform algoritmului. La redistribuire, județele Ialomița și Giurgiu au primit, fiecare, câte un loc de senator de la Partidul Oamenilor Tineri (POT). Cum respectiva formațiune politică nu a avut liste în aceste județe, locul nu a mai fost alocat iar cele două județe au rămas doar cu câte un senator.</p>
   </div>
