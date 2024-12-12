@@ -1,22 +1,26 @@
 <div class="container mx-auto p-4">
 
-  <div class="max-w-4xl mx-auto mb-8">
-    <h1 class="text-3xl font-bold mb-4">Alocarea Mandatelor Parlamentare 2024</h1>
-    <div class="text-gray-700">
-      <p class="text-lg mb-4">
-        Această vizualizare interactivă prezintă componența noului Parlament al României,
-        oferind o perspectivă clară și accesibilă asupra rezultatelor alegerilor din decembrie 2024.
-      </p>
-      <p class="mb-6">
-        Deși trăim în era digitală, rezultatele oficiale sunt publicate în format PDF de către AEP,
-        făcând dificilă înțelegerea și analiza distribuției mandatelor.
-        Am creat această platformă pentru a oferi cetățenilor acces facil la informații
-        despre reprezentanții lor în Parlament, prezentând datele într-un format modern și interactiv.
-      </p>
+  <div class="mt-8 mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white shadow sm:rounded-lg">
+      <div class="px-4 py-5 sm:p-6">
+        <h1 class="text-3xl font-bold text-gray-900">Alocarea Mandatelor Parlamentare 2024</h1>
+        <div class="mt-4 text-sm text-gray-500 space-y-4">
+          <p class="text-lg">
+            Această vizualizare interactivă prezintă componența noului Parlament al României,
+            oferind o perspectivă clară și accesibilă asupra rezultatelor alegerilor din decembrie 2024.
+          </p>
+          <p>
+            Deși trăim în era digitală, rezultatele oficiale sunt publicate în format PDF de către AEP,
+            făcând dificilă înțelegerea și analiza distribuției mandatelor.
+            Am creat această platformă pentru a oferi cetățenilor acces facil la informații
+            despre reprezentanții lor în Parlament, prezentând datele într-un format modern și interactiv.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="bg-white rounded-lg shadow-lg p-6 space-y-6">
+  <div class="bg-white mt-8 rounded-lg shadow-lg p-4 space-y-6">
     <div class="flex justify-between items-center">
       <div class="text-2xl font-bold">
         <%= @chamber == 'senate' ? 'Senat' : 'Camera Deputaților' %>
@@ -44,7 +48,7 @@
         </svg>
       </div>
 
-      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bottom-24 hover:bg-yellow-100 w:64 sm:w-48 bg-white p-4 sm:p-1 rounded-lg shadow text-center">
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bottom-24 rounded-lg text-center">
         <div data-hemicycle-target="selectedSeatInfo" class="text-gray-500">
           <p> Apasati un reprezentant pentru detalii</p>
         </div>
@@ -166,11 +170,29 @@
     </div>
   </div>
 
-  <div class="text-sm text-gray-600 bg-blue-50 p-4 rounded border border-blue-100">
-    <p>Datele privind voturile și mandatele sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP) conform proceselor verbale oficiale (<a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_2.pdf" class="text-blue-600 hover:underline">Senat</a> și <a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_3.pdf" class="text-blue-600 hover:underline">Camera Deputaților</a>).</p>
+  <div class="mt-8 mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white shadow sm:rounded-lg">
+      <div class="px-4 py-5 sm:p-6">
+        <h3 class="text-lg leading-6 font-medium text-gray-900">Informații Adiționale</h3>
+        <div class="mt-2 text-sm text-gray-500 space-y-4">
+          <p>Datele privind voturile și mandatele sunt preluate direct de la Autoritatea Electorală Permanentă (AEP/ROAEP) conform proceselor verbale oficiale (<a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_2.pdf" class="text-indigo-600 hover:text-indigo-500">Senat</a> și <a href="https://www.roaep.ro/prezentare/wp-content/uploads/2024/12/RF_3.pdf" class="text-indigo-600 hover:text-indigo-500">Camera Deputaților</a>).</p>
 
-    <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale.</p>
+          <p>În noul Parlament vor fi 331 de deputați, dintre care 312 aleși prin vot și 19 reprezentanți ai minorităților naționale.</p>
 
-    <p>La Senat vor fi 134 de senatori, cu doi mai puțini decât câte locuri ar fi fost conform algoritmului. La redistribuire, județele Ialomița și Giurgiu au primit, fiecare, câte un loc de senator de la Partidul Oamenilor Tineri (POT). Cum respectiva formațiune politică nu a avut liste în aceste județe, locul nu a mai fost alocat iar cele două județe au rămas doar cu câte un senator.</p>
+          <p>La Senat vor fi 134 de senatori, cu doi mai puțini decât câte locuri ar fi fost conform algoritmului. La redistribuire, județele Ialomița și Giurgiu au primit, fiecare, câte un loc de senator de la Partidul Oamenilor Tineri (POT). Cum respectiva formațiune politică nu a avut liste în aceste județe, locul nu a mai fost alocat iar cele două județe au rămas doar cu câte un senator.</p>
+
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              <a href="https://www.roaep.ro/prezentare/comunicat-de-presa/comunicat-de-presa-privind-numarul-de-mandate-obtinute-de-competitorii-electorali-la-alegerile-pentru-senat-si-camera-deputatilor-din-anul-2024-pe-grupe-de-varsta-si-pe-gen/"
+                 class="text-indigo-600 hover:text-indigo-500"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                Raport privind structura pe vârste și gen a candidaților (AEP)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
