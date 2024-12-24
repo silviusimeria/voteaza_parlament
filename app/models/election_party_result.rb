@@ -14,4 +14,12 @@ class ElectionPartyResult < ApplicationRecord
   validates :percentage_cd, :percentage_senate,
             numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 },
             allow_nil: true
+
+
+  def self.ransackable_attributes(auth_object = nil)
+    [ "county_id", "created_at", "deputy_mandates", "election_id", "id", "id_value", "party_id", "percentage_cd", "percentage_senate", "senate_mandates", "updated_at", "votes_cd", "votes_senate" ]
+  end
+  def self.ransackable_associations(auth_object = nil)
+    [ "county", "election", "election_party_county_result", "party" ]
+  end
 end

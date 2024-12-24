@@ -1,6 +1,6 @@
 class VoteResultsProcessor
   THRESHOLD = 5.0
-  COUNTY_MAPPINGS_PATH = Rails.root.join('public', 'county_mappings.json')
+  COUNTY_MAPPINGS_PATH = Rails.root.join("public", "county_mappings.json")
 
     def initialize(election, results_json)
       @election = election
@@ -173,7 +173,6 @@ class VoteResultsProcessor
          percentage_senate: percentage_senate
         )
     end
-
   end
 
   def find_party_votes(candidates, party_name)
@@ -221,9 +220,9 @@ class VoteResultsProcessor
     qualified_parties = chamber == :cd ? @qualified_parties_cd : @qualified_parties_senate
     total_seats = if chamber == :cd
                     county.seats_for_election(@election)[:deputy]
-                  else
+    else
                     county.seats_for_election(@election)[:senate]
-                  end
+    end
 
     return {} if total_seats.nil? || total_seats.zero?
 

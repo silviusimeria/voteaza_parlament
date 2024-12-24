@@ -2,7 +2,7 @@ class PersonNameAnalyzer
   def self.analyze_same_names
     # Get all names that appear multiple times
     same_names = Person.group(:name)
-                       .having('COUNT(*) > 1')
+                       .having("COUNT(*) > 1")
                        .pluck(:name)
 
     puts "Found #{same_names.length} names that appear multiple times"
@@ -66,7 +66,7 @@ class PersonNameAnalyzer
       election = Election.find(election_id)
 
       # Check for same election + party + county combinations
-      duplicates = nominations.group_by { |n| [n.party_id, n.county_id] }
+      duplicates = nominations.group_by { |n| [ n.party_id, n.county_id ] }
                               .select { |_, noms| noms.size > 1 }
 
       if duplicates.any?

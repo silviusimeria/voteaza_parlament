@@ -63,7 +63,7 @@ class PopulateAbbreviations < ActiveRecord::Migration[8.0]
     # Update each party
     abbreviations.each do |slug, abbr|
       execute <<-SQL
-        UPDATE parties 
+        UPDATE parties
         SET abbreviation = '#{abbr}'
         WHERE slug = '#{slug}';
       SQL

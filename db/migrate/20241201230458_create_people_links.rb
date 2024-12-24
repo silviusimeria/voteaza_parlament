@@ -9,6 +9,6 @@ class CreatePeopleLinks < ActiveRecord::Migration[7.1]
       t.timestamps
     end
 
-    add_index :people_links, [:person_id, :kind]
+    add_index :people_links, [ :person_id, :kind ]
   end
 end

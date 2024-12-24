@@ -12,7 +12,7 @@ mandate = SenateMandate.create!(
 # Parliamentary Group mappings
 PARLIAMENTARY_GROUPS = {
   'PSD' => 'Grupul parlamentar al Partidului Social Democrat',
-  'AUR' => 'Grupul parlamentar Alianța pentru Unirea Românilor', 
+  'AUR' => 'Grupul parlamentar Alianța pentru Unirea Românilor',
   'PNL' => 'Grupul parlamentar al Partidului Naţional Liberal',
   'USR' => 'Grupul parlamentar al Uniunii Salvați România',
   'SOS' => 'Grupul parlamentar al Partidului S.O.S. România',

@@ -1,6 +1,6 @@
 class PopulateExistingSlugs < ActiveRecord::Migration[8.0]
   def up
-    [Party, CandidateNomination, County].each do |model|
+    [ Party, CandidateNomination, County ].each do |model|
       model.find_each do |record|
         record.send(:set_slug)
         record.save!(validate: false)

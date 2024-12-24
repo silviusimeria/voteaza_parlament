@@ -35,7 +35,7 @@ class NewNationalMandateAllocation
   end
 
   def identify_qualifying_parties
-    [:cd, :senate].each do |chamber|
+    [ :cd, :senate ].each do |chamber|
       votes_field = "votes_#{chamber}"
       total_votes = ElectionPartyResult.where(election: @election).sum(votes_field)
 
@@ -54,7 +54,7 @@ class NewNationalMandateAllocation
   def allocate_county_stage
     puts "\nAllocating county stage..."
     County.find_each do |county|
-      [:cd, :senate].each do |chamber|
+      [ :cd, :senate ].each do |chamber|
         process_county_chamber(county, chamber)
       end
     end
@@ -106,7 +106,7 @@ class NewNationalMandateAllocation
   end
 
   def allocate_national_stage
-    [:cd, :senate].each do |chamber|
+    [ :cd, :senate ].each do |chamber|
       allocated = ElectionPartyCountyResult.where(election: @election)
                                            .sum(chamber == :cd ? :deputy_mandates : :senate_mandates)
       remaining = @total_mandates[chamber] - allocated
@@ -133,7 +133,7 @@ class NewNationalMandateAllocation
       end
     end
 
-    quotients.sort_by! { |q| [-q[:value], -q[:original_votes]] }
+    quotients.sort_by! { |q| [ -q[:value], -q[:original_votes] ] }
     mandates = quotients.first(remaining_seats).group_by { |q| q[:party_id] }
                         .transform_values(&:count)
 
@@ -171,8 +171,8 @@ class NewNationalMandateAllocation
   end
 
   def find_best_county_for_mandate(party_id, chamber)
-    mandate_field = chamber == :cd ? 'deputy_mandates' : 'senate_mandates'
-    seats_field = chamber == :cd ? 'deputy_seats' : 'senate_seats'
+    mandate_field = chamber == :cd ? "deputy_mandates" : "senate_mandates"
+    seats_field = chamber == :cd ? "deputy_seats" : "senate_seats"
     votes_field = "votes_#{chamber}"
 
     available_counties = County.joins(:election_county_data)

@@ -1,5 +1,5 @@
-require 'json'
-require 'date'
+require "json"
+require "date"
 
 module Senate
   class UpdateSenatorsData
@@ -15,18 +15,18 @@ module Senate
     end
 
     def normalize_special_chars(str)
-      str.tr('ŞşŢţ', 'ȘșȚț')
+      str.tr("ŞşŢţ", "ȘșȚț")
     end
 
     def generate_slug(name)
       normalize_special_chars(name)
         .downcase
-        .gsub('ș', 's').gsub('ț', 't')
-        .gsub('ă', 'a').gsub('â', 'a').gsub('î', 'i')
-        .gsub(/[^a-z0-9\s-]/, '')
-        .gsub(/\s+/, '-')
-        .gsub(/-+/, '-')
-        .gsub(/^-|-$/, '')
+        .gsub("ș", "s").gsub("ț", "t")
+        .gsub("ă", "a").gsub("â", "a").gsub("î", "i")
+        .gsub(/[^a-z0-9\s-]/, "")
+        .gsub(/\s+/, "-")
+        .gsub(/-+/, "-")
+        .gsub(/^-|-$/, "")
     end
 
     def find_people_by_name(name, people)
@@ -36,7 +36,7 @@ module Senate
 
       # Find exact matches
       exact_matches = people.select { |p| normalize_special_chars(p.name).upcase == senator_name }
-      matches.concat(exact_matches.map { |p| {person: p, match_type: "exact"} }) if exact_matches.any?
+      matches.concat(exact_matches.map { |p| { person: p, match_type: "exact" } }) if exact_matches.any?
 
       # If no exact matches, try partial matches
       if matches.empty?
@@ -45,14 +45,14 @@ module Senate
           person_parts = normalize_special_chars(p.name).upcase.split(/[\s-]+/)
           (name_parts & person_parts).length >= 2 # Match if at least 2 parts match
         end
-        matches.concat(partial_matches.map { |p| {person: p, match_type: "partial"} }) if partial_matches.any?
+        matches.concat(partial_matches.map { |p| { person: p, match_type: "partial" } }) if partial_matches.any?
       end
 
       # If still no matches, try slug matches
       if matches.empty?
         senator_slug = generate_slug(name)
         slug_matches = people.select { |p| p.slug == senator_slug }
-        matches.concat(slug_matches.map { |p| {person: p, match_type: "slug"} }) if slug_matches.any?
+        matches.concat(slug_matches.map { |p| { person: p, match_type: "slug" } }) if slug_matches.any?
       end
 
       matches
@@ -62,9 +62,9 @@ module Senate
       current_mandate = SenateMandate.find_by(active: true)
       nominations = if current_mandate
                       CandidateNomination.where(person_id: person.id, election_id: current_mandate.election_id)
-                    else
+      else
                       []
-                    end
+      end
 
       {
         nominations: nominations.map { |n| "#{n.id}: #{n.county.name} - #{n.party.name} (#{n.kind})" },
@@ -75,7 +75,7 @@ module Senate
 
     def update_senators_data
       # Load senators data
-      senators_file = Rails.root.join('public', 'data', 'senate', 'senators_list.json')
+      senators_file = Rails.root.join("public", "data", "senate", "senators_list.json")
       senators_data = JSON.parse(File.read(senators_file))
 
       # Get all people
@@ -87,34 +87,34 @@ module Senate
       mismatches = []     # No matches found
       errors = []         # Updates that failed
 
-      senators_data['senators'].each do |senator|
-        matches = find_people_by_name(senator['name'], people)
+      senators_data["senators"].each do |senator|
+        matches = find_people_by_name(senator["name"], people)
 
         if matches.empty?
           mismatches << {
-            name: senator['name'].upcase,
-            normalized: normalize_special_chars(senator['name'].upcase),
-            parliament_id: senator['parliament_id']
+            name: senator["name"].upcase,
+            normalized: normalize_special_chars(senator["name"].upcase),
+            parliament_id: senator["parliament_id"]
           }
         elsif matches.length == 1
           # Single match - we can update
           person = matches.first[:person]
           begin
-            dob = Date.strptime(senator['dob'], '%d.%m.%Y')
+            dob = Date.strptime(senator["dob"], "%d.%m.%Y")
             person.update!(
               dob: dob,
-              parliament_id: senator['parliament_id']
+              parliament_id: senator["parliament_id"]
             )
 
             unique_matches << {
-              senator_name: senator['name'].upcase,
+              senator_name: senator["name"].upcase,
               matched_person: person.name,
               match_method: matches.first[:match_type],
-              parliament_id: senator['parliament_id']
+              parliament_id: senator["parliament_id"]
             }
           rescue => e
             errors << {
-              senator_name: senator['name'].upcase,
+              senator_name: senator["name"].upcase,
               error: e.message
             }
           end
@@ -128,15 +128,15 @@ module Senate
               name: person.name,
               match_type: match[:match_type],
               current_parliament_id: person.parliament_id,
-              new_parliament_id: senator['parliament_id'],
+              new_parliament_id: senator["parliament_id"],
               nominations: context[:nominations],
               party_memberships: context[:party_memberships]
             }
           end
 
           multiple_matches << {
-            senator_name: senator['name'],
-            parliament_id: senator['parliament_id'],
+            senator_name: senator["name"],
+            parliament_id: senator["parliament_id"],
             matches: context_info
           }
         end
@@ -147,10 +147,10 @@ module Senate
       puts "\nUnique Matches (Updated) - #{unique_matches.count}:"
       unique_matches.each do |match|
         method_indicator = case match[:match_method]
-                           when "exact" then "="
-                           when "partial" then "≈"
-                           when "slug" then "~"
-                           end
+        when "exact" then "="
+        when "partial" then "≈"
+        when "slug" then "~"
+        end
         puts "#{method_indicator} #{match[:senator_name]} => #{match[:matched_person]}"
         puts "  Parliament ID: #{match[:parliament_id]}"
       end
@@ -201,8 +201,8 @@ module Senate
       end
 
       # Write detailed report to file
-      report_file = Rails.root.join('log', "senators_update_#{Time.now.strftime('%Y%m%d_%H%M%S')}.log")
-      File.open(report_file, 'w') do |f|
+      report_file = Rails.root.join("log", "senators_update_#{Time.now.strftime('%Y%m%d_%H%M%S')}.log")
+      File.open(report_file, "w") do |f|
         f.puts "=== SENATORS DATA UPDATE REPORT ==="
         f.puts "Generated at: #{Time.now}"
         f.puts "\nSTATISTICS:"

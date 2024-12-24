@@ -1,11 +1,11 @@
 module ApplicationHelper
   def commission_role_in_romanian(role)
     {
-      'president' => 'Președinte',
-      'vice_president' => 'Vicepreședinte',
-      'secretary' => 'Secretar',
-      'member' => 'Membru',
-      'quaestor' => 'Chestor'
+      "president" => "Președinte",
+      "vice_president" => "Vicepreședinte",
+      "secretary" => "Secretar",
+      "member" => "Membru",
+      "quaestor" => "Chestor"
     }[role&.downcase] || role
   end
 
@@ -25,16 +25,15 @@ module ApplicationHelper
 
   def parliament_group_role_in_romanian(role)
     {
-      'president' => 'Președinte',
-      'vice_president' => 'Vicepreședinte',
-      'secretary' => 'Secretar',
-      'member' => 'Membru',
-      'quaestor' => 'Chestor'
+      "lider" => "Lider",
+      "vice_lider" => "Vicelider",
+      "secretary" => "Secretar",
+      "member" => "Membru"
     }[role&.downcase] || role
   end
 
   def parliament_group_percentage(group_count, total_members)
-    return '0%' if total_members.zero?
+    return "0%" if total_members.zero?
     percentage = (group_count.to_f / total_members * 100).round(1)
     "#{percentage}%"
   end

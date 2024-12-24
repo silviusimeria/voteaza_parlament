@@ -12,6 +12,6 @@ class DropCandidateLinks < ActiveRecord::Migration[7.1]
       t.timestamps
     end
 
-    add_index :candidate_links, [:candidate_nomination_id, :kind]
+    add_index :candidate_links, [ :candidate_nomination_id, :kind ]
   end
 end

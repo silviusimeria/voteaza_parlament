@@ -36,7 +36,7 @@ class VoteResultsDebugger
 
   def debug_county_mappings
     puts "\nCounty Mappings:"
-    @county_mappings.sort_by { |k,_| k }.each do |aep_id, county_id|
+    @county_mappings.sort_by { |k, _| k }.each do |aep_id, county_id|
       county = County.find(county_id)
       aep_data = @results["scopes"]["CNTY"]["CD"][aep_id]
       if aep_data
@@ -61,12 +61,12 @@ class VoteResultsDebugger
     mappings = {}
     County.find_each do |county|
       case county.code
-      when 'D'
-        mappings['43'] = county.id # Strainatate
-      when 'B'
+      when "D"
+        mappings["43"] = county.id # Strainatate
+      when "B"
         # Map all Bucharest sectors to București
-        ('44'..'49').each { |sector_id| mappings[sector_id] = county.id }
-        mappings['42'] = county.id
+        ("44".."49").each { |sector_id| mappings[sector_id] = county.id }
+        mappings["42"] = county.id
       else
         @results["scopes"]["CNTY"]["CD"].each do |id, data|
           county_name = data["info"]["county"] rescue next
@@ -82,10 +82,10 @@ class VoteResultsDebugger
   end
 
   def normalize_string(str)
-    return '' unless str
+    return "" unless str
     str.unicode_normalize(:nfkd)
-       .encode('ASCII', replace: '')
+       .encode("ASCII", replace: "")
        .upcase
-       .gsub(/[^A-Z\-]/, '')
+       .gsub(/[^A-Z\-]/, "")
   end
 end

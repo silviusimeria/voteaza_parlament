@@ -1,4 +1,4 @@
-require 'open-uri'
+require "open-uri"
 
 namespace :vote_results do
   desc "Inspect vote results JSON structure"

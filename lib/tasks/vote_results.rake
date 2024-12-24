@@ -1,4 +1,4 @@
-require 'open-uri'
+require "open-uri"
 
 namespace :vote_results do
   desc "Fetch and process vote results from AEP for current election"

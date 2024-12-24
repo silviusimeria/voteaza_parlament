@@ -10,7 +10,7 @@ class CreateElectionPartyCountyResults < ActiveRecord::Migration[8.0]
       t.integer :deputy_mandates
       t.timestamps
 
-      t.index [:election_id, :party_id, :county_id],
+      t.index [ :election_id, :party_id, :county_id ],
               unique: true,
               name: 'idx_election_party_county'
     end

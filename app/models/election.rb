@@ -13,7 +13,7 @@ class Election < ApplicationRecord
 
   has_one :senate_mandate
 
-  scope :parliament, -> { where(kind: 'parliament') }
+  scope :parliament, -> { where(kind: "parliament") }
   scope :active, -> { where(active: true) }
 
   def self.current

@@ -6,14 +6,14 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get "map", to: "map#index"
-      get 'search', to: 'search#index'
+      get "search", to: "search#index"
 
-      resources :counties, only: [:show], param: :slug
+      resources :counties, only: [ :show ], param: :slug
     end
   end
 
-  get 'persoana/:slug', to: 'people#show', as: :person_profile
-  get '/judet/:county_slug', to: 'counties#show', as: :map_county
+  get "persoana/:slug", to: "people#show", as: :person_profile
+  get "/judet/:county_slug", to: "counties#show", as: :map_county
 
   resources :counties, only: [] do
     member do
@@ -21,13 +21,13 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'parlament', to: 'parliament#hemicycle', as: :parliament_map
-  get 'senat', to: 'parliament#senate', as: :senate_map
+  get "parlament", to: "parliament#hemicycle", as: :parliament_map
+  get "senat", to: "parliament#senate", as: :senate_map
 
 
   get "termeni-si-conditii", to: "pages#terms"
-  get 'voting-info', to: 'pages#voting_info', as: :voting_info
-  get 'candidate-evaluation', to: 'pages#candidate_evaluation', as: :candidate_evaluation
+  get "voting-info", to: "pages#voting_info", as: :voting_info
+  get "candidate-evaluation", to: "pages#candidate_evaluation", as: :candidate_evaluation
 
 
   ActiveAdmin.routes(self)

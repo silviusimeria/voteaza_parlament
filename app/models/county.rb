@@ -12,7 +12,7 @@ class County < ApplicationRecord
   validates :name, :code, :geojson_id, presence: true
 
   def parties_with_candidates
-    election = Election.find_by(name: 'Parliamentary Elections 2024')
+    election = Election.find_by(name: "Parliamentary Elections 2024")
     return [] unless election
 
     nominations_with_results = candidate_nominations.includes(:party)

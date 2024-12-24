@@ -19,7 +19,7 @@ class PeopleController < ApplicationController
   private
 
   def fetch_connection_data(person, depth = 1)
-    depth = [depth.to_i, 3].min # Cap at depth 3
+    depth = [ depth.to_i, 3 ].min # Cap at depth 3
     depth = 1 if depth < 1
 
     nodes = []
@@ -36,9 +36,9 @@ class PeopleController < ApplicationController
 
   def collect_connections(person, depth, nodes, edges, visited, current_depth = 0)
     return if current_depth > depth || visited.include?(person.id)
-    
+
     visited.add(person.id)
-    
+
     # Add the person node
     nodes << {
       data: {
@@ -54,7 +54,7 @@ class PeopleController < ApplicationController
 
       # Add the connected person node
       connected_person = connection.connected_person
-      
+
       # Add edge
       edges << {
         data: {
@@ -68,10 +68,10 @@ class PeopleController < ApplicationController
       # Recursively collect connections if not at max depth
       if current_depth < depth
         collect_connections(
-          connected_person, 
-          depth, 
-          nodes, 
-          edges, 
+          connected_person,
+          depth,
+          nodes,
+          edges,
           visited,
           current_depth + 1
         )

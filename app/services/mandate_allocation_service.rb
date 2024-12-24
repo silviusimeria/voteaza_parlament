@@ -26,7 +26,7 @@ class MandateAllocationService
   end
 
   def identify_parties_above_threshold
-    [:cd, :senate].each do |chamber|
+    [ :cd, :senate ].each do |chamber|
       votes_field = "votes_#{chamber}"
       total_votes = ElectionPartyResult.where(election: @election).sum(votes_field)
       puts "\nCalculating national threshold for #{chamber.upcase}"
@@ -52,7 +52,7 @@ class MandateAllocationService
       puts "\nProcessing #{county.name}..."
       seats = county.seats_for_election(@election)
 
-      [:cd, :senate].each do |chamber|
+      [ :cd, :senate ].each do |chamber|
         total_seats = chamber == :cd ? seats[:deputy] : seats[:senate]
         next if total_seats.to_i.zero?
 
@@ -106,7 +106,7 @@ class MandateAllocationService
 
   def allocate_remaining_mandates
     puts "\n=== Allocating remaining mandates ==="
-    [:cd, :senate].each do |chamber|
+    [ :cd, :senate ].each do |chamber|
       puts "\n#{chamber.upcase} Chamber"
       puts "Unallocated seats: #{@unallocated_seats[chamber]}"
       puts "Remaining votes by party:"
@@ -203,7 +203,6 @@ class MandateAllocationService
   end
 
   def print_final_stats
-
     total_cd = ElectionPartyCountyResult.where(election: @election).sum(:deputy_mandates)
     total_senate = ElectionPartyCountyResult.where(election: @election).sum(:senate_mandates)
 

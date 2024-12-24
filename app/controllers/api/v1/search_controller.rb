@@ -9,7 +9,7 @@ module Api
         @results = SearchService.new(term).search
 
         respond_to do |format|
-          format.html { render partial: 'shared/search_results', locals: { results: @results } }
+          format.html { render partial: "shared/search_results", locals: { results: @results } }
           format.json { render json: @results }
         end
       end

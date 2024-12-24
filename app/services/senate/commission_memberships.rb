@@ -44,7 +44,7 @@ module Senate
       return person if person
 
       # Last try: Find by similar format (allowing for case differences and dashes)
-      normalized_id = parliament_id.gsub(/[^A-F0-9]/i, '')
+      normalized_id = parliament_id.gsub(/[^A-F0-9]/i, "")
       Person.where("UPPER(REPLACE(parliament_id, '-', '')) = UPPER(?)", normalized_id).first
     end
 
@@ -124,7 +124,7 @@ module Senate
     end
 
     def load_json_data
-      file_path = Rails.root.join('public', 'data', 'senate', 'commission_members.json')
+      file_path = Rails.root.join("public", "data", "senate", "commission_members.json")
       JSON.parse(File.read(file_path))
     end
 
@@ -147,7 +147,7 @@ module Senate
       CandidateNomination.find_by(
         person: person,
         election_id: @senate_mandate.election_id,
-        kind: 'senate'
+        kind: "senate"
       )
     end
 
@@ -192,7 +192,7 @@ module Senate
       timestamp = Time.current.strftime("%Y%m%d_%H%M%S")
       report_file = Rails.root.join("log/commission_import_#{timestamp}.log")
 
-      File.open(report_file, 'w') do |f|
+      File.open(report_file, "w") do |f|
         f.puts "=== Commission Memberships Import Report ==="
         f.puts "Generated at: #{Time.current}"
         f.puts "\nSTATISTICS:"

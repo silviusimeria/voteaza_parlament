@@ -8,7 +8,7 @@ class CreateElectionCountyData < ActiveRecord::Migration[8.0]
       t.integer :registered_voters
       t.timestamps
 
-      t.index [:election_id, :county_id], unique: true
+      t.index [ :election_id, :county_id ], unique: true
     end
   end
 end

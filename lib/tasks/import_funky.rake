@@ -3,7 +3,7 @@ namespace :import do
   task funky: :environment do
     puts "Starting Funky Citizens data import..."
 
-    json_file = Rails.root.join('public', 'date_candidati_funky.json')
+    json_file = Rails.root.join("public", "date_candidati_funky.json")
 
     unless File.exist?(json_file)
       puts "Error: File not found at #{json_file}"
@@ -21,7 +21,7 @@ namespace :import do
         processed = 0
 
         data.each do |row|
-          FunkyDataImportService.import([row])
+          FunkyDataImportService.import([ row ])
           processed += 1
 
           if (processed % 10).zero? # Show progress every 10 records
@@ -56,7 +56,7 @@ namespace :import do
     if Rails.env.production?
       puts "Cannot run in production without confirmation!"
       puts "Run with CONFIRM=yes to proceed"
-      exit 1 unless ENV['CONFIRM'] == 'yes'
+      exit 1 unless ENV["CONFIRM"] == "yes"
     end
 
     ActiveRecord::Base.transaction do

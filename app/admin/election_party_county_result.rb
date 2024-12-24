@@ -1,14 +1,16 @@
 ActiveAdmin.register ElectionPartyCountyResult do
-  permit_params :election_id, :party_id, :county_id, :senate_mandates, :deputy_mandates
+  menu label: "Election County Results", priority: 4, parent: "Elections"
+
+  permit_params :election_id, :party_id, :county_id, :senate_mandates, :deputy_mandates,
 
   index do
     selectable_column
     id_column
     column :election
-    column :county, sortable: 'counties.name' do |result|
+    column :county, sortable: "counties.name" do |result|
       link_to result.county.name, admin_county_path(result.county)
     end
-    column :party, sortable: 'parties.name' do |result|
+    column :party, sortable: "parties.name" do |result|
       link_to result.party.name, admin_party_path(result.party)
     end
     column :senate_mandates
@@ -46,10 +48,10 @@ ActiveAdmin.register ElectionPartyCountyResult do
   } do |ids, inputs|
     batch_action_collection.find(ids).each do |result|
       result.update(
-        senate_mandates: inputs['senate_mandates'],
-        deputy_mandates: inputs['deputy_mandates']
+        senate_mandates: inputs["senate_mandates"],
+        deputy_mandates: inputs["deputy_mandates"]
       )
     end
-    redirect_to collection_path, alert: 'Mandates have been updated.'
+    redirect_to collection_path, alert: "Mandates have been updated."
   end
 end

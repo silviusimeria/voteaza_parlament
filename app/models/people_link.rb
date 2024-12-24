@@ -37,5 +37,5 @@ class PeopleLink < ApplicationRecord
   scope :declarations, -> { where(kind: %w[asset_declaration interests_declaration declaration_assets declaration_interests criminal_record]) }
   scope :professional, -> { where(kind: %w[linkedin cv website]) }
   scope :research, -> { where(kind: %w[wikipedia press ad_library]) }
-  scope :positions, -> { where(kind: 'position_statement') }
+  scope :positions, -> { where(kind: "position_statement") }
 end

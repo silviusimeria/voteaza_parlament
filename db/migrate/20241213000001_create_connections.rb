@@ -7,9 +7,8 @@ class CreateConnections < ActiveRecord::Migration[8.0]
       t.string :source_url
       t.string :source_text
       t.timestamps
-
     end
 
-    add_index :connections, [:person_id, :connected_person_id, :relationship_type], unique: true, name: 'idx_unique_connections'
+    add_index :connections, [ :person_id, :connected_person_id, :relationship_type ], unique: true, name: 'idx_unique_connections'
   end
 end

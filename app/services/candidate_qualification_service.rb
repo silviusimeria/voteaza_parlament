@@ -12,7 +12,7 @@ class CandidateQualificationService
         party_id: result.party_id
       ).update_all(qualified: false)
 
-      [:senate, :deputy].each do |kind|
+      [ :senate, :deputy ].each do |kind|
         next if qualified_candidates_count[kind].zero?
 
         CandidateNomination.where(

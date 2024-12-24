@@ -17,7 +17,7 @@ class CreateVoteResults < ActiveRecord::Migration[8.0]
       t.integer :senate_mandates
       t.timestamps
 
-      t.index [:election_id, :county_id, :party_id], unique: true, name: 'idx_election_party_results'
+      t.index [ :election_id, :county_id, :party_id ], unique: true, name: 'idx_election_party_results'
     end
 
     # Store national level results per election/party
@@ -32,7 +32,7 @@ class CreateVoteResults < ActiveRecord::Migration[8.0]
       t.boolean :over_threshold_senate, default: false
       t.timestamps
 
-      t.index [:election_id, :party_id], unique: true
+      t.index [ :election_id, :party_id ], unique: true
     end
   end
 end

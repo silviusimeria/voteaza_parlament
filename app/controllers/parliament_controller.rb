@@ -1,7 +1,7 @@
 class ParliamentController < ApplicationController
   def hemicycle
-    @chamber = params[:chamber] || 'senate'
-    @election = Election.find_by(name: 'Parliamentary Elections 2024')
+    @chamber = params[:chamber] || "senate"
+    @election = Election.find_by(name: "Parliamentary Elections 2024")
 
     # Get all nominations with their associated data
     @seats = CandidateNomination.includes(:party, :county, :person)
@@ -25,32 +25,32 @@ class ParliamentController < ApplicationController
     @minority_candidates = CandidateNomination.includes(:party, :county)
                                              .where(election: @election,
                                                     party_id: parties_under_threshold,
-                                                    kind: 'deputy',
+                                                    kind: "deputy",
                                                     qualified: true)
-                                             .order('parties.name', :position)
+                                             .order("parties.name", :position)
 
     case @chamber
-    when 'senate'
+    when "senate"
       @parties = Party.joins(:candidate_nominations, :election_party_national_results)
                       .where(candidate_nominations: { election: @election, kind: @chamber })
-                      .where(election_party_national_results: { election: @election, over_threshold_senate: true})
+                      .where(election_party_national_results: { election: @election, over_threshold_senate: true })
                       .distinct
-    when 'deputy'
+    when "deputy"
       @parties = Party.joins(:candidate_nominations, :election_party_national_results)
                       .where(candidate_nominations: { election: @election, kind: @chamber })
-                      .where(election_party_national_results: { election: @election, over_threshold_cd: true})
+                      .where(election_party_national_results: { election: @election, over_threshold_cd: true })
                       .distinct
     end
   end
 
   def senate
-    @election = Election.find_by(name: 'Parliamentary Elections 2024')
+    @election = Election.find_by(name: "Parliamentary Elections 2024")
     @mandate = SenateMandate.find_by(election: @election)
 
     # Get all mandate_started senators for hemicycle
     @seats = CandidateNomination.includes(:party, :county, :person, :parliamentary_group_memberships)
-                                .where(election: @election, 
-                                      kind: 'senate',
+                                .where(election: @election,
+                                      kind: "senate",
                                       mandate_started: true)
                                 .map do |nomination|
                                   {
@@ -66,16 +66,16 @@ class ParliamentController < ApplicationController
 
     # Load parliament groups with their members
     @parliament_groups = @mandate.parliamentary_groups
-                                .includes(:party, 
+                                .includes(:party,
                                         parliamentary_group_memberships: [
-                                          candidate_nomination: [:person, :county]
+                                          candidate_nomination: [ :person, :county ]
                                         ])
                                 .order(:name)
 
     # Load commissions
     @commissions = @mandate.senate_commissions
-                          .includes(:senate_commission_memberships => {
-                            candidate_nomination: [:person, :party]
+                          .includes(senate_commission_memberships: {
+                            candidate_nomination: [ :person, :party ]
                           })
                           .order(:name)
   end

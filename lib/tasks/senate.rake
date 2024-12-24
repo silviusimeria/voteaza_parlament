@@ -25,17 +25,16 @@ namespace :senate do
                                            mandate_start_date: Date.today)
     end
   end
-  
+
   desc "Assign qualified senators to parliamentary groups"
   task assign_to_groups: :environment do
     Senate::MembershipAssigner.new.call
   end
 
-  desc 'Import senate commission memberships from JSON data'
+  desc "Import senate commission memberships from JSON data"
   task import_commission_memberships: :environment do
     puts "Starting import of senate commission memberships..."
     Senate::CommissionMemberships.call
     puts "Import completed!"
   end
-
 end

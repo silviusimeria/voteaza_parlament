@@ -10,8 +10,8 @@ class MigrateCandidateDataToPeople < ActiveRecord::Migration[8.0]
     # Link candidates to their person records
     execute <<-SQL
       UPDATE candidate_nominations
-      SET person_id = people.id 
-      FROM people 
+      SET person_id = people.id
+      FROM people
       WHERE candidate_nominations.name = people.name
     SQL
   end

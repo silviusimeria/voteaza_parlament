@@ -36,7 +36,7 @@ class NationalMandateAllocation
   end
 
   def identify_qualifying_parties
-    [:cd, :senate].each do |chamber|
+    [ :cd, :senate ].each do |chamber|
       votes_field = "votes_#{chamber}"
       total_votes = ElectionPartyResult.where(election: @election).sum(votes_field)
 
@@ -53,7 +53,7 @@ class NationalMandateAllocation
 
   def allocate_county_mandates
     County.find_each do |county|
-      [:cd, :senate].each do |chamber|
+      [ :cd, :senate ].each do |chamber|
         process_county_chamber(county, chamber)
       end
     end
@@ -114,13 +114,13 @@ class NationalMandateAllocation
         # Find counties where additional mandates can be allocated
         best_county = ElectionPartyResult
                         .joins(<<-SQL)
-          LEFT JOIN election_party_county_results epcr ON 
+          LEFT JOIN election_party_county_results epcr ON#{' '}
           epcr.election_id = election_party_results.election_id AND
           epcr.county_id = election_party_results.county_id AND
           epcr.party_id = election_party_results.party_id
         SQL
                         .where(election: @election, party_id: party_id)
-                        .where(<<-SQL, chamber == :cd ? 'deputy' : 'senate')
+                        .where(<<-SQL, chamber == :cd ? "deputy" : "senate")
           (
             SELECT COALESCE(SUM(#{chamber == :cd ? 'deputy' : 'senate'}_mandates), 0)
             FROM election_party_county_results
@@ -178,7 +178,7 @@ class NationalMandateAllocation
   end
 
   def allocate_remaining_mandates
-    [:cd, :senate].each do |chamber|
+    [ :cd, :senate ].each do |chamber|
       allocated = @allocated_mandates[chamber].values.sum
       remaining = @total_mandates[chamber] - allocated
 
@@ -195,7 +195,7 @@ class NationalMandateAllocation
 
       # Calculate national electoral number
       votes_sums = @remaining_votes[chamber].map do |party_id, votes|
-        [party_id, votes]
+        [ party_id, votes ]
       end
 
       # Divide sequentially and sort by results
@@ -211,7 +211,7 @@ class NationalMandateAllocation
       end
 
       # Sort by quotient value, use original votes as tiebreaker
-      quotients.sort_by! { |q| [-q[:value], -q[:original_votes]] }
+      quotients.sort_by! { |q| [ -q[:value], -q[:original_votes] ] }
 
       # Take top quotients up to remaining seats
       mandates = quotients.first(remaining).group_by { |q| q[:party_id] }

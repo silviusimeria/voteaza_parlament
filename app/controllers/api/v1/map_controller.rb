@@ -3,7 +3,7 @@ module Api
     class MapController < BaseController
       def index
         @counties = County.includes(
-          candidate_nominations: [ :party, person: [:people_links] ]
+          candidate_nominations: [ :party, person: [ :people_links ] ]
         )
 
         render json: {

@@ -6,10 +6,10 @@ class ParliamentaryGroup < ApplicationRecord
   belongs_to :senate_mandate
 
   validates :name, presence: true, uniqueness: true
-  
-  scope :active, -> { where('start_date <= ? AND (end_date IS NULL OR end_date >= ?)', Date.current, Date.current) }
+
+  scope :active, -> { where("start_date <= ? AND (end_date IS NULL OR end_date >= ?)", Date.current, Date.current) }
 
   def self.ransackable_attributes(auth_object = nil)
-    ["created_at", "id", "id_value", "name", "official_id", "party_id", "senate_mandate_id", "short_name", "slug", "updated_at"]
+    [ "created_at", "id", "id_value", "name", "official_id", "party_id", "senate_mandate_id", "short_name", "slug", "updated_at" ]
   end
 end
