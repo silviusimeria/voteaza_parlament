@@ -3,7 +3,8 @@ class ParliamentaryGroup < ApplicationRecord
   has_many :politicians, through: :parliamentary_group_memberships
 
   belongs_to :party
-  
+  belongs_to :senate_mandate
+
   validates :name, presence: true, uniqueness: true
   
   scope :active, -> { where('start_date <= ? AND (end_date IS NULL OR end_date >= ?)', Date.current, Date.current) }

@@ -22,7 +22,7 @@ namespace :senate do
     Person.where.not(parliament_id: nil).each do |p|
       p.candidate_nominations.first.update(mandate_allocated: true,
                                            mandate_started: true,
-                                           mandate_start_date: Date.today - 2.days)
+                                           mandate_start_date: Date.today)
     end
   end
   
