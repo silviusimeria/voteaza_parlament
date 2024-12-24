@@ -25,8 +25,8 @@ module ApplicationHelper
 
   def parliament_group_role_in_romanian(role)
     {
-      "lider" => "Lider",
-      "vice_lider" => "Vicelider",
+      "leader" => "Lider",
+      "vice_leader" => "Vicelider",
       "secretary" => "Secretar",
       "member" => "Membru"
     }[role&.downcase] || role
