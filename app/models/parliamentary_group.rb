@@ -5,7 +5,6 @@ class ParliamentaryGroup < ApplicationRecord
   belongs_to :party
   
   validates :name, presence: true, uniqueness: true
-  validates :description, presence: true
   validates :start_date, presence: true
   
   scope :active, -> { where('start_date <= ? AND (end_date IS NULL OR end_date >= ?)', Date.current, Date.current) }
