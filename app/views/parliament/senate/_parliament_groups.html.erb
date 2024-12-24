@@ -1,0 +1,24 @@
+<div class="bg-white mt-8 rounded-lg shadow-lg p-4">
+  <h2 class="text-xl font-semibold text-gray-900 mb-4">Grupuri Parlamentare</h2>
+
+  <% total_members = @parliament_groups.sum { |g| g.parliamentary_group_memberships.count } %>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- First column -->
+    <div class="space-y-2">
+      <% @parliament_groups.each_with_index do |group, index| %>
+        <% if index <= @parliament_groups.length / 2 %>
+          <%= render 'parliament/senate/parliament_group', group: group, total_members: total_members %>
+        <% end %>
+      <% end %>
+    </div>
+
+    <!-- Second column -->
+    <div class="space-y-2">
+      <% @parliament_groups.each_with_index do |group, index| %>
+        <% if index > @parliament_groups.length / 2 %>
+          <%= render 'parliament/senate/parliament_group', group: group, total_members: total_members %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

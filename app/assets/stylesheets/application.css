@@ -9,6 +9,7 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
+/* Base styles */
 html, body {
     height: 100%;
 }
@@ -17,10 +18,14 @@ html, body {
     height: 0;
 }
 
+/* Import component styles */
+@import "components/_connections";
+
+/* Existing dropdown styles */
 .dropdown-container {
     position: relative;
     display: inline-block;
-    width: 200px; /* Fixed width for the dropdown */
+    width: 200px;
 }
 .dropdown-button {
     width: 100%;
@@ -38,7 +43,7 @@ html, body {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%; /* Make sure it matches the width of the dropdown button */
+    width: 100%;
 }
 .dropdown-content a {
     color: black;
@@ -56,6 +61,7 @@ html, body {
     transform: rotate(180deg);
 }
 
+/* Map styles */
 .county-label {
     background: transparent !important;
     border: none !important;
@@ -75,7 +81,6 @@ html, body {
     padding: 0 !important;
 }
 
-/* Hide the arrow */
 .leaflet-tooltip:before {
     display: none !important;
 }

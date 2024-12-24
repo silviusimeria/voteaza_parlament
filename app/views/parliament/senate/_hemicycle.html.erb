@@ -1,0 +1,24 @@
+<div class="relative">
+  <div data-controller="hemicycle"
+       data-hemicycle-seats-value="<%= @seats.to_json %>"
+       data-hemicycle-chamber-value="senate"
+       class="relative">
+    <div data-hemicycle-target="container" class="w-full">
+      <svg viewBox="0 0 1000 500" class="w-full">
+        <rect width="1000" height="500" fill="#f8f9fa"/>
+        <g data-hemicycle-target="seatsContainer"></g>
+      </svg>
+    </div>
+
+    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bottom-24 rounded-lg text-center">
+      <div data-hemicycle-target="selectedSeatInfo" class="text-gray-500">
+        <p>Apasati un reprezentant pentru detalii</p>
+      </div>
+      <div data-hemicycle-target="selectedSeatDetails" class="hidden">
+        <p class="font-bold" data-hemicycle-target="tooltipName"></p>
+        <p class="text-sm" data-hemicycle-target="tooltipParty"></p>
+        <p class="text-sm text-gray-600" data-hemicycle-target="tooltipCounty"></p>
+      </div>
+    </div>
+  </div>
+</div>

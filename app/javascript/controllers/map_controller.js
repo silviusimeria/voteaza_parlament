@@ -87,7 +87,7 @@ export default class extends Controller {
         try {
             const [data, geoJson] = await Promise.all([
                 fetch('/api/v1/map').then(r => r.json()),
-                fetch('/ro_judete_poligon.geojson').then(r => r.json())
+                fetch('/data/ro_judete_poligon.geojson').then(r => r.json())
             ]);
 
             this.counties = data.counties;

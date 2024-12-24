@@ -1,0 +1,31 @@
+<div class="bg-gray-50 rounded-lg p-4">
+  <h3 class="font-medium text-gray-900"><%= commission.name %></h3>
+
+  <div class="mt-3">
+    <h4 class="font-medium text-gray-700 mb-2">Conducere:</h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <% commission.leadership_positions.each do |position| %>
+        <div class="flex items-start space-x-2">
+          <span class="text-gray-500"><%= position.role %>:</span>
+          <%= link_to person_profile_path(position.person.slug), class: "text-blue-600 hover:text-blue-800" do %>
+            <%= position.person.full_name %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="mt-4">
+    <h4 class="font-medium text-gray-700 mb-2">Membri:</h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <% commission.members.each do |member| %>
+        <div class="text-sm">
+          <%= link_to person_profile_path(member.slug), class: "text-blue-600 hover:text-blue-800" do %>
+            <%= member.full_name %>
+            <span class="text-gray-500">(<%= member.parliament_group&.abbreviation %>)</span>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

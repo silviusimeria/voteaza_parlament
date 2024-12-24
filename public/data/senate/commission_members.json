@@ -1,0 +1,2804 @@
+{
+  "commissions": [
+    {
+      "id": "8b2f7bb0-388e-46c7-b3cc-ef38d3968da3",
+      "name": "Comisia juridică, de numiri, disciplină, imunităţi şi validări",
+      "short_name": "Juridică",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "RUJAN Ion-Cristinel",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "400F5737-4844-4C7D-98DA-AEE69C2428D0",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SPĂTARU Elena-Simona",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "60BCE7C1-FB2B-4F29-9C74-0B37C64A7611",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘTEFANESCU Daniela",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "BD44B5A4-E8AB-43C1-8B0E-DC539F57F668",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CAZANCIUC Robert-Marius",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "33C6752D-C2B6-42AF-A6B4-233B9F6E9994",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CERVA Nadia-Cosmina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "31C2CF8C-BA75-4086-9359-6CFED5BB857D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CSEKE Attila-Zoltan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2AF30F2A-5AD3-45DB-A322-4073884FED8F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FEDEROVICI Doina-Elena",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E695C911-B82F-4AF1-A537-4AE1BAA991BF",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FENECHIU Cătălin-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "87C4A776-8E64-4E70-A862-4F087AEA03E5",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "IACOB Constantin-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E4DE63CF-394D-49DA-844A-6B060A232B35",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NICULESCU-ŢÂGÂRLAŞ Cristian-Augustin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "8E9B590E-EB5B-49A9-A908-8CBE4E43B9FC",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PAULIUC Nicoleta",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "737C18E7-C031-4D78-8808-9588B964E893",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUS Vasile-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E5DA6DE6-88CD-468A-B161-B32CAAC784F3",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TĂNĂSESCU Alina-Elena",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BE0ED528-F7E8-43F5-A47E-E2F52E95A17C",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VELA Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F1658CFA-9AEA-415D-8EF2-EC0E6E4046FC",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VLAHU Nicolae",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F6B7345B-82CA-43BF-9B7E-EFE5C038B2A0",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "75fd4832-f4ba-4690-9f6d-5959b0b950fa",
+      "name": "Comisia pentru constituţionalitate",
+      "short_name": "Constituționalitate",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "CERVA Nadia-Cosmina",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "31C2CF8C-BA75-4086-9359-6CFED5BB857D",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TĂNĂSESCU Alina-Elena",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "BE0ED528-F7E8-43F5-A47E-E2F52E95A17C",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEGRU Corneliu",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "C6BE0951-8179-4AB1-8166-8CAC4C1BF4D4",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANGHEL Razvan-Paul",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E4673FD9-34FD-4B0D-8019-092771F2537E",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CSEKE Attila-Zoltan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2AF30F2A-5AD3-45DB-A322-4073884FED8F",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FENECHIU Cătălin-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "87C4A776-8E64-4E70-A862-4F087AEA03E5",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MOISE Sorin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AD29025B-ADCF-4C9D-8F02-851AB171FF91",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NICULESCU-ŢÂGÂRLAŞ Cristian-Augustin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "8E9B590E-EB5B-49A9-A908-8CBE4E43B9FC",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PLĂEȘU Laurențiu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "4EA5E2F9-CD07-4EB4-912E-A1181CC460B1",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUJAN Ion-Cristinel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "400F5737-4844-4C7D-98DA-AEE69C2428D0",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SPĂTARU Elena-Simona",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "60BCE7C1-FB2B-4F29-9C74-0B37C64A7611",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "19d004bb-ad2a-43e6-b258-5495b37aa7af",
+      "name": "Comisia pentru buget, finanţe, activitate bancară şi piaţă de capital",
+      "short_name": "Buget",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "HORGA Maria-Gabriela",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "91A4D099-7162-417B-8F93-645DC31ACCF0",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DOGARIU Eugen",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "094EF6D8-2E32-4CBD-81FF-46B54EC604F1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PINTEA Paul-Ciprian",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "6491A652-0D83-455C-B9A9-A04C0F5194C0",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CIUPERCEANU Ionuț-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "801216B9-B47E-419B-BD9F-2DA44629E975",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COȘA Silviu-Iulian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C4A7837D-5479-4AAD-82BC-34C696B71339",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COTEȚ Mihai",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5DFB5F9B-9D25-40A4-9145-366AE2B2C04D",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DOBRA Elena-Adelina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5CB3F164-6F0C-449B-BC2E-457C5E9BF73C",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "JIANU Florin-Nicolae",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C74CA163-BFBC-43C0-B1D4-6EBE99D3A0E6",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MIHAI Daniela",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F640457C-0362-4C02-96D1-7C38B9957BDD",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEGOI Eugen-Remus",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "18F2771E-382A-4809-B1AB-8C8750FC5BF8",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIU Petrișor-Gabriel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "05495ACE-0730-44D7-B735-9D97285DCCF0",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PETREA Dorin-Silviu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E49EF80D-FC0B-4CA7-93EF-9ED3840E012A",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "POTECĂ Vasilică",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A5A25B95-3452-4D9D-983B-A1C7A033CFCD",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STELEA Niculina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5AA76A32-F2F8-42C0-A868-C5AFA29FC744",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TÁNCZOS Barna",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AD82D70D-0286-45A0-A3CC-E1DF3FA38144",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VEŞTEA Mihail",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "70753DDE-D7A5-47B2-859D-EEE551CE150F",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ZAMFIR Daniel-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "94BB9130-2698-4509-9BEA-FFCEDF3DAC7F",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "38806053-9772-4798-9c4d-a7508d4358ca",
+      "name": "Comisia pentru politică externă",
+      "short_name": "Politică Externă",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "CORLĂŢEAN Titus",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "7AEBFFAD-47E6-4C7E-BDFB-34360E888703",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "LAVRIC Sorin",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "781AF753-0E1A-4820-9926-7191E4EB16DF",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SAVA Clement",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "988C7A7C-2A4E-476D-BCC0-BCC1D6E5B97B",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BOCHILEANU George-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BFF3C30A-425F-4B6D-8D4F-1285C1BDE059",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CAZANCIUC Robert-Marius",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "33C6752D-C2B6-42AF-A6B4-233B9F6E9994",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CÎMPEANU Sorin-Mihai",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E358037E-262E-4BC0-B1D8-30016595005F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DÎRLĂU Andrei-Emil",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A98C83AA-D99D-464B-A5A1-44566F751A51",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DOGARIU Eugen",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "094EF6D8-2E32-4CBD-81FF-46B54EC604F1",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DUMITRESCU Cristina-Gabriella",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "55C19F8C-80F4-4BD1-B112-E363C2B283F1",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHIȚĂ Robert-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AC8C9401-1A0D-478B-B367-62212ECAB1C5",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NOVAK Levente",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2BAEEBA9-A861-4355-9C8E-8CEBEBA4F0D4",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ORBAN Carmen",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "86155CE0-9997-464A-AD63-93236F32F972",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PREDOIU Marian-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "979F6165-CAA2-4568-ABE4-A663A37147FD",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SPĂTARU Elena-Simona",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "60BCE7C1-FB2B-4F29-9C74-0B37C64A7611",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STREINU CERCEL Adrian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "075D383A-42A1-44D5-989F-CC686356D066",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "a825a62e-47e5-47d6-bcf5-a5d23e3382bf",
+      "name": "Comisia pentru apărare, ordine publică şi siguranţă naţională",
+      "short_name": "Apărare",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "PAULIUC Nicoleta",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "737C18E7-C031-4D78-8808-9588B964E893",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STROE Felix",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "E945E210-E8A5-4E58-8C9F-D144F4A062B5",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COȘA Silviu-Iulian",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "C4A7837D-5479-4AAD-82BC-34C696B71339",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BLAGA Vasile",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "33D88102-6E65-4934-9ECF-10102445C2C4",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BODEA Marius",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DC8F43FB-E036-477B-B895-12F56A2464C1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BORȚUN Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "29201640-DE4E-47FF-89B2-18126D2790AE",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CATANA Claudiu-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "94AFC16B-0D0B-45BE-A844-2110C5C3BC0A",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CHELARU Mircia",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "9CD64C47-2BE4-43ED-8B32-249577FE8C97",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CIUCĂ Nicolae-Ionel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "6891C220-7D4E-4741-A6D7-2BCFB8FD1929",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CORLĂŢEAN Titus",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7AEBFFAD-47E6-4C7E-BDFB-34360E888703",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FLOROIU Ionel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "FCDBFB0C-93CA-4AA5-85BA-4F53B21865BD",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHIȚĂ Robert-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AC8C9401-1A0D-478B-B367-62212ECAB1C5",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "IACOB Constantin-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E4DE63CF-394D-49DA-844A-6B060A232B35",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘIPOȘ Sorin-Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A2987B08-F230-43F8-AB52-D9073851A524",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ONEA Olga",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7F782376-A244-4258-B5A5-911192E5566D",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PARASCA Teofil",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3953018D-3E06-4028-BC4B-953FB20F88E9",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TUROS Lóránd",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3354F56C-A3E7-4CEA-9DDE-E3BD730D7B7F",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "0b43e912-a027-4003-942c-073d8c82af92",
+      "name": "Comisia pentru afaceri europene",
+      "short_name": "Afaceri Europene",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "CIUCĂ Nicolae-Ionel",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "6891C220-7D4E-4741-A6D7-2BCFB8FD1929",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FEJÉR László-Ődőn",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "B443BD5D-6BA0-4192-832C-4B502D6EC1A8",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DÎRLĂU Andrei-Emil",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "A98C83AA-D99D-464B-A5A1-44566F751A51",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DOBRA Elena-Adelina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5CB3F164-6F0C-449B-BC2E-457C5E9BF73C",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FEDEROVICI Doina-Elena",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E695C911-B82F-4AF1-A537-4AE1BAA991BF",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHINEA Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "008FD8CB-C069-4F74-B02B-612D1DB6A19D",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "HORGA Maria-Gabriela",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "91A4D099-7162-417B-8F93-645DC31ACCF0",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PETREA Dorin-Silviu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E49EF80D-FC0B-4CA7-93EF-9ED3840E012A",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PREDOIU Marian-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "979F6165-CAA2-4568-ABE4-A663A37147FD",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PRESURĂ Alexandra",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "95133353-E40C-4398-BBAC-A6D14FCDAD54",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STOICA Ciprian-Titi",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "1969FBC4-5C74-4B09-AFD6-CB64347549DE",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TĂNĂSESCU Alina-Elena",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BE0ED528-F7E8-43F5-A47E-E2F52E95A17C",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VÂNTU Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "27B719E9-FA14-4F74-A01C-EB955CE9F0EC",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "3c24f5c4-46d1-4dcd-b035-49c8c90a40a3",
+      "name": "Comisia economică, industrii, servicii, turism și antreprenoriat",
+      "short_name": "Economică",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "VLAŞIN Sorin",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "E681A8AD-B809-40AE-9075-F0879F10A986",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CATANA Claudiu-Daniel",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "94AFC16B-0D0B-45BE-A844-2110C5C3BC0A",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FODOCA Liviu-Iulian",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "4ECEF3DD-1F70-4433-82BA-54975207C4A1",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ALEXANDRU Victoria-Violeta",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "4D812C2C-FA19-4834-B1F1-08FEDC72161D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANTAL István-Loránt",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DE52F6DF-260B-4042-9A60-095A0DBFE661",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "JIANU Florin-Nicolae",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C74CA163-BFBC-43C0-B1D4-6EBE99D3A0E6",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MARIAN Călin-Petru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "509068B6-ECF9-4365-A022-74B77483CE14",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MIHAI Daniela",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F640457C-0362-4C02-96D1-7C38B9957BDD",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEAGU Nicolae",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BDD75DA8-FC58-45C3-8765-87D17EA22C8D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PETRE George-Cezar",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "14E542F2-EE04-444E-B539-9E85135DA202",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUSU Ioan-Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D9CF2A62-6109-4D68-9452-B54D6B4E786F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SILEGEANU Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C7757F24-2D04-42A2-833E-C0A9A821AD71",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘTEFĂNACHE Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "9A773414-4C8D-41AF-BD97-D9834EB23395",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VASILE Marian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0460DBEB-6CAA-41F0-AEAD-EA380A592FDE",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ZAMFIR Daniel-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "94BB9130-2698-4509-9BEA-FFCEDF3DAC7F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "fee2c024-fa84-489f-bb69-e3b434e0d5fd",
+      "name": "Comisia pentru agricultură, industrie alimentară si dezvoltare rurală",
+      "short_name": "Agricultură",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "CERNIC Sebastian",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "CE14B3E6-9E25-4840-A0B0-23F33C6DB73C",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RĂCUCI Claudiu-Vasile",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "082C21CD-DCDB-42BB-9BFD-A871139CB9C5",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NOVAK Levente",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "2BAEEBA9-A861-4355-9C8E-8CEBEBA4F0D4",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CONSTANTINESCU Rodica",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "FA667A85-17D1-4CB5-A5DB-322D48FCD38D",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CUȘNIR Rodica",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DD953B01-E89C-481C-88B9-40CBD8E43FEC",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘIPOȘ Sorin-Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A2987B08-F230-43F8-AB52-D9073851A524",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MARIAN Călin-Petru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "509068B6-ECF9-4365-A022-74B77483CE14",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MIHAI Daniela",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F640457C-0362-4C02-96D1-7C38B9957BDD",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MOISE Sorin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AD29025B-ADCF-4C9D-8F02-851AB171FF91",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂDURARU Răducu-Adrian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "57A5F4D6-EC10-4020-8424-958ED09FBF37",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SPAU Dumitru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F34848D5-327A-4E34-80DD-C28EB44C8D98",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STĂNESCU Paul",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "CD69820B-804D-42BF-BE94-C567A0EFD41B",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘTEFANESCU Daniela",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BD44B5A4-E8AB-43C1-8B0E-DC539F57F668",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "842e844e-f500-4afd-adb1-602f37a0266d",
+      "name": "Comisia pentru ape, păduri, pescuit și fond cinegetic",
+      "short_name": "Ape și Păduri",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "POTECĂ Vasilică",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "A5A25B95-3452-4D9D-983B-A1C7A033CFCD",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FLUTUR Gheorghe",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "58DD0F59-A7E9-44F4-9860-5316735921E1",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MOISE Sorin",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "AD29025B-ADCF-4C9D-8F02-851AB171FF91",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BEM Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "00AEE4D2-EA00-4484-9A67-0C2F8A0459F8",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BICĂ Andra",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B9C904E7-969F-4126-B0E1-0EBD3A003CC5",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CERNIC Sebastian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "CE14B3E6-9E25-4840-A0B0-23F33C6DB73C",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "KOVÁCS Maté",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3B1C3E18-CC5D-46D4-8BE7-70CA0566D41F",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MĂLĂIESCU Luca",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B9350519-299B-4572-8D08-7AEA22489F39",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MARIAN Călin-Petru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "509068B6-ECF9-4365-A022-74B77483CE14",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "OPRINOIU Aurel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5954CCC9-0AF9-409F-9B30-91C8B292D60D",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ROMAN Marius-Valentin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3090F662-69B9-4088-94EA-AD1847401B50",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "c20e16f6-9734-41da-be13-6beb4702be25",
+      "name": "Comisia pentru administraţie publică",
+      "short_name": "Administrație",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "CSÁSZÁR Károly Zsolt",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "827844F4-ED1E-4293-BBE5-3DD527A0D65B",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VEŞTEA Mihail",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "70753DDE-D7A5-47B2-859D-EEE551CE150F",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FLOROIU Ionel",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "FCDBFB0C-93CA-4AA5-85BA-4F53B21865BD",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BLAGA Vasile",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "33D88102-6E65-4934-9ECF-10102445C2C4",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BOTA Gheorghe-Ioan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "86228CA2-986A-40BA-9ED8-1A975ED32F9C",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DARĂU Ambrozie-Irineu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "37B6DE1D-2D61-4475-BB9B-443D4AD9D181",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FODOCA Liviu-Iulian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "4ECEF3DD-1F70-4433-82BA-54975207C4A1",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MĂLĂIESCU Luca",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B9350519-299B-4572-8D08-7AEA22489F39",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MÎNDRU Cătălin-Emil",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B70CFD7F-7726-4531-99D0-83FF6F6F05B3",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂDURARU Răducu-Adrian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "57A5F4D6-EC10-4020-8424-958ED09FBF37",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIU Grigore-Adrian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "8C196354-6157-46A5-8B04-9D394C7B294D",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "POTECĂ Vasilică",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A5A25B95-3452-4D9D-983B-A1C7A033CFCD",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PRESURĂ Alexandra",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "95133353-E40C-4398-BBAC-A6D14FCDAD54",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RĂCUCI Claudiu-Vasile",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "082C21CD-DCDB-42BB-9BFD-A871139CB9C5",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STELEA Niculina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5AA76A32-F2F8-42C0-A868-C5AFA29FC744",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘTEFĂNACHE Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "9A773414-4C8D-41AF-BD97-D9834EB23395",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘTEFANESCU Daniela",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BD44B5A4-E8AB-43C1-8B0E-DC539F57F668",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ZAMFIR Daniel-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "94BB9130-2698-4509-9BEA-FFCEDF3DAC7F",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "7cae207a-3ae5-4cf6-8568-eb3bf69a9b88",
+      "name": "Comisia pentru muncă, familie şi protecţie socială",
+      "short_name": "Muncă",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "HUMELNICU Marius",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "D172FE4E-C155-4F46-8859-6665840065A9",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂUN Ana-Cynthia-Ioana",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "A5B8A0D4-4710-4730-A171-9B78349041F6",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BARCARI Dorina",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "EDF20DA3-A851-4622-B534-0B3D833A51B9",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ALEXANDRU Victoria-Violeta",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "4D812C2C-FA19-4834-B1F1-08FEDC72161D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CAȘCAVAL Dan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D7829EB2-A908-43C2-8F3F-1F1AD550B9E6",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COȘA Silviu-Iulian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C4A7837D-5479-4AAD-82BC-34C696B71339",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COTEȚ Mihai",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5DFB5F9B-9D25-40A4-9145-366AE2B2C04D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CUȘNIR Rodica",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DD953B01-E89C-481C-88B9-40CBD8E43FEC",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DARĂU Ambrozie-Irineu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "37B6DE1D-2D61-4475-BB9B-443D4AD9D181",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "KONDOR Ágota",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DCB76AFD-06D2-4795-9CE4-705231994268",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MĂRGINEAN Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "FEE99943-2379-4151-8E9A-7B15D1F04A4F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEGRU Corneliu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C6BE0951-8179-4AB1-8166-8CAC4C1BF4D4",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SANDU Mircea-Ionuț",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "74A1CA6F-7E3C-49EA-B9D7-B8DF00BF7766",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STOICIU Victoria",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0317F068-49AD-4541-87D4-CC589AEF437F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VLAŞIN Sorin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E681A8AD-B809-40AE-9075-F0879F10A986",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "b6d9d5f8-bf64-44c3-bdbf-12fe7567ba82",
+      "name": "Comisia pentru învățământ, știință și inovare",
+      "short_name": "Învățământ",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "DOBRA Elena-Adelina",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "5CB3F164-6F0C-449B-BC2E-457C5E9BF73C",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CAȘCAVAL Dan",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "D7829EB2-A908-43C2-8F3F-1F1AD550B9E6",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BOTA Gheorghe-Ioan",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "86228CA2-986A-40BA-9ED8-1A975ED32F9C",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANISIE Monica-Cristina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DAD3C5EE-3157-410A-85FF-094A63524104",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BICĂ Andra",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B9C904E7-969F-4126-B0E1-0EBD3A003CC5",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CARP Ionel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "65699EFD-F7E5-4128-B80F-1EF173563D66",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CÎMPEANU Sorin-Mihai",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E358037E-262E-4BC0-B1D8-30016595005F",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DARĂU Ambrozie-Irineu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "37B6DE1D-2D61-4475-BB9B-443D4AD9D181",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "KONDOR Ágota",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DCB76AFD-06D2-4795-9CE4-705231994268",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MÎNDRU Cătălin-Emil",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B70CFD7F-7726-4531-99D0-83FF6F6F05B3",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NICULA Mircea-Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "CB2CA5B6-FFEB-4FE8-A10C-87C4D61CACB0",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂLĂRIE Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2A3A96E0-F5D4-4A21-8C10-9606276F5311",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂUCEAN-FERNANDES Luminița",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2B2EA3F2-756E-46D5-ACFE-9A41350B7F34",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PUIU Ovidiu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C4AF4B08-CCB8-4323-8FB2-A7272AFF2123",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STOICIU Victoria",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0317F068-49AD-4541-87D4-CC589AEF437F",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VELA Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F1658CFA-9AEA-415D-8EF2-EC0E6E4046FC",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VLĂESCU Virgiliu-George",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AEC2401E-7BFD-4C9F-9F67-F418BCDC5BE5",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "7f7c09a7-7ae7-4e99-9018-a9c5774ef858",
+      "name": "Comisia pentru sănătate",
+      "short_name": "Sănătate",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "STREINU CERCEL Adrian",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "075D383A-42A1-44D5-989F-CC686356D066",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VÂNTU Cristian",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "27B719E9-FA14-4F74-A01C-EB955CE9F0EC",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CIBU DEACONU Ruxandra",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "0A8B45A7-E661-4C59-9169-281F79FF12EB",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANGHEL Razvan-Paul",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E4673FD9-34FD-4B0D-8019-092771F2537E",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BOLOJAN Ilie-Gavril",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "813D6A81-CEA1-4AC6-9717-143A859D4BDE",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CHERTIF Costache",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "9D98D226-76AA-4DEC-9D8D-24A83D344DFB",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GEAMĂNU Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0A82391D-2ECD-4B88-AC27-57B69D159720",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GRAUR Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A8FF8991-97DD-4A5B-92A9-63C61A612F75",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MĂRGINEAN Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "FEE99943-2379-4151-8E9A-7B15D1F04A4F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MOHAN Aurel-George",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0692F467-F93F-4A21-A06A-8431696053A8",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ONEA Olga",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7F782376-A244-4258-B5A5-911192E5566D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ORBAN Carmen",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "86155CE0-9997-464A-AD63-93236F32F972",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂUCEAN-FERNANDES Luminița",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2B2EA3F2-756E-46D5-ACFE-9A41350B7F34",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PAULIUC Nicoleta",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "737C18E7-C031-4D78-8808-9588B964E893",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TUROS Lóránd",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3354F56C-A3E7-4CEA-9DDE-E3BD730D7B7F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "bf3d1ac6-e2d1-4c07-bd5e-b2191548714b",
+      "name": "Comisia pentru cultură şi media",
+      "short_name": "Cultură",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "NICULESCU-ŢÂGÂRLAŞ Cristian-Augustin",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "8E9B590E-EB5B-49A9-A908-8CBE4E43B9FC",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ROBE Liviu Sorin",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "6E681419-5F69-41CD-85CA-ACEF5EED2A63",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BUZATU Oana-Constantina",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "6A194230-E597-4335-8CE2-1DA0B0AAE9C4",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DUMITRESCU Cristina-Gabriella",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "55C19F8C-80F4-4BD1-B112-E363C2B283F1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FENECHIU Cătălin-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "87C4A776-8E64-4E70-A862-4F087AEA03E5",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "LAVRIC Sorin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "781AF753-0E1A-4820-9926-7191E4EB16DF",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MANEA Dumitru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E23F34EE-F4F8-4E72-8302-7453373E0CEC",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEAGU Nicolae",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BDD75DA8-FC58-45C3-8765-87D17EA22C8D",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEGOI Eugen-Remus",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "18F2771E-382A-4809-B1AB-8C8750FC5BF8",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PUIU Ovidiu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C4AF4B08-CCB8-4323-8FB2-A7272AFF2123",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ROMAȘCANU Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "26CBB9E7-D2FD-487C-BAF4-AD616DA097E9",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ROMAN Marius-Valentin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3090F662-69B9-4088-94EA-AD1847401B50",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TUROS Lóránd",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3354F56C-A3E7-4CEA-9DDE-E3BD730D7B7F",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "0f905a32-3397-4e52-b3e1-9ba3319cfcc3",
+      "name": "Comisia pentru transporturi şi infrastructură",
+      "short_name": "Transporturi",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "MAZILU Liviu-Lucian",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "3ABF38C7-FFFE-4F34-B90A-77B5C3219DA5",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUSU Petrică Lucian",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "3F7D19D2-B8D0-4309-894C-B71561F01985",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BODEA Marius",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "DC8F43FB-E036-477B-B895-12F56A2464C1",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COTEȚ Mihai",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5DFB5F9B-9D25-40A4-9145-366AE2B2C04D",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DUNCA Marius-Alexandru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5582EE24-5017-4462-AD12-49D4BDE5D5BB",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FEJÉR László-Ődőn",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B443BD5D-6BA0-4192-832C-4B502D6EC1A8",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "HUMELNICU Marius",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D172FE4E-C155-4F46-8859-6665840065A9",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MIRCESCU Ion-Narcis",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7A6EC680-9075-4FFF-97D2-7D556F4D57BC",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIA Ninel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "007FDD23-B531-407E-A067-9C3796420C8C",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PETRE George-Cezar",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "14E542F2-EE04-444E-B539-9E85135DA202",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PINTEA Paul-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "6491A652-0D83-455C-B9A9-A04C0F5194C0",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SILEGEANU Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C7757F24-2D04-42A2-833E-C0A9A821AD71",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STROE Felix",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E945E210-E8A5-4E58-8C9F-D144F4A062B5",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "fce2aea4-104c-4495-a3c1-41a9bd7e5f37",
+      "name": "Comisia pentru energie, infrastructură energetică și resurse minerale",
+      "short_name": "Energie",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "ANTAL István-Loránt",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "DE52F6DF-260B-4042-9A60-095A0DBFE661",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RESMERIŢĂ Cornel-Cristian",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "E7647515-E32C-4E2D-96FF-AB83E8A93512",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "JITARU Ovidiu",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "7193AAFE-9862-45BF-B876-6F90DFA96616",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ABRUDEAN Mircea",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7FF0CD22-7BBB-4CA8-ADA1-0473697459BD",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BORȚUN Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "29201640-DE4E-47FF-89B2-18126D2790AE",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHINEA Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "008FD8CB-C069-4F74-B02B-612D1DB6A19D",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘIPOȘ Eugen-Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AA6BA21B-D06F-4F62-8659-D4E74ADD85CB",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘIPOȘ Sorin-Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A2987B08-F230-43F8-AB52-D9073851A524",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MAZILU Liviu-Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3ABF38C7-FFFE-4F34-B90A-77B5C3219DA5",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIA Ninel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "007FDD23-B531-407E-A067-9C3796420C8C",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIU Petrișor-Gabriel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "05495ACE-0730-44D7-B735-9D97285DCCF0",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUSU Petrică Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3F7D19D2-B8D0-4309-894C-B71561F01985",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VLAŞIN Sorin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E681A8AD-B809-40AE-9075-F0879F10A986",
+          "partyId": "003055A9-61A2-473D-8C35-7CA36642B8A5",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "ef36e8b3-2fb2-43e8-bd6d-1ad040db24b3",
+      "name": "Comisia pentru comunicații, tehnologia informației și inteligență artificială",
+      "short_name": "Comunicații",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "RUS Vasile-Ciprian",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "E5DA6DE6-88CD-468A-B161-B32CAAC784F3",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VASILE Marian",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "0460DBEB-6CAA-41F0-AEAD-EA380A592FDE",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIU Grigore-Adrian",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "8C196354-6157-46A5-8B04-9D394C7B294D",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANGHEL Razvan-Paul",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E4673FD9-34FD-4B0D-8019-092771F2537E",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BUZATU Oana-Constantina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "6A194230-E597-4335-8CE2-1DA0B0AAE9C4",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CSÁSZÁR Károly Zsolt",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "827844F4-ED1E-4293-BBE5-3DD527A0D65B",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "HUMELNICU Marius",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D172FE4E-C155-4F46-8859-6665840065A9",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "JITARU Ovidiu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7193AAFE-9862-45BF-B876-6F90DFA96616",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEAGU Nicolae",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BDD75DA8-FC58-45C3-8765-87D17EA22C8D",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NEGOI Eugen-Remus",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "18F2771E-382A-4809-B1AB-8C8750FC5BF8",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NICULA Mircea-Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "CB2CA5B6-FFEB-4FE8-A10C-87C4D61CACB0",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "POTECĂ Vasilică",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A5A25B95-3452-4D9D-983B-A1C7A033CFCD",
+          "partyId": "C2E2497D-8FD7-4489-9FB0-CC198E6D8700",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "1d044a32-1bad-4adf-925e-0abab63af58a",
+      "name": "Comisia pentru drepturile omului, egalitate de șanse, culte şi minorităţi",
+      "short_name": "Drepturile Omului",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "CARP Ionel",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "65699EFD-F7E5-4128-B80F-1EF173563D66",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STOICIU Victoria",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "0317F068-49AD-4541-87D4-CC589AEF437F",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TASNADI Istvan-Szilard",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "D7E43180-8A7D-47CE-94DD-E2E6FFB390D1",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ABRUDEAN Mircea",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7FF0CD22-7BBB-4CA8-ADA1-0473697459BD",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANISIE Monica-Cristina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DAD3C5EE-3157-410A-85FF-094A63524104",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BOCHILEANU George-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BFF3C30A-425F-4B6D-8D4F-1285C1BDE059",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CONSTANTINESCU Rodica",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "FA667A85-17D1-4CB5-A5DB-322D48FCD38D",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GRAUR Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A8FF8991-97DD-4A5B-92A9-63C61A612F75",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "KOVÁCS Maté",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3B1C3E18-CC5D-46D4-8BE7-70CA0566D41F",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MĂRGINEAN Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "FEE99943-2379-4151-8E9A-7B15D1F04A4F",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MIRCESCU Ion-Narcis",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7A6EC680-9075-4FFF-97D2-7D556F4D57BC",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STELEA Niculina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5AA76A32-F2F8-42C0-A868-C5AFA29FC744",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VELA Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "F1658CFA-9AEA-415D-8EF2-EC0E6E4046FC",
+          "partyId": "26028F12-151D-4F0B-AD82-9747E6D30CBC",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "a3ba8a6b-8b59-47b1-8932-0d30b5f7add1",
+      "name": "Comisia pentru românii de pretutindeni",
+      "short_name": "Diaspora",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "DUMITRESCU Cristina-Gabriella",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "55C19F8C-80F4-4BD1-B112-E363C2B283F1",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MANEA Dumitru",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "E23F34EE-F4F8-4E72-8302-7453373E0CEC",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COTEȚ Mihai",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "5DFB5F9B-9D25-40A4-9145-366AE2B2C04D",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ABRUDEAN Mircea",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "7FF0CD22-7BBB-4CA8-ADA1-0473697459BD",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BOCHILEANU George-Cătălin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "BFF3C30A-425F-4B6D-8D4F-1285C1BDE059",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DUNCA Marius-Alexandru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5582EE24-5017-4462-AD12-49D4BDE5D5BB",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GEAMĂNU Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0A82391D-2ECD-4B88-AC27-57B69D159720",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NOVAK Levente",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2BAEEBA9-A861-4355-9C8E-8CEBEBA4F0D4",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ROMAȘCANU Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "26CBB9E7-D2FD-487C-BAF4-AD616DA097E9",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STAN  Ioan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "259A81F5-9971-4B56-B1B5-C4230980BCD3",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘTEFĂNACHE Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "9A773414-4C8D-41AF-BD97-D9834EB23395",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "3bb3386f-054f-4cc4-8374-0b5c3b9a3e12",
+      "name": "Comisia pentru mediu",
+      "short_name": "Mediu",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "VARGA Glad-Aurel",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "DAC88F11-D51D-43E7-B5C0-E5692E92C4E1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "OPRINOIU Aurel",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "5954CCC9-0AF9-409F-9B30-91C8B292D60D",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MĂLĂIESCU Luca",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "B9350519-299B-4572-8D08-7AEA22489F39",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BUZATU Oana-Constantina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "6A194230-E597-4335-8CE2-1DA0B0AAE9C4",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CHERTIF Costache",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "9D98D226-76AA-4DEC-9D8D-24A83D344DFB",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DOGARIU Eugen",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "094EF6D8-2E32-4CBD-81FF-46B54EC604F1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FLUTUR Gheorghe",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "58DD0F59-A7E9-44F4-9860-5316735921E1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHEORGHE Daniel-Paul-Romeo",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D2F51E91-D18A-431C-BC9D-6061101CE1D4",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PARASCA Teofil",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3953018D-3E06-4028-BC4B-953FB20F88E9",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂUN Ana-Cynthia-Ioana",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "A5B8A0D4-4710-4730-A171-9B78349041F6",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PUIU Ovidiu",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C4AF4B08-CCB8-4323-8FB2-A7272AFF2123",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "SANDU Mircea-Ionuț",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "74A1CA6F-7E3C-49EA-B9D7-B8DF00BF7766",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TÁNCZOS Barna",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AD82D70D-0286-45A0-A3CC-E1DF3FA38144",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "f8ec429d-75f4-4b5b-a199-1eaa5eeace09",
+      "name": "Comisia pentru cercetarea abuzurilor, combaterea corupției și petiții",
+      "short_name": "Abuzuri",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "VLAHU Nicolae",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "F6B7345B-82CA-43BF-9B7E-EFE5C038B2A0",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHEORGHE Daniel-Paul-Romeo",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "D2F51E91-D18A-431C-BC9D-6061101CE1D4",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STOICA Ciprian-Titi",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "1969FBC4-5C74-4B09-AFD6-CB64347549DE",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ALDEA Mariana-Vali",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AAA971E5-5110-4C5F-98F5-07C6EE365A1E",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ANISIE Monica-Cristina",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DAD3C5EE-3157-410A-85FF-094A63524104",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CIUPERCEANU Ionuț-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "801216B9-B47E-419B-BD9F-2DA44629E975",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "COȘA Silviu-Iulian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "C4A7837D-5479-4AAD-82BC-34C696B71339",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FENECHIU Cătălin-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "87C4A776-8E64-4E70-A862-4F087AEA03E5",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "OPRINOIU Aurel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5954CCC9-0AF9-409F-9B30-91C8B292D60D",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PĂLĂRIE Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "2A3A96E0-F5D4-4A21-8C10-9606276F5311",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RESMERIŢĂ Cornel-Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E7647515-E32C-4E2D-96FF-AB83E8A93512",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STAN  Ioan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "259A81F5-9971-4B56-B1B5-C4230980BCD3",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TASNADI Istvan-Szilard",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D7E43180-8A7D-47CE-94DD-E2E6FFB390D1",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "807773c0-c6eb-401f-b87e-42c34b9213fb",
+      "name": "Comisia pentru regulament",
+      "short_name": "Regulament",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "MOHAN Aurel-George",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "0692F467-F93F-4A21-A06A-8431696053A8",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘIPOȘ Sorin-Gheorghe",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "A2987B08-F230-43F8-AB52-D9073851A524",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BEM Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "00AEE4D2-EA00-4484-9A67-0C2F8A0459F8",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BLAGA Vasile",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "33D88102-6E65-4934-9ECF-10102445C2C4",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BORȚUN Ștefan",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "29201640-DE4E-47FF-89B2-18126D2790AE",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "IACOB Constantin-Ciprian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "E4DE63CF-394D-49DA-844A-6B060A232B35",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "KOVÁCS Maté",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3B1C3E18-CC5D-46D4-8BE7-70CA0566D41F",
+          "partyId": "1042F657-AB38-4245-AC2E-9CEBB90C723C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "2bd4bd40-5994-40a8-81b7-fcef2df3acfc",
+      "name": "Comisia pentru tineret și sport",
+      "short_name": "Tineret",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "VLĂESCU Virgiliu-George",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "AEC2401E-7BFD-4C9F-9F67-F418BCDC5BE5",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ȘIPOȘ Eugen-Cristian",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "AA6BA21B-D06F-4F62-8659-D4E74ADD85CB",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CIUPERCEANU Ionuț-Ciprian",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "801216B9-B47E-419B-BD9F-2DA44629E975",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ALDEA Mariana-Vali",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "AAA971E5-5110-4C5F-98F5-07C6EE365A1E",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CATANA Claudiu-Daniel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "94AFC16B-0D0B-45BE-A844-2110C5C3BC0A",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "CIBU DEACONU Ruxandra",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "0A8B45A7-E661-4C59-9169-281F79FF12EB",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DUNCA Marius-Alexandru",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "5582EE24-5017-4462-AD12-49D4BDE5D5BB",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MÎNDRU Cătălin-Emil",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "B70CFD7F-7726-4531-99D0-83FF6F6F05B3",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ROBE Liviu Sorin",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "6E681419-5F69-41CD-85CA-ACEF5EED2A63",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUSU Ioan-Cristian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D9CF2A62-6109-4D68-9452-B54D6B4E786F",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "RUSU Petrică Lucian",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "3F7D19D2-B8D0-4309-894C-B71561F01985",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "TASNADI Istvan-Szilard",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "D7E43180-8A7D-47CE-94DD-E2E6FFB390D1",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "VARGA Glad-Aurel",
+          "role": "Membru",
+          "party": "",
+          "parlamentarId": "DAC88F11-D51D-43E7-B5C0-E5692E92C4E1",
+          "partyId": "66CE7E9A-A70D-4C69-83CE-774E9E17C315",
+          "startDate": "21.12.2024"
+        }
+      ]
+    },
+    {
+      "id": "75adc0c8-9941-40a9-a90d-c52e5c84be34",
+      "name": "Biroul Permanent",
+      "short_name": "Birou",
+      "type": "permanent",
+      "members": [
+        {
+          "name": "BOLOJAN Ilie-Gavril",
+          "role": "Preşe",
+          "party": "",
+          "parlamentarId": "813D6A81-CEA1-4AC6-9717-143A859D4BDE",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "23.12.2024"
+        },
+        {
+          "name": "CAZANCIUC Robert-Marius",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "33C6752D-C2B6-42AF-A6B4-233B9F6E9994",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STĂNESCU Paul",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "CD69820B-804D-42BF-BE94-C567A0EFD41B",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PLĂEȘU Laurențiu",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "4EA5E2F9-CD07-4EB4-912E-A1181CC460B1",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "ABRUDEAN Mircea",
+          "role": "Vicepreşe",
+          "party": "",
+          "parlamentarId": "7FF0CD22-7BBB-4CA8-ADA1-0473697459BD",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "FEDEROVICI Doina-Elena",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "E695C911-B82F-4AF1-A537-4AE1BAA991BF",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "STELEA Niculina",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "5AA76A32-F2F8-42C0-A868-C5AFA29FC744",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "BLAGA Vasile",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "33D88102-6E65-4934-9ECF-10102445C2C4",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "GHINEA Cristian",
+          "role": "Secretar",
+          "party": "",
+          "parlamentarId": "008FD8CB-C069-4F74-B02B-612D1DB6A19D",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "DUNCA Marius-Alexandru",
+          "role": "Chestor",
+          "party": "",
+          "parlamentarId": "5582EE24-5017-4462-AD12-49D4BDE5D5BB",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "MIRCESCU Ion-Narcis",
+          "role": "Chestor",
+          "party": "",
+          "parlamentarId": "7A6EC680-9075-4FFF-97D2-7D556F4D57BC",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "PEIA Ninel",
+          "role": "Chestor",
+          "party": "",
+          "parlamentarId": "007FDD23-B531-407E-A067-9C3796420C8C",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        },
+        {
+          "name": "NOVAK Levente",
+          "role": "Chestor",
+          "party": "",
+          "parlamentarId": "2BAEEBA9-A861-4355-9C8E-8CEBEBA4F0D4",
+          "partyId": "3E33C37A-0E27-49DA-A83A-BD98212E750C",
+          "startDate": "21.12.2024"
+        }
+      ]
+    }
+  ]
+}

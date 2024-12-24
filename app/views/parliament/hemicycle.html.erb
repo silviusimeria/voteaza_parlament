@@ -5,10 +5,6 @@
       <div class="px-4 py-5 sm:p-6">
         <h1 class="text-3xl font-bold text-gray-900">Alocarea Mandatelor Parlamentare 2024</h1>
         <div class="mt-4 text-sm text-gray-500 space-y-4">
-          <p class="text-lg">
-            Această vizualizare interactivă prezintă componența noului Parlament al României,
-            oferind o perspectivă clară și accesibilă asupra rezultatelor alegerilor din decembrie 2024.
-          </p>
           <p>
             Deși trăim în era digitală, rezultatele oficiale sunt publicate în format PDF de către AEP,
             făcând dificilă înțelegerea și analiza distribuției mandatelor.
@@ -20,155 +16,10 @@
     </div>
   </div>
 
-  <div class="bg-white mt-8 rounded-lg shadow-lg p-4 space-y-6">
-    <div class="flex justify-between items-center">
-      <div class="text-2xl font-bold">
-        <%= @chamber == 'senate' ? 'Senat' : 'Camera Deputaților' %>
-      </div>
-
-      <div class="flex gap-2">
-        <%= link_to "Senat",
-                    parliament_map_path(chamber: 'senate'),
-                    class: "px-4 py-2 rounded #{@chamber == 'senate' ? 'bg-blue-600 text-white' : 'bg-gray-200'}" %>
-
-        <%= link_to "Camera Deputaților",
-                    parliament_map_path(chamber: 'deputy'),
-                    class: "px-4 py-2 rounded #{@chamber == 'deputy' ? 'bg-blue-600 text-white' : 'bg-gray-200'}" %>
-      </div>
-    </div>
-
-    <div data-controller="hemicycle"
-         data-hemicycle-seats-value="<%= @seats.to_json %>"
-         data-hemicycle-chamber-value="<%= @chamber %>"
-         class="relative">
-      <div data-hemicycle-target="container" class="w-full">
-        <svg viewBox="0 0 1000 500" class="w-full">
-          <rect width="1000" height="500" fill="#f8f9fa"/>
-          <g data-hemicycle-target="seatsContainer"></g>
-        </svg>
-      </div>
-
-      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bottom-24 rounded-lg text-center">
-        <div data-hemicycle-target="selectedSeatInfo" class="text-gray-500">
-          <p> Apasati un reprezentant pentru detalii</p>
-        </div>
-        <div data-hemicycle-target="selectedSeatDetails" class="hidden">
-          <p class="font-bold" data-hemicycle-target="tooltipName"></p>
-          <p class="text-sm" data-hemicycle-target="tooltipParty"></p>
-          <p class="text-sm text-gray-600" data-hemicycle-target="tooltipCounty"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-6">
-      <!-- Party list with collapsible sections -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        <!-- First column -->
-        <div class="space-y-2">
-          <% @parties.each_with_index do |party, index| %>
-            <% if index <= @parties.length / 2 %>
-              <div class="space-y-2">
-                <!-- Party header - always visible -->
-                <div data-controller="toggle" class="rounded overflow-hidden">
-                  <button data-action="toggle#toggle" class="w-full flex items-center justify-between p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors">
-                    <div class="flex items-center gap-2 min-w-0">
-                      <div class="w-4 h-4 flex-shrink-0 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
-                      <span class="truncate"><%= party.name %></span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <% seat_count = @seats.count { |seat| seat[:party_name] == party.name } %>
-                      <span class="font-semibold whitespace-nowrap"><%= seat_count %> locuri</span>
-                      <svg data-toggle-target="icon" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                      </svg>
-                    </div>
-                  </button>
-
-                  <!-- Collapsible members section -->
-                  <div data-toggle-target="content" class="hidden">
-                    <div class="pl-6 py-2 space-y-1 bg-white max-h-[50vh] overflow-y-auto">
-                      <% @seats.select { |seat| seat[:party_name] == party.name }.each do |seat| %>
-                        <%= link_to "/persoana/#{seat[:slug]}", class: "block p-2 rounded-lg hover:bg-gray-50" do %>
-                          <div class="font-medium"><%= seat[:name] %></div>
-                          <div class="text-sm text-gray-600"><%= seat[:county_name] %></div>
-                        <% end %>
-                      <% end %>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <% end %>
-          <% end %>
-        </div>
-
-        <!-- Second column -->
-        <div class="space-y-2">
-          <% @parties.each_with_index do |party, index| %>
-            <% if index > @parties.length / 2 %>
-              <div class="space-y-2">
-                <div data-controller="toggle" class="rounded overflow-hidden">
-                  <button data-action="toggle#toggle" class="w-full flex items-center justify-between p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors">
-                    <div class="flex items-center gap-2 min-w-0">
-                      <div class="w-4 h-4 flex-shrink-0 rounded-full" style="background-color: <%= party.color || '#999999' %>"></div>
-                      <span class="truncate"><%= party.name %></span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <% seat_count = @seats.count { |seat| seat[:party_name] == party.name } %>
-                      <span class="font-semibold whitespace-nowrap"><%= seat_count %> locuri</span>
-                      <svg data-toggle-target="icon" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                      </svg>
-                    </div>
-                  </button>
-
-                  <div data-toggle-target="content" class="hidden">
-                    <div class="pl-6 py-2 space-y-1 bg-white max-h-[50vh] overflow-y-auto">
-                      <% @seats.select { |seat| seat[:party_name] == party.name }.each do |seat| %>
-                        <%= link_to "/persoana/#{seat[:slug]}", class: "block p-2 rounded-lg hover:bg-gray-50" do %>
-                          <div class="font-medium"><%= seat[:name] %></div>
-                          <div class="text-sm text-gray-600"><%= seat[:county_name] %></div>
-                        <% end %>
-                      <% end %>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <% end %>
-          <% end %>
-
-          <% if @chamber == 'deputy' %>
-            <div data-controller="toggle" class="rounded overflow-hidden">
-              <button data-action="toggle#toggle" class="w-full flex items-center justify-between p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors">
-                <div class="flex items-center gap-2">
-                  <div class="w-4 h-4 rounded-full" style="background-color: #999999"></div>
-                  <span>MINORITĂȚI</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="font-semibold">19 locuri</span>
-                  <svg data-toggle-target="icon" class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                  </svg>
-                </div>
-              </button>
-
-              <div data-toggle-target="content" class="hidden">
-                <div class="pl-6 py-2 space-y-1 bg-white max-h-[50vh] overflow-y-auto">
-                  <% @minority_candidates.each do |candidate| %>
-                    <%= link_to "/persoana/#{candidate.slug}", class: "block p-2 rounded-lg hover:bg-gray-50" do %>
-                      <div class="font-medium"><%= candidate.name %></div>
-                      <div class="text-sm text-gray-600">
-                        <%= candidate.party.name %> - <%= candidate.county.name %>
-                      </div>
-                    <% end %>
-                  <% end %>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'hemicycle', locals: {seats: @seats,
+                                            chamber: @chamber,
+                                            minority_candidates: @minority_candidates,
+                                            parties: @parties} %>
 
   <div class="mt-8 mx-auto px-4 sm:px-6 lg:px-8">
     <div class="bg-white shadow sm:rounded-lg">
@@ -195,4 +46,6 @@
       </div>
     </div>
   </div>
+
+  <%= render partial: 'next_steps' %>
 </div>

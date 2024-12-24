@@ -1,13 +1,4 @@
-# db/seeds.rb
-if ENV['ADMIN_EMAIL'].present? && ENV['ADMIN_PASSWORD'].present?
-  if AdminUser.count.zero?
-    AdminUser.create!(
-      email: ENV['ADMIN_EMAIL'],
-      password: ENV['ADMIN_PASSWORD'],
-      password_confirmation: ENV['ADMIN_PASSWORD']
-    )
-    puts 'Admin user created'
-  end
-else
-  puts 'Skipping admin user creation - missing ENV variables'
+# Load all seed files
+Dir[File.join(Rails.root, 'db', 'seeds', '*.rb')].sort.each do |seed|
+  load seed
 end

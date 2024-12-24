@@ -15,10 +15,14 @@ class CandidateNomination < ApplicationRecord
   validates :name, presence: true
   validates :slug, presence: true, uniqueness: { scope: [:election_id, :county_id, :party_id] }
 
+  has_many :parliamentary_group_memberships
+  has_many :parliamentary_groups, through: :parliamentary_group_memberships
+
   scope :for_election, ->(election) { where(election: election) }
   scope :senate, -> { where(kind: 'senate') }
   scope :deputy, -> { where(kind: 'deputy') }
   scope :by_position, -> { order(:position) }
+  scope :qualified, -> { where(qualified: true) }
 
   enum :kind, {
     senate: "senate",

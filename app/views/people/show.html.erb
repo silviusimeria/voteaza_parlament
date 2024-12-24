@@ -4,8 +4,9 @@
     <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
       <div class="flex items-start gap-6">
         <div class="flex-grow">
-          <h1 class="text-3xl font-bold text-gray-900"><%= @person.name %></h1>
-
+          <h1 class="text-3xl font-bold text-gray-900">
+            <%= @person.name %>
+          </h1>
           <%= render partial: "people/nomination_section", locals: {person: @person, nominations: @nominations} %>
         </div>
       </div>
@@ -17,53 +18,6 @@
     <%# Links Section - complex enough for its own partial %>
     <%= render partial: "people/links_section", locals: {person: @person} if @person.people_links.any? %>
 
-    <%# Nominations - keep in main template as it's simpler %>
-    <%# @nominations.each do |nomination| %>
-<!--      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">-->
-<!--        <h2 class="text-xl font-semibold mb-4">-->
-<!--          Candidat <%#= nomination.kind.titleize %> • <%#= nomination.county.name %>-->
-<!--        </h2>-->
-
-        <%# Party info %>
-<!--        <div class="flex items-center gap-4 mb-6">-->
-          <%# local_logo_path = "#{nomination.party.abbreviation&.downcase}.png" %>
-          <%# begin %>
-            <%# @local_logo = nomination.party.abbreviation && asset_path(local_logo_path) %>
-          <%# rescue Sprockets::Rails::Helper::AssetNotFound %>
-            <%# @local_logo = nil %>
-          <%# end %>
-          <%# if @local_logo %>
-<!--            <%# image_tag local_logo_path,class: "w-12 h-12 object-contain",alt: "#{nomination.party.name} logo" %>-->
-          <%# elsif nomination.party.logo_url.present? %>
-<!--            <%# image_tag nomination.party.logo_url,class: "w-12 h-12 object-contain",alt: "#{nomination.party.name} logo" %>-->
-          <%# else %>
-<!--            <div class="w-12 h-12 rounded flex items-center justify-center"-->
-<!--                 style="background-color: <%#= nomination.party.color || "grey" %>">-->
-<!--                <span class="text-white font-bold text-sm">-->
-                  <%#= nomination.party.abbreviation.present? ? nomination.party.abbreviation : nomination.party.name[0] %>
-<!--                </span>-->
-<!--            </div>-->
-          <%# end %>
-<!--        </div>-->
-
-        <%# Party Links %>
-        <%# if nomination.party.party_links.any? %>
-<!--          <div>-->
-<!--            <h3 class="text-lg font-medium mb-3">Resurse Partid</h3>-->
-<!--            <div class="flex flex-wrap gap-2">-->
-              <%# nomination.party.party_links.each do |link| %>
-<!--                <%# link_to link.url, class: "inline-flex items-center gap-1 px-3 py-1 text-sm text-blue-600 hover:text-blue-800 group", target: "_blank", rel: "noopener" do %>-->
-<!--                  <span><%#= link.kind %></span>-->
-<!--                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5"-->
-<!--                       viewBox="0 0 20 20" fill="currentColor">-->
-<!--                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />-->
-<!--                  </svg>-->
-                <%# end %>
-              <%# end %>
-<!--            </div>-->
-<!--          </div>-->
-        <%# end %>
-<!--      </div>-->
-    <%# end %>
+    <%#= render partial: "people/connections", locals: {initial_graph_data: @initial_graph_data} %>
   </div>
 </div>

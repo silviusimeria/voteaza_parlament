@@ -1,0 +1,674 @@
+{
+  "senators": [
+    {
+      "name": "ABRUDEAN Mircea",
+      "parliament_id": "7ff0cd22-7bbb-4ca8-ada1-0473697459bd",
+      "dob": "23.07.1984"
+    },
+    {
+      "name": "ALDEA Mariana-Vali",
+      "parliament_id": "aaa971e5-5110-4c5f-98f5-07c6ee365a1e",
+      "dob": "01.09.1987"
+    },
+    {
+      "name": "ALEXANDRU Victoria-Violeta",
+      "parliament_id": "4d812c2c-fa19-4834-b1f1-08fedc72161d",
+      "dob": "11.11.1975"
+    },
+    {
+      "name": "ANGHEL Razvan-Paul",
+      "parliament_id": "e4673fd9-34fd-4b0d-8019-092771f2537e",
+      "dob": "15.11.1972"
+    },
+    {
+      "name": "ANISIE Monica-Cristina",
+      "parliament_id": "dad3c5ee-3157-410a-85ff-094a63524104",
+      "dob": "19.07.1973"
+    },
+    {
+      "name": "ANTAL István-Loránt",
+      "parliament_id": "de52f6df-260b-4042-9a60-095a0dbfe661",
+      "dob": "19.10.1981"
+    },
+    {
+      "name": "BARCARI Dorina",
+      "parliament_id": "edf20da3-a851-4622-b534-0b3d833a51b9",
+      "dob": "19.02.1950"
+    },
+    {
+      "name": "BEM Cristian",
+      "parliament_id": "00aee4d2-ea00-4484-9a67-0c2f8a0459f8",
+      "dob": "23.11.1972"
+    },
+    {
+      "name": "BICĂ Andra",
+      "parliament_id": "b9c904e7-969f-4126-b0e1-0ebd3a003cc5",
+      "dob": "30.06.1982"
+    },
+    {
+      "name": "BLAGA Vasile",
+      "parliament_id": "33d88102-6e65-4934-9ecf-10102445c2c4",
+      "dob": "26.07.1956"
+    },
+    {
+      "name": "BOCHILEANU George-Cătălin",
+      "parliament_id": "bff3c30a-425f-4b6d-8d4f-1285c1bde059",
+      "dob": "15.06.1988"
+    },
+    {
+      "name": "BODEA Marius",
+      "parliament_id": "dc8f43fb-e036-477b-b895-12f56a2464c1",
+      "dob": "09.06.1976"
+    },
+    {
+      "name": "BOLOJAN Ilie-Gavril",
+      "parliament_id": "813d6a81-cea1-4ac6-9717-143a859d4bde",
+      "dob": "17.03.1969"
+    },
+    {
+      "name": "BORȚUN Ștefan",
+      "parliament_id": "29201640-de4e-47ff-89b2-18126d2790ae",
+      "dob": "12.04.1970"
+    },
+    {
+      "name": "BOTA Gheorghe-Ioan",
+      "parliament_id": "86228ca2-986a-40ba-9ed8-1a975ed32f9c",
+      "dob": "28.05.1974"
+    },
+    {
+      "name": "BUZATU Oana-Constantina",
+      "parliament_id": "6a194230-e597-4335-8ce2-1da0b0aae9c4",
+      "dob": "29.08.1983"
+    },
+    {
+      "name": "CAȘCAVAL Dan",
+      "parliament_id": "d7829eb2-a908-43c2-8f3f-1f1ad550b9e6",
+      "dob": "20.11.1964"
+    },
+    {
+      "name": "CARP Ionel",
+      "parliament_id": "65699efd-f7e5-4128-b80f-1ef173563d66",
+      "dob": "18.06.1976"
+    },
+    {
+      "name": "CATANA Claudiu-Daniel",
+      "parliament_id": "94afc16b-0d0b-45be-a844-2110c5c3bc0a",
+      "dob": "08.02.1987"
+    },
+    {
+      "name": "CAZANCIUC Robert-Marius",
+      "parliament_id": "33c6752d-c2b6-42af-a6b4-233b9f6e9994",
+      "dob": "26.11.1971"
+    },
+    {
+      "name": "CERNIC Sebastian",
+      "parliament_id": "ce14b3e6-9e25-4840-a0b0-23f33c6db73c",
+      "dob": "06.05.1982"
+    },
+    {
+      "name": "CERVA Nadia-Cosmina",
+      "parliament_id": "31c2cf8c-ba75-4086-9359-6cfed5bb857d",
+      "dob": "08.10.1975"
+    },
+    {
+      "name": "CHELARU Mircia",
+      "parliament_id": "9cd64c47-2be4-43ed-8b32-249577fe8c97",
+      "dob": "03.07.1949"
+    },
+    {
+      "name": "CHERTIF Costache",
+      "parliament_id": "9d98d226-76aa-4dec-9d8d-24a83d344dfb",
+      "dob": "01.11.1955"
+    },
+    {
+      "name": "CIBU DEACONU Ruxandra",
+      "parliament_id": "0a8b45a7-e661-4c59-9169-281f79ff12eb",
+      "dob": "07.03.1979"
+    },
+    {
+      "name": "CÎMPEANU Sorin-Mihai",
+      "parliament_id": "e358037e-262e-4bc0-b1d8-30016595005f",
+      "dob": "18.04.1968"
+    },
+    {
+      "name": "CIUCĂ Nicolae-Ionel",
+      "parliament_id": "6891c220-7d4e-4741-a6d7-2bcfb8fd1929",
+      "dob": "07.02.1967"
+    },
+    {
+      "name": "CIUPERCEANU Ionuț-Ciprian",
+      "parliament_id": "801216b9-b47e-419b-bd9f-2da44629e975",
+      "dob": "26.01.1986"
+    },
+    {
+      "name": "COȘA Silviu-Iulian",
+      "parliament_id": "c4a7837d-5479-4aad-82bc-34c696b71339",
+      "dob": "11.07.1970"
+    },
+    {
+      "name": "CONSTANTINESCU Rodica",
+      "parliament_id": "fa667a85-17d1-4cb5-a5db-322d48fcd38d",
+      "dob": "02.03.1984"
+    },
+    {
+      "name": "CORLĂȚEAN TITUS",
+      "parliament_id": "7aebffad-47e6-4c7e-bdfb-34360e888703",
+      "dob": "11.01.1968"
+    },
+    {
+      "name": "COTEȚ Mihai",
+      "parliament_id": "5dfb5f9b-9d25-40a4-9145-366ae2b2c04d",
+      "dob": "11.12.1973"
+    },
+    {
+      "name": "CSÁSZÁR Károly Zsolt",
+      "parliament_id": "827844f4-ed1e-4293-bbe5-3dd527a0d65b",
+      "dob": "20.10.1974"
+    },
+    {
+      "name": "CSEKE Attila-Zoltan",
+      "parliament_id": "2af30f2a-5ad3-45db-a322-4073884fed8f",
+      "dob": "09.06.1973"
+    },
+    {
+      "name": "CUȘNIR Rodica",
+      "parliament_id": "dd953b01-e89c-481c-88b9-40cbd8e43fec",
+      "dob": "03.02.1975"
+    },
+    {
+      "name": "DARĂU Ambrozie-Irineu",
+      "parliament_id": "37b6de1d-2d61-4475-bb9b-443d4ad9d181",
+      "dob": "12.10.1986"
+    },
+    {
+      "name": "DÎRLĂU Andrei-Emil",
+      "parliament_id": "a98c83aa-d99d-464b-a5a1-44566f751a51",
+      "dob": "15.11.1956"
+    },
+    {
+      "name": "DOBRA Elena-Adelina",
+      "parliament_id": "5cb3f164-6f0c-449b-bc2e-457c5e9bf73c",
+      "dob": "04.05.1990"
+    },
+    {
+      "name": "DOGARIU Eugen",
+      "parliament_id": "094ef6d8-2e32-4cbd-81ff-46b54ec604f1",
+      "dob": "21.04.1977"
+    },
+    {
+      "name": "DUMITRESCU Cristina-Gabriella",
+      "parliament_id": "55c19f8c-80f4-4bd1-b112-e363c2b283f1",
+      "dob": "11.05.1982"
+    },
+    {
+      "name": "DUNCA Marius-Alexandru",
+      "parliament_id": "5582ee24-5017-4462-ad12-49d4bde5d5bb",
+      "dob": "19.07.1980"
+    },
+    {
+      "name": "FEDEROVICI Doina-Elena",
+      "parliament_id": "e695c911-b82f-4af1-a537-4ae1baa991bf",
+      "dob": "30.05.1974"
+    },
+    {
+      "name": "FEJÉR László-Ődőn",
+      "parliament_id": "b443bd5d-6ba0-4192-832c-4b502d6ec1a8",
+      "dob": "11.11.1961"
+    },
+    {
+      "name": "FENECHIU Cătălin-Daniel",
+      "parliament_id": "87c4a776-8e64-4e70-a862-4f087aea03e5",
+      "dob": "20.11.1969"
+    },
+    {
+      "name": "FLOROIU Ionel",
+      "parliament_id": "fcdbfb0c-93ca-4aa5-85ba-4f53b21865bd",
+      "dob": "14.11.1962"
+    },
+    {
+      "name": "FLUTUR Gheorghe",
+      "parliament_id": "58dd0f59-a7e9-44f4-9860-5316735921e1",
+      "dob": "08.07.1960"
+    },
+    {
+      "name": "FODOCA Liviu-Iulian",
+      "parliament_id": "4ecef3dd-1f70-4433-82ba-54975207c4a1",
+      "dob": "15.10.1978"
+    },
+    {
+      "name": "GEAMĂNU Ștefan",
+      "parliament_id": "0a82391d-2ecd-4b88-ac27-57b69d159720",
+      "dob": "24.06.1985"
+    },
+    {
+      "name": "GHEORGHE Daniel-Paul-Romeo",
+      "parliament_id": "d2f51e91-d18a-431c-bc9d-6061101ce1d4",
+      "dob": "05.02.1977"
+    },
+    {
+      "name": "GHIȚĂ Robert-Daniel",
+      "parliament_id": "ac8c9401-1a0d-478b-b367-62212ecab1c5",
+      "dob": "15.12.1981"
+    },
+    {
+      "name": "GHINEA Cristian",
+      "parliament_id": "008fd8cb-c069-4f74-b02b-612d1db6a19d",
+      "dob": "20.07.1977"
+    },
+    {
+      "name": "GRAUR Cătălin",
+      "parliament_id": "a8ff8991-97dd-4a5b-92a9-63c61a612f75",
+      "dob": "25.07.1977"
+    },
+    {
+      "name": "HORGA Maria-Gabriela",
+      "parliament_id": "91a4d099-7162-417b-8f93-645dc31accf0",
+      "dob": "25.12.1985"
+    },
+    {
+      "name": "HUMELNICU Marius",
+      "parliament_id": "d172fe4e-c155-4f46-8859-6665840065a9",
+      "dob": "22.10.1977"
+    },
+    {
+      "name": "IACOB Constantin-Ciprian",
+      "parliament_id": "e4de63cf-394d-49da-844a-6b060a232b35",
+      "dob": "30.09.1981"
+    },
+    {
+      "name": "JIANU Florin-Nicolae",
+      "parliament_id": "c74ca163-bfbc-43c0-b1d4-6ebe99d3a0e6",
+      "dob": "30.12.1976"
+    },
+    {
+      "name": "JITARU Ovidiu",
+      "parliament_id": "7193aafe-9862-45bf-b876-6f90dfa96616",
+      "dob": "19.05.1962"
+    },
+    {
+      "name": "KONDOR Ágota",
+      "parliament_id": "dcb76afd-06d2-4795-9ce4-705231994268",
+      "dob": "17.11.1965"
+    },
+    {
+      "name": "KOVÁCS Maté",
+      "parliament_id": "3b1c3e18-cc5d-46d4-8be7-70ca0566d41f",
+      "dob": "14.11.1978"
+    },
+    {
+      "name": "LAVRIC Sorin",
+      "parliament_id": "781af753-0e1a-4820-9926-7191e4eb16df",
+      "dob": "27.11.1967"
+    },
+    {
+      "name": "MĂLĂIESCU Luca",
+      "parliament_id": "b9350519-299b-4572-8d08-7aea22489f39",
+      "dob": "17.06.1967"
+    },
+    {
+      "name": "MANEA Dumitru",
+      "parliament_id": "e23f34ee-f4f8-4e72-8302-7453373e0cec",
+      "dob": "27.06.1956"
+    },
+    {
+      "name": "MĂRGINEAN Lucian",
+      "parliament_id": "fee99943-2379-4151-8e9a-7b15d1f04a4f",
+      "dob": "05.02.1968"
+    },
+    {
+      "name": "MARIAN Călin-Petru",
+      "parliament_id": "509068b6-ecf9-4365-a022-74b77483ce14",
+      "dob": "27.09.1971"
+    },
+    {
+      "name": "MAZILU Liviu-Lucian",
+      "parliament_id": "3abf38c7-fffe-4f34-b90a-77b5c3219da5",
+      "dob": "23.11.1966"
+    },
+    {
+      "name": "MIHAI Daniela",
+      "parliament_id": "f640457c-0362-4c02-96d1-7c38b9957bdd",
+      "dob": "28.06.1971"
+    },
+    {
+      "name": "MÎNDRU Cătălin-Emil",
+      "parliament_id": "b70cfd7f-7726-4531-99d0-83ff6f6f05b3",
+      "dob": "03.08.1975"
+    },
+    {
+      "name": "MIRCESCU Ion-Narcis",
+      "parliament_id": "7a6ec680-9075-4fff-97d2-7d556f4d57bc",
+      "dob": "04.03.1976"
+    },
+    {
+      "name": "MOHAN Aurel-George",
+      "parliament_id": "0692f467-f93f-4a21-a06a-8431696053a8",
+      "dob": "27.04.1983"
+    },
+    {
+      "name": "MOISE Sorin",
+      "parliament_id": "ad29025b-adcf-4c9d-8f02-851ab171ff91",
+      "dob": "21.12.1980"
+    },
+    {
+      "name": "NEAGU Nicolae",
+      "parliament_id": "bdd75da8-fc58-45c3-8765-87d17ea22c8d",
+      "dob": "06.12.1959"
+    },
+    {
+      "name": "NEGOI Eugen-Remus",
+      "parliament_id": "18f2771e-382a-4809-b1ab-8c8750fc5bf8",
+      "dob": "16.11.1970"
+    },
+    {
+      "name": "NEGRU Corneliu",
+      "parliament_id": "c6be0951-8179-4ab1-8166-8cac4c1bf4d4",
+      "dob": "09.11.1968"
+    },
+    {
+      "name": "NICULA Mircea-Cristian",
+      "parliament_id": "cb2ca5b6-ffeb-4fe8-a10c-87c4d61cacb0",
+      "dob": "27.06.1977"
+    },
+    {
+      "name": "NICULESCU-ŢÂGÂRLAŞ Cristian-Augustin",
+      "parliament_id": "8e9b590e-eb5b-49a9-a908-8cbe4e43b9fc",
+      "dob": "25.08.1977"
+    },
+    {
+      "name": "NOVAK Levente",
+      "parliament_id": "2baeeba9-a861-4355-9c8e-8cebeba4f0d4",
+      "dob": "19.10.1984"
+    },
+    {
+      "name": "ONEA Olga",
+      "parliament_id": "7f782376-a244-4258-b5a5-911192e5566d",
+      "dob": "01.02.1982"
+    },
+    {
+      "name": "OPRINOIU Aurel",
+      "parliament_id": "5954ccc9-0af9-409f-9b30-91c8b292d60d",
+      "dob": "26.10.1972"
+    },
+    {
+      "name": "ORBAN Carmen",
+      "parliament_id": "86155ce0-9997-464a-ad63-93236f32f972",
+      "dob": "22.11.1968"
+    },
+    {
+      "name": "PĂDURARU Răducu-Adrian",
+      "parliament_id": "57a5f4d6-ec10-4020-8424-958ed09fbf37",
+      "dob": "25.07.1977"
+    },
+    {
+      "name": "PĂLĂRIE Ștefan",
+      "parliament_id": "2a3a96e0-f5d4-4a21-8c10-9606276f5311",
+      "dob": "12.07.1978"
+    },
+    {
+      "name": "PARASCA Teofil",
+      "parliament_id": "3953018d-3e06-4028-bc4b-953fb20f88e9",
+      "dob": "08.08.1965"
+    },
+    {
+      "name": "PĂUCEAN-FERNANDES Luminița",
+      "parliament_id": "2b2ea3f2-756e-46d5-acfe-9a41350b7f34",
+      "dob": "06.07.1977"
+    },
+    {
+      "name": "PAULIUC Nicoleta",
+      "parliament_id": "737c18e7-c031-4d78-8808-9588b964e893",
+      "dob": "11.05.1971"
+    },
+    {
+      "name": "PĂUN Ana-Cynthia-Ioana",
+      "parliament_id": "a5b8a0d4-4710-4730-a171-9b78349041f6",
+      "dob": "11.04.1987"
+    },
+    {
+      "name": "PEIA Ninel",
+      "parliament_id": "007fdd23-b531-407e-a067-9c3796420c8c",
+      "dob": "07.10.1969"
+    },
+    {
+      "name": "PEIU Grigore-Adrian",
+      "parliament_id": "8c196354-6157-46a5-8b04-9d394c7b294d",
+      "dob": "25.07.1978"
+    },
+    {
+      "name": "PEIU Petrișor-Gabriel",
+      "parliament_id": "05495ace-0730-44d7-b735-9d97285dccf0",
+      "dob": "29.06.1967"
+    },
+    {
+      "name": "PETRE George-Cezar",
+      "parliament_id": "14e542f2-ee04-444e-b539-9e85135da202",
+      "dob": "26.03.1979"
+    },
+    {
+      "name": "PETREA Dorin-Silviu",
+      "parliament_id": "e49ef80d-fc0b-4ca7-93ef-9ed3840e012a",
+      "dob": "02.02.1978"
+    },
+    {
+      "name": "PINTEA Paul-Ciprian",
+      "parliament_id": "6491a652-0d83-455c-b9a9-a04c0f5194c0",
+      "dob": "02.11.1987"
+    },
+    {
+      "name": "PLĂEȘU Laurențiu",
+      "parliament_id": "4ea5e2f9-cd07-4eb4-912e-a1181cc460b1",
+      "dob": "07.04.1968"
+    },
+    {
+      "name": "POTECĂ Vasilică",
+      "parliament_id": "a5a25b95-3452-4d9d-983b-a1c7a033cfcd",
+      "dob": "01.03.1963"
+    },
+    {
+      "name": "PREDOIU Marian-Cătălin",
+      "parliament_id": "979f6165-caa2-4568-abe4-a663a37147fd",
+      "dob": "27.08.1968"
+    },
+    {
+      "name": "PRESURĂ Alexandra",
+      "parliament_id": "95133353-e40c-4398-bbac-a6d14fcdad54",
+      "dob": "16.09.1984"
+    },
+    {
+      "name": "PUIU Ovidiu",
+      "parliament_id": "c4af4b08-ccb8-4323-8fb2-a7272aff2123",
+      "dob": "08.07.1969"
+    },
+    {
+      "name": "RĂCUCI Claudiu-Vasile",
+      "parliament_id": "082c21cd-dcdb-42bb-9bfd-a871139cb9c5",
+      "dob": "29.04.1971"
+    },
+    {
+      "name": "RESMERIŢĂ Cornel-Cristian",
+      "parliament_id": "e7647515-e32c-4e2d-96ff-ab83e8a93512",
+      "dob": "26.01.1980"
+    },
+    {
+      "name": "ROBE Liviu Sorin",
+      "parliament_id": "6e681419-5f69-41cd-85ca-acef5eed2a63",
+      "dob": "28.10.1977"
+    },
+    {
+      "name": "ROMAȘCANU Lucian",
+      "parliament_id": "26cbb9e7-d2fd-487c-baf4-ad616da097e9",
+      "dob": "19.05.1967"
+    },
+    {
+      "name": "ROMAN Marius-Valentin",
+      "parliament_id": "3090f662-69b9-4088-94ea-ad1847401b50",
+      "dob": "22.06.1982"
+    },
+    {
+      "name": "RUJAN Ion-Cristinel",
+      "parliament_id": "400f5737-4844-4c7d-98da-aee69c2428d0",
+      "dob": "29.10.1972"
+    },
+    {
+      "name": "RUS Vasile-Ciprian",
+      "parliament_id": "e5da6de6-88cd-468a-b161-b32caac784f3",
+      "dob": "26.04.1981"
+    },
+    {
+      "name": "RUSU Ioan-Cristian",
+      "parliament_id": "d9cf2a62-6109-4d68-9452-b54d6b4e786f",
+      "dob": "21.03.1986"
+    },
+    {
+      "name": "RUSU Petrică Lucian",
+      "parliament_id": "3f7d19d2-b8d0-4309-894c-b71561f01985",
+      "dob": "20.06.1984"
+    },
+    {
+      "name": "SANDU Mircea-Ionuț",
+      "parliament_id": "74a1ca6f-7e3c-49ea-b9d7-b8df00bf7766",
+      "dob": "07.04.1981"
+    },
+    {
+      "name": "SAVA Clement",
+      "parliament_id": "988c7a7c-2a4e-476d-bcc0-bcc1d6e5b97b",
+      "dob": "19.10.1976"
+    },
+    {
+      "name": "SILEGEANU Cătălin",
+      "parliament_id": "c7757f24-2d04-42a2-833e-c0a9a821ad71",
+      "dob": "13.05.1984"
+    },
+    {
+      "name": "SPĂTARU Elena-Simona",
+      "parliament_id": "60bce7c1-fb2b-4f29-9c74-0b37c64a7611",
+      "dob": "04.09.1978"
+    },
+    {
+      "name": "SPAU Dumitru",
+      "parliament_id": "f34848d5-327a-4e34-80dd-c28eb44c8d98",
+      "dob": "18.11.1978"
+    },
+    {
+      "name": "STAN Ioan",
+      "parliament_id": "259a81f5-9971-4b56-b1b5-c4230980bcd3",
+      "dob": "03.03.1956"
+    },
+    {
+      "name": "STĂNESCU Paul",
+      "parliament_id": "cd69820b-804d-42bf-be94-c567a0efd41b",
+      "dob": "25.08.1957"
+    },
+    {
+      "name": "STELEA Niculina",
+      "parliament_id": "5aa76a32-f2f8-42c0-a868-c5afa29fc744",
+      "dob": "07.01.1965"
+    },
+    {
+      "name": "STOICA Ciprian-Titi",
+      "parliament_id": "1969fbc4-5c74-4b09-afd6-cb64347549de",
+      "dob": "01.05.1982"
+    },
+    {
+      "name": "STOICIU Victoria",
+      "parliament_id": "0317f068-49ad-4541-87d4-cc589aef437f",
+      "dob": "14.05.1979"
+    },
+    {
+      "name": "STREINU CERCEL Adrian",
+      "parliament_id": "075d383a-42a1-44d5-989f-cc686356d066",
+      "dob": "30.08.1956"
+    },
+    {
+      "name": "STROE Felix",
+      "parliament_id": "e945e210-e8a5-4e58-8c9f-d144f4a062b5",
+      "dob": "25.12.1955"
+    },
+    {
+      "name": "ȘIPOȘ Eugen-Cristian",
+      "parliament_id": "aa6ba21b-d06f-4f62-8659-d4e74add85cb",
+      "dob": "18.07.1971"
+    },
+    {
+      "name": "ȘIPOȘ Sorin-Gheorghe",
+      "parliament_id": "a2987b08-f230-43f8-ab52-d9073851a524",
+      "dob": "17.04.1970"
+    },
+    {
+      "name": "ȘTEFĂNACHE Gheorghe",
+      "parliament_id": "9a773414-4c8d-41af-bd97-d9834eb23395",
+      "dob": "02.07.1971"
+    },
+    {
+      "name": "ȘTEFĂNESCU DANIELA",
+      "parliament_id": "bd44b5a4-e8ab-43c1-8b0e-dc539f57f668",
+      "dob": "11.02.1960"
+    },
+    {
+      "name": "TĂNĂSESCU Alina-Elena",
+      "parliament_id": "be0ed528-f7e8-43f5-a47e-e2f52e95a17c",
+      "dob": "26.10.1975"
+    },
+    {
+      "name": "TÁNCZOS Barna",
+      "parliament_id": "ad82d70d-0286-45a0-a3cc-e1df3fa38144",
+      "dob": "25.05.1976"
+    },
+    {
+      "name": "TASNADI Istvan-Szilard",
+      "parliament_id": "d7e43180-8a7d-47ce-94dd-e2e6ffb390d1",
+      "dob": "13.03.1991"
+    },
+    {
+      "name": "TUROS Lóránd",
+      "parliament_id": "3354f56c-a3e7-4cea-9dde-e3bd730d7b7f",
+      "dob": "18.03.1977"
+    },
+    {
+      "name": "VÂNTU Cristian",
+      "parliament_id": "27b719e9-fa14-4f74-a01c-eb955ce9f0ec",
+      "dob": "05.10.1973"
+    },
+    {
+      "name": "VARGA Glad-Aurel",
+      "parliament_id": "dac88f11-d51d-43e7-b5c0-e5692e92c4e1",
+      "dob": "25.05.1986"
+    },
+    {
+      "name": "VASILE Marian",
+      "parliament_id": "0460dbeb-6caa-41f0-aead-ea380a592fde",
+      "dob": "08.06.1980"
+    },
+    {
+      "name": "VELA Gheorghe",
+      "parliament_id": "f1658cfa-9aea-415d-8ef2-ec0e6e4046fc",
+      "dob": "26.03.1976"
+    },
+    {
+      "name": "VEŞTEA MIHAIL",
+      "parliament_id": "70753dde-d7a5-47b2-859d-eee551ce150f",
+      "dob": "18.07.1958"
+    },
+    {
+      "name": "VLĂESCU Virgiliu-George",
+      "parliament_id": "aec2401e-7bfd-4c9f-9f67-f418bcdc5be5",
+      "dob": "20.06.1969"
+    },
+    {
+      "name": "VLAHU Nicolae",
+      "parliament_id": "f6b7345b-82ca-43bf-9b7e-efe5c038b2a0",
+      "dob": "24.09.1989"
+    },
+    {
+      "name": "VLAŞIN SORIN",
+      "parliament_id": "e681a8ad-b809-40ae-9075-f0879f10a986",
+      "dob": "19.04.1971"
+    },
+    {
+      "name": "ZAMFIR Daniel-Cătălin",
+      "parliament_id": "94bb9130-2698-4509-9bea-ffcedf3dac7f",
+      "dob": "10.03.1967"
+    }
+  ]
+}

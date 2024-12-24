@@ -1,0 +1,67 @@
+.connection-graph {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px); // Adjusting for navbar if present
+  display: flex;
+}
+
+.cytoscape-container {
+  flex-grow: 1;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+.graph-controls {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    
+    &:focus {
+      outline: none;
+      border-color: #3498db;
+    }
+  }
+  
+  .depth-input {
+    width: 4rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    
+    &:focus {
+      outline: none;
+      border-color: #3498db;
+    }
+  }
+  
+  .search-button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}

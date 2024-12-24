@@ -15,9 +15,28 @@
           Candidat pentru <%= nomination_to_show.kind == 'senate' ? 'Senat' : 'Camera Deputaților' %>
           în județul <%= nomination_to_show.county.name %>,
           poziția <%= nomination_to_show.position %>
-          din partea <strong><%= nomination_to_show.party.name %></strong>
-          <% if nomination_to_show.qualified %>
-            și a obținut mandat pentru perioada <%= election.election_date.year %>-<%= election.election_date.year + 4 %>
+          din partea partidului <%= nomination_to_show.party.name %>
+          <% if nomination_to_show.kind == 'senate' %>
+            <% if nomination_to_show.mandate_started %>
+              pentru legislatura <%= election.senate_mandate.slug %>, și a depus jurământul la data de <%= nomination_to_show.mandate_start_date.strftime('%d.%m.%y') %>, parte din <%= nomination_to_show.parliamentary_groups.for_mandate(election.senate_mandate).first.name %>.
+
+            <% elsif nomination_to_show.qualified %>
+              și a obținut mandat pentru legislatura <%= election.senate_mandate.slug %> dar a renunțat.
+            <% end %>
+          <% else %>
+            <% if nomination_to_show.qualified %>
+              și a obținut mandat pentru legislatura <%= election.senate_mandate.slug %>
+            <% end %>
+          <% end %>
+          <% if @person.parliament_id.present? %>
+            <%= link_to "https://www.senat.ro/FisaSenator.aspx?ParlamentarID=#{@person.parliament_id}",
+                        class: "ml-2 inline-flex items-center text-sm text-blue-600 hover:text-blue-800",
+                        target: "_blank",
+                        title: "Vezi profilul oficial pe senat.ro" do %>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            <% end %>
           <% end %>
         </div>
       </div>

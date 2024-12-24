@@ -7,15 +7,21 @@ class Person < ApplicationRecord
   has_many :counties, through: :candidate_nominations
   has_many :parties, through: :candidate_nominations
 
+  has_many :connections
+  has_many :connected_people, through: :connections
+
+  has_many :inverse_connections, class_name: 'Connection', foreign_key: 'connected_person_id'
+  has_many :inverse_connected_people, through: :inverse_connections, source: :person
+
   # Ransack config
   def self.ransackable_attributes(auth_object = nil)
     %w[id name funky_data slug created_at updated_at]
   end
 
   def self.ransackable_associations(auth_object = nil)
-    %w[candidate_nominations people_links counties parties party_memberships]
+    %w[candidate_nominations people_links counties parties party_memberships connections
+connected_people inverse_connections inverse_connected_people]
   end
-
 
   def birth_date
     funky_data&.dig('birth_date')

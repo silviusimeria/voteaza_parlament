@@ -1,0 +1,46 @@
+{
+  "groups": [
+    {
+      "party_code": "Partidul Social Democrat",
+      "name": "Grupul parlamentar al Partidului Social Democrat",
+      "short_name": "PSD",
+      "official_id": "1042f657-ab38-4245-ac2e-9cebb90c723c"
+    },
+    {
+      "party_code": "Alianța pentru Unirea Românilor",
+      "name": "Grupul parlamentar Alianța pentru Unirea Românilor",
+      "short_name": "AUR",
+      "official_id": "66ce7e9a-a70d-4c69-83ce-774e9e17c315"
+    },
+    {
+      "party_code": "Partidul Național Liberal",
+      "name": "Grupul parlamentar al Partidului Naţional Liberal",
+      "short_name": "PNL",
+      "official_id": "3e33c37a-0e27-49da-a83a-bd98212e750c"
+    },
+    {
+      "party_code": "Uniunea Salvați România",
+      "name": "Grupul parlamentar al Uniunii Salvați România",
+      "short_name": "USR",
+      "official_id": "c2e2497d-8fd7-4489-9fb0-cc198e6d8700"
+    },
+    {
+      "party_code": "Partidul S.O.S. România",
+      "name": "Grupul parlamentar al Partidului S.O.S. România",
+      "short_name": "SOS",
+      "official_id": "26028f12-151d-4f0b-ad82-9747e6d30cbc"
+    },
+    {
+      "party_code": "Uniunea Democrată Maghiară din România",
+      "name": "Grupul parlamentar al Uniunii Democrate Maghiare din România",
+      "short_name": "UDMR",
+      "official_id": "003055a9-61a2-473d-8c35-7ca36642b8a5"
+    },
+    {
+      "party_code": "Partidul Oamenilor Tineri",
+      "name": "Grupul parlamentar al Partidului Oamenilor Tineri",
+      "short_name": "POT",
+      "official_id": "6c0fa8ee-7660-446c-9185-0570d8cb9193"
+    }
+  ]
+}

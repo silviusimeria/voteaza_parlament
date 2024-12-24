@@ -1,0 +1,11 @@
+<%= turbo_frame_tag "connections_graph" do %>
+  <div class="connection-graph" 
+       data-controller="graph"
+       data-graph-initial-data-value="<%= graph_data.to_json %>"
+       data-graph-url-value="<%= person_profile_path(slug: @person.slug) %>">
+
+    <div id="cy" 
+         class="cytoscape-container h-[600px]" 
+         data-graph-target="container"></div>
+  </div>
+<% end %>

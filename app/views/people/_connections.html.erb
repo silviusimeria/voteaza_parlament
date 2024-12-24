@@ -1,0 +1,32 @@
+<%# Main connections visualization view %>
+<div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-xl font-semibold">Connections</h2>
+    
+    <%# Depth control %>
+    <%= turbo_frame_tag "depth_control" do %>
+      <div class="flex items-center gap-2">
+        <span class="text-sm text-gray-600">Depth:</span>
+        <% (1..3).each do |d| %>
+          <%= link_to d.to_s,
+                      person_profile_path(slug: @person.slug, depth: d),
+                      class: "px-3 py-1 rounded #{params[:depth].to_i == d ? 'bg-blue-500 text-white' : 'bg-gray-100'}",
+                      data: { turbo_stream: true } %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <%# Graph container wrapped in a Turbo Frame %>
+  <%= turbo_frame_tag "connections_graph" do %>
+    <div class="connection-graph" 
+         data-controller="graph"
+         data-graph-initial-data-value="<%= @graph_data.to_json %>"
+         data-graph-url-value="<%= person_profile_path(slug: @person.slug) %>">
+
+      <div id="cy" 
+           class="cytoscape-container h-[600px]" 
+           data-graph-target="container"></div>
+    </div>
+  <% end %>
+</div>

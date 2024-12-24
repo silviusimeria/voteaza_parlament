@@ -11,6 +11,8 @@ class Election < ApplicationRecord
   validates :kind, presence: true
   validates :election_date, presence: true
 
+  has_one :senate_mandate
+
   scope :parliament, -> { where(kind: 'parliament') }
   scope :active, -> { where(active: true) }
 
