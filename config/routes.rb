@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   end
 
   get 'parlament', to: 'parliament#hemicycle', as: :parliament_map
-  get 'senate', to: 'parliament#senate', as: :senate_map
+  get 'senat', to: 'parliament#senate', as: :senate_map
 
 
   get "termeni-si-conditii", to: "pages#terms"

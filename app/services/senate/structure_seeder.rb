@@ -50,7 +50,7 @@ module Senate
           .gsub(/^-|-$/, '')         # trim hyphens from ends
         
         ParliamentaryGroup.find_or_create_by!(
-          senate_mandate: @mandate,
+          senate_mandate_id: @mandate.id,
           party: party,
           name: group_data['name'],
           short_name: group_data['short_name'],
@@ -72,7 +72,7 @@ module Senate
           .gsub(/^-|-$/, '')         # trim hyphens from ends
 
         SenateCommission.find_or_create_by!(
-          senate_mandate: @mandate,
+          senate_mandate_id: @mandate.id,
           name: commission_data['name'],
           short_name: commission_data['short_name'],
           commission_type: commission_data['type'],
